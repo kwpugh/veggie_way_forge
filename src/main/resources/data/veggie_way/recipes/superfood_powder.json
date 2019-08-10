@@ -1,0 +1,36 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "ADB",
+        "CAC",
+        "BDA"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "veggie_way:proteins"
+        },
+        "B":
+        {
+            "item": "veggie_way:carbs"
+        },
+        "C":
+        {
+            "item": "veggie_way:fructose"
+        },
+        "D":
+        {
+            "item": "veggie_way:vitamins"
+        }
+    },
+    
+    "result":
+    {
+        "item": "veggie_way:superfood_powder",
+        "count": 4
+    }
+}

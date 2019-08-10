@@ -1,0 +1,32 @@
+modLoader="javafml" #mandatory
+
+loaderVersion="[27,)" #mandatory (24 is current forge version)
+
+credits="Thanks to Harry Talks for his amazing tutorials and Udemy for great Java courses." #optional
+
+authors="kwpugh" #optional
+
+[[mods]] #mandatory
+modId="veggie_way" #mandatory
+version="2.0.0" #mandatory
+displayName="The Veggie Way" #mandatory
+description='''
+A the veggie way to nutritious food
+'''
+
+
+[[dependencies.veggie_way]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[28,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+
+# Here's another dependency
+[[dependencies.veggie_way]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.14.3, 1.14.4]"
+    ordering="NONE"
+    side="BOTH"
