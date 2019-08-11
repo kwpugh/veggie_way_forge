@@ -38,7 +38,7 @@ public class HandTiller extends PickaxeItem
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
 		         });
 		         
-		        //30% chance to spawn Drying Agent when breaking
+		        //20% chance to spawn Drying Agent when breaking
 		        double r = random.nextDouble();
 		        if (r <= 0.2)
 		        {
@@ -50,7 +50,7 @@ public class HandTiller extends PickaxeItem
 		        }		
 			}
 			
-			if(block == Blocks.DIRT)
+			if(block == Blocks.DIRT || block == Blocks.GRASS_BLOCK)
 			{
 				stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);

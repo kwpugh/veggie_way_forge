@@ -36,7 +36,6 @@ public class VeggieWay
 
     private void setup(final FMLCommonSetupEvent event)
     {
-
         logger.info("Mod setup");
     }
 

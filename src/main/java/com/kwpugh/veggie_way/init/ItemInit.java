@@ -2,19 +2,15 @@ package com.kwpugh.veggie_way.init;
 
 import com.kwpugh.veggie_way.VeggieWay;
 import com.kwpugh.veggie_way.items.CropQuinoa;
+import com.kwpugh.veggie_way.items.DrinkBase;
 import com.kwpugh.veggie_way.items.HandTiller;
 import com.kwpugh.veggie_way.items.ItemCaffeine;
 import com.kwpugh.veggie_way.items.ItemCarbs;
 import com.kwpugh.veggie_way.items.ItemDryingAgent;
-import com.kwpugh.veggie_way.items.ItemEnergyBar;
-import com.kwpugh.veggie_way.items.ItemEnergyDrink;
 import com.kwpugh.veggie_way.items.ItemEnergyPowder;
 import com.kwpugh.veggie_way.items.ItemFructose;
 import com.kwpugh.veggie_way.items.ItemProteins;
-import com.kwpugh.veggie_way.items.ItemSuperfoodBar;
 import com.kwpugh.veggie_way.items.ItemSuperfoodPowder;
-import com.kwpugh.veggie_way.items.ItemSuperfoodShake;
-import com.kwpugh.veggie_way.items.ItemSuperfoodSmoothie;
 import com.kwpugh.veggie_way.items.ItemVitamins;
 import com.kwpugh.veggie_way.items.ItemWheatgerm;
 import com.kwpugh.veggie_way.items.SeedQuinoa;
@@ -56,13 +52,12 @@ public class ItemInit
 				ItemList.energy_powder = new ItemEnergyPowder(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("energy_powder")),
 				ItemList.superfood_powder = new ItemSuperfoodPowder(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("superfood_powder")),
 				
-				ItemList.energy_drink = new ItemEnergyDrink(new Item.Properties().food(FoodList.energyDrink).group(VeggieWay.veggie_way)).setRegistryName(location("energy_drink")),
-				ItemList.superfood_shake = new ItemSuperfoodShake(new Item.Properties().food(FoodList.superfoodShake).group(VeggieWay.veggie_way)).setRegistryName(location("superfood_shake")),
-				ItemList.superfood_smoothie = new ItemSuperfoodSmoothie(new Item.Properties().food(FoodList.superfoodSmoothie).group(VeggieWay.veggie_way)).setRegistryName(location("superfood_smoothie")),
+				ItemList.energy_drink = new DrinkBase(new Item.Properties().food(FoodList.energyDrink).group(VeggieWay.veggie_way)).setRegistryName(location("energy_drink")),
+				ItemList.superfood_shake = new DrinkBase(new Item.Properties().food(FoodList.superfoodShake).group(VeggieWay.veggie_way)).setRegistryName(location("superfood_shake")),
+				ItemList.superfood_smoothie = new DrinkBase(new Item.Properties().food(FoodList.superfoodSmoothie).group(VeggieWay.veggie_way)).setRegistryName(location("superfood_smoothie")),
 				
-				ItemList.energy_bar = new ItemEnergyBar(new Item.Properties().food(FoodList.energyBar).group(VeggieWay.veggie_way)).setRegistryName(location("energy_bar")),
-				ItemList.superfood_bar = new ItemSuperfoodBar(new Item.Properties().food(FoodList.superfoodBar).group(VeggieWay.veggie_way)).setRegistryName(location("superfood_bar"))
-							
+				ItemList.energy_bar = new Item(new Item.Properties().food(FoodList.energyBar).group(VeggieWay.veggie_way)).setRegistryName(location("energy_bar")),
+				ItemList.superfood_bar = new Item(new Item.Properties().food(FoodList.superfoodBar).group(VeggieWay.veggie_way)).setRegistryName(location("superfood_bar"))							
 			);		
 			VeggieWay.logger.info("Items registered.");
 		}

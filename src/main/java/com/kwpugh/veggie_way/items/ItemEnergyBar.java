@@ -20,9 +20,9 @@ public class ItemEnergyBar extends Item
 	{
 		super(properties);
 	}
-
+	
 	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving)
-	{
+	{		
 	    if (entityLiving instanceof PlayerEntity && !((PlayerEntity)entityLiving).abilities.isCreativeMode)
 	    {
 	    	stack.shrink(1);
