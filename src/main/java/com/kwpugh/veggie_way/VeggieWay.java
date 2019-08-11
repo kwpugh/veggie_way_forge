@@ -41,19 +41,16 @@ public class VeggieWay
 
     private void doClientStuff(final FMLClientSetupEvent event)
     {
-
     	logger.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
-
         InterModComms.sendTo("veggie_way", "helloworld", () -> { logger.info("Hello world from VeggieWay"); return "Hello world";});
     }
 
     private void processIMC(final InterModProcessEvent event)
     {
-
     	logger.info("Got IMC {}", event.getIMCStream().
                 map(m->m.getMessageSupplier().get()).
                 collect(Collectors.toList()));
@@ -62,7 +59,6 @@ public class VeggieWay
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event)
     {
-
     	logger.info("Server starting");
     }
 }

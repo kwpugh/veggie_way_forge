@@ -12,7 +12,7 @@
     {
         "A":
         {
-            "item": "minecraft:dried_kelp"
+            "tag": "veggie_way:fruits"
         },
         "B":
         {
@@ -22,7 +22,7 @@
     
     "result":
     {
-        "item": "veggie_way:vitamins",
+        "item": "veggie_way:fructose",
         "count": 4
     }
 }

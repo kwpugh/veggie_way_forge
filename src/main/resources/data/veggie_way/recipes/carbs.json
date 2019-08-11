@@ -12,7 +12,7 @@
     {
         "A":
         {
-            "item": "minecraft:potato"
+            "tag": "veggie_way:carbs"
         },
         "B":
         {

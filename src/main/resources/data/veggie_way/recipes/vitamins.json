@@ -12,7 +12,7 @@
     {
         "A":
         {
-            "item": "minecraft:sweet_berries"
+            "tag": "veggie_way:vegetables"
         },
         "B":
         {
@@ -22,7 +22,7 @@
     
     "result":
     {
-        "item": "veggie_way:fructose",
+        "item": "veggie_way:vitamins",
         "count": 4
     }
 }
