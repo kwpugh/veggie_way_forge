@@ -3,26 +3,26 @@
     
     "pattern":
     [
+        "AAA",
         "ABA",
-        "BAB",
-        "ABA"
+        "AAA"
     ],
     
     "key":
     {
         "A":
         {
-            "item": "veggie_way:caffeine"
+            "item": "minecraft:wheat"
         },
         "B":
         {
-            "item": "veggie_way:fructose"
+            "item": "veggie_way:drying_agent"
         }
     },
     
     "result":
     {
-        "item": "veggie_way:energy_powder",
+        "item": "veggie_way:wheatgerm",
         "count": 4
     }
 }

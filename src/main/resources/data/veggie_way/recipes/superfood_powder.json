@@ -4,7 +4,7 @@
     "pattern":
     [
         "ADB",
-        "CAC",
+        "CEC",
         "BDA"
     ],
     
@@ -25,6 +25,10 @@
         "D":
         {
             "item": "veggie_way:vitamins"
+        },
+        "E":
+        {
+            "item": "veggie_way:wheatgerm"
         }
     },
     

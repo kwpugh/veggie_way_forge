@@ -14,9 +14,9 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
-public class ItemEnergyDrink extends Item
+public class ItemSuperfoodShake extends Item
 {	
-	public ItemEnergyDrink(Properties properties)
+	public ItemSuperfoodShake(Properties properties)
 	{
 		super(properties);
 	}
@@ -40,7 +40,7 @@ public class ItemEnergyDrink extends Item
 	public void addInformation(ItemStack stack, World world, List<ITextComponent> list, ITooltipFlag flag)
 	{
 		super.addInformation(stack, world, list, flag);				
-		list.add(new StringTextComponent(TextFormatting.BLUE + "A sweet drink that peps you up!"));
-		list.add(new StringTextComponent(TextFormatting.GREEN + "Gives you a Speed effect"));
+		list.add(new StringTextComponent(TextFormatting.BLUE + "A most statisfying meal!"));
+		list.add(new StringTextComponent(TextFormatting.GREEN + "Gives you a boost of Strength"));
 	} 
 }

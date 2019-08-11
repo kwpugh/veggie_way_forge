@@ -10,19 +10,19 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
-public class ItemCarbs extends Item
+public class ItemWheatgerm extends Item
 {
 
-	public ItemCarbs(Properties properties)
+	public ItemWheatgerm(Properties properties)
 	{
 		super(properties);
 	}
-	
+
     @Override
 	public void addInformation(ItemStack stack, World world, List<ITextComponent> list, ITooltipFlag flag)
 	{
 		super.addInformation(stack, world, list, flag);				
-		list.add(new StringTextComponent(TextFormatting.BLUE + "A concentrated form of carbohydrate"));
+		list.add(new StringTextComponent(TextFormatting.BLUE + "A concentrated form of wheat germ"));
 		list.add(new StringTextComponent(TextFormatting.GREEN + "Used for mixing"));
 	}  
 }

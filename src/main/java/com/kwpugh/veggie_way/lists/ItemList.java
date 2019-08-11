@@ -14,6 +14,8 @@ public class ItemList
 	public static Item fructose;
 	public static Item proteins;
 	public static Item vitamins;
+	public static Item caffeine;
+	public static Item wheatgerm;
 	
 	public static Item energy_powder;
 	public static Item superfood_powder;
