@@ -1,4 +1,4 @@
-package com.kwpugh.veggie_way;
+package com.kwpugh.veggie_way.group;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
