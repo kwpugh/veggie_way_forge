@@ -4,6 +4,7 @@
 	"values":
 	[
 		"veggie_way:quinoa",
-		"minecraft:egg"
+		"minecraft:egg",
+		"forge:quinoa"
 	]
 }
