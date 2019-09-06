@@ -1,6 +1,6 @@
 {
-    "parent": "block/crop",
+    "parent": "block/cross",
     "textures": {
-        "crop": "veggie_way:block/quinoa_plant_stage_3"
+        "cross": "veggie_way:block/quinoa_plant_stage_3"
     }
 }

@@ -1,7 +1,5 @@
 package com.kwpugh.veggie_way.items;
 
-import java.util.Properties;
-
 import com.kwpugh.veggie_way.lists.ItemList;
 
 import net.minecraft.block.Block;
@@ -14,15 +12,14 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
-import net.minecraft.item.ShovelItem;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-
-public class HandTiller extends ShovelItem
+public class HandPick extends PickaxeItem
 {
-	public HandTiller(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder)
+	public HandPick(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder)
 	{
 		super(tier, attackDamageIn, attackSpeedIn, builder);
 	}
@@ -34,7 +31,7 @@ public class HandTiller extends ShovelItem
 		
 		if (!worldIn.isRemote && state.getBlockHardness(worldIn, pos) != 0.0F)
 		{
-			if(block == Blocks.SAND)
+			if(block == Blocks.SANDSTONE)
 			{
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
@@ -44,7 +41,7 @@ public class HandTiller extends ShovelItem
 		        double r = random.nextDouble();
 		        if (r <= 0.2)
 		        {
-		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.drying_agent, 1)));
+		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.powder_saltpeter, 1)));
 		        }
 		        else if (r > 0.2)
 		        {
@@ -52,23 +49,23 @@ public class HandTiller extends ShovelItem
 		        }		
 			}
 			
-			if(block == Blocks.DIRT || block == Blocks.GRASS_BLOCK)
+			if(block == Blocks.NETHERRACK)
 			{
-				stack.damageItem(1, entityLiving, (p_220038_0_) -> {
+		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
 		         });
 		         
-		        //10% chance to spawn Quinoa Seeds when breaking
+		        //30% chance to spawn sulfur when breaking
 		        double r = random.nextDouble();
 		        if (r <= 0.1)
 		        {
-		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.quinoa_seeds, 1)));
+		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.powder_sulfur, 1)));
 		        }
 		        else if (r > 0.1)
 		        {
-		        	 //just drop the normal block, no quinoa
-		        }			
-			} 
+		        	 //just drop the normal block, no sulfur
+		        }		
+			}
 	    }
 
 		return true;

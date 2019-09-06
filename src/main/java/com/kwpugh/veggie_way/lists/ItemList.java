@@ -5,7 +5,11 @@ import net.minecraft.item.Item;
 public class ItemList 
 {
 	public static Item hand_tiller;
+	public static Item hand_pick;
+	
 	public static Item drying_agent;
+	public static Item powder_sulfur;
+	public static Item powder_saltpeter;
 	
 	public static Item quinoa_seeds;
 	public static Item quinoa;
