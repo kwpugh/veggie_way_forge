@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "veggie_way:bamboo_sheet"
+        }
+    },
+    "result": {
+        "item": "minecraft:leather",
+        "count": 1
+    }
+}

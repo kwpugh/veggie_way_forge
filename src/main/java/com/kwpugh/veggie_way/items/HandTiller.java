@@ -1,7 +1,5 @@
 package com.kwpugh.veggie_way.items;
 
-import java.util.Properties;
-
 import com.kwpugh.veggie_way.lists.ItemList;
 
 import net.minecraft.block.Block;
@@ -69,6 +67,24 @@ public class HandTiller extends ShovelItem
 		        	 //just drop the normal block, no quinoa
 		        }			
 			} 
+			
+			if(block == Blocks.GRAVEL)
+			{
+		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
+		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
+		         });
+		         
+		        //20% chance to spawn bone fragment when breaking
+		        double r = random.nextDouble();
+		        if (r <= 0.2)
+		        {
+		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.bone_fragment, 1)));
+		        }
+		        else if (r > 0.2)
+		        {
+		        	 //just drop the normal block, no bone fragment
+		        }		
+			}
 	    }
 
 		return true;

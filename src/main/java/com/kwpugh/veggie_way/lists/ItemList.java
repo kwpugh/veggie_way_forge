@@ -6,10 +6,14 @@ public class ItemList
 {
 	public static Item hand_tiller;
 	public static Item hand_pick;
+	public static Item hand_scraper;
+	public static Item feather_plucker;
 	
 	public static Item drying_agent;
 	public static Item powder_sulfur;
 	public static Item powder_saltpeter;
+	public static Item bamboo_sheet;
+	public static Item bone_fragment;
 	
 	public static Item quinoa_seeds;
 	public static Item quinoa;

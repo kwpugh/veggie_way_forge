@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "  A",
+        " A ",
+        "A  "
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "veggie_way:bone_fragment"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:bone",
+        "count": 1
+    }
+}
