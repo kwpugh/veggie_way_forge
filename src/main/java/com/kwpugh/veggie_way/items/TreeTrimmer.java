@@ -31,12 +31,7 @@ public class TreeTrimmer extends ShovelItem
 		
 		if (!worldIn.isRemote)
 		{
-			if(block == Blocks.ACACIA_LEAVES ||
-					block == Blocks.BIRCH_LEAVES ||
-					block == Blocks.DARK_OAK_LEAVES ||
-					block == Blocks.JUNGLE_LEAVES ||
-					block == Blocks.OAK_LEAVES ||
-					block == Blocks.SPRUCE_LEAVES)
+			if(block == Blocks.SPRUCE_LEAVES)
 			{
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
@@ -57,12 +52,7 @@ public class TreeTrimmer extends ShovelItem
 
 		if (!worldIn.isRemote)
 		{
-			if(block == Blocks.ACACIA_LEAVES ||
-					block == Blocks.BIRCH_LEAVES ||
-					block == Blocks.DARK_OAK_LEAVES ||
-					block == Blocks.JUNGLE_LEAVES ||
-					block == Blocks.OAK_LEAVES ||
-					block == Blocks.SPRUCE_LEAVES)
+			if(block == Blocks.BIRCH_LEAVES)
 			{
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
@@ -83,12 +73,7 @@ public class TreeTrimmer extends ShovelItem
 		
 		if (!worldIn.isRemote)
 		{
-			if(block == Blocks.ACACIA_LEAVES ||
-					block == Blocks.BIRCH_LEAVES ||
-					block == Blocks.DARK_OAK_LEAVES ||
-					block == Blocks.JUNGLE_LEAVES ||
-					block == Blocks.OAK_LEAVES ||
-					block == Blocks.SPRUCE_LEAVES)
+			if(block == Blocks.OAK_LEAVES)
 			{
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
@@ -109,12 +94,7 @@ public class TreeTrimmer extends ShovelItem
 		
 		if (!worldIn.isRemote)
 		{
-			if(block == Blocks.ACACIA_LEAVES ||
-					block == Blocks.BIRCH_LEAVES ||
-					block == Blocks.DARK_OAK_LEAVES ||
-					block == Blocks.JUNGLE_LEAVES ||
-					block == Blocks.OAK_LEAVES ||
-					block == Blocks.SPRUCE_LEAVES)
+			if(block == Blocks.ACACIA_LEAVES)
 			{
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
@@ -135,12 +115,7 @@ public class TreeTrimmer extends ShovelItem
 
 		if (!worldIn.isRemote)
 		{
-			if(block == Blocks.ACACIA_LEAVES ||
-					block == Blocks.BIRCH_LEAVES ||
-					block == Blocks.DARK_OAK_LEAVES ||
-					block == Blocks.JUNGLE_LEAVES ||
-					block == Blocks.OAK_LEAVES ||
-					block == Blocks.SPRUCE_LEAVES)
+			if(block == Blocks.JUNGLE_LEAVES)
 			{
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
@@ -161,12 +136,7 @@ public class TreeTrimmer extends ShovelItem
 		
 		if (!worldIn.isRemote)
 		{
-			if(block == Blocks.ACACIA_LEAVES ||
-					block == Blocks.BIRCH_LEAVES ||
-					block == Blocks.DARK_OAK_LEAVES ||
-					block == Blocks.JUNGLE_LEAVES ||
-					block == Blocks.OAK_LEAVES ||
-					block == Blocks.SPRUCE_LEAVES)
+			if(block == Blocks.DARK_OAK_LEAVES)
 			{
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
