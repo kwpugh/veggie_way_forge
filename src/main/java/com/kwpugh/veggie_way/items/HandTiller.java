@@ -12,6 +12,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
+import net.minecraft.item.Items;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.math.BlockPos;
@@ -39,11 +40,11 @@ public class HandTiller extends ShovelItem
 		         });
 
 		        double r = random.nextDouble();
-		        if (r <= 0.2)
+		        if (r <= 0.3)
 		        {
 		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.drying_agent, 1)));
 		        }
-		        else if (r > 0.2)
+		        else if (r > 0.3)
 		        {
 		        	 //just drop the normal block, no drying agent
 		        }		
@@ -76,6 +77,23 @@ public class HandTiller extends ShovelItem
 		        if (r <= 0.2)
 		        {
 		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.bone_fragment, 1)));
+		        }
+		        else if (r > 0.2)
+		        {
+		        	 //just drop the normal block, no bone fragment
+		        }		
+			}
+			
+			if(block == Blocks.CLAY)
+			{
+		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
+		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
+		         });
+
+		        double r = random.nextDouble();
+		        if (r <= 0.2)
+		        {
+		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.INK_SAC, 1)));
 		        }
 		        else if (r > 0.2)
 		        {

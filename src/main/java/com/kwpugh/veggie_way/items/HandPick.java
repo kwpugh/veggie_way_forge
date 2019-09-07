@@ -73,11 +73,11 @@ public class HandPick extends PickaxeItem
 		         });
 		         
 		        double r = random.nextDouble();
-		        if (r <= 0.1)
+		        if (r <= 0.2)
 		        {
 		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.BLAZE_POWDER, 1)));
 		        }
-		        else if (r > 0.1)
+		        else if (r > 0.2)
 		        {
 		        	 //just drop the normal block, no drops
 		        }		
