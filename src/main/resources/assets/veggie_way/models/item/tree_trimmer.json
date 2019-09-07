@@ -1,6 +1,6 @@
 {
    "parent": "item/handheld",
    "textures": {
-       "layer0": "veggie_way:item/feather_plucker"
+       "layer0": "veggie_way:item/tree_trimmer"
    }
 }

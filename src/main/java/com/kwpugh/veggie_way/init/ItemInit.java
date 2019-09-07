@@ -3,6 +3,7 @@ package com.kwpugh.veggie_way.init;
 import com.kwpugh.veggie_way.VeggieWay;
 import com.kwpugh.veggie_way.items.CropQuinoa;
 import com.kwpugh.veggie_way.items.DrinkBase;
+import com.kwpugh.veggie_way.items.TreeTrimmer;
 import com.kwpugh.veggie_way.items.HandPick;
 import com.kwpugh.veggie_way.items.HandScraper;
 import com.kwpugh.veggie_way.items.HandTiller;
@@ -22,7 +23,6 @@ import com.kwpugh.veggie_way.lists.ItemList;
 
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemTier;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.event.RegistryEvent;
@@ -39,15 +39,16 @@ public class ItemInit
 		{
 			event.getRegistry().registerAll
 			(				
-				ItemList.hand_tiller = new HandTiller(ItemTier.IRON, 0, 0, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("hand_tiller")),	
-				ItemList.hand_pick = new HandPick(ItemTier.IRON, 0, 0, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("hand_pick")),
-				//ItemList.feather_plucker = new HandPick(ItemTier.IRON, 0, 0, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("feather_plucker")),
+				ItemList.hand_tiller = new HandTiller(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("hand_tiller")),	
+				ItemList.hand_pick = new HandPick(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("hand_pick")),
 				ItemList.hand_scraper = new HandScraper(Fluids.EMPTY, (new Item.Properties()).maxStackSize(1).group(VeggieWay.veggie_way)).setRegistryName(location("hand_scraper")),
-				
+				ItemList.tree_trimmer = new TreeTrimmer(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("tree_trimmer")),
+						
 				ItemList.powder_sulfur = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("powder_sulfur")),
 				ItemList.powder_saltpeter = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("powder_saltpeter")),
 				
 				ItemList.bone_fragment = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("bone_fragment")),
+				ItemList.pearl_fragment = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("pearl_fragment")),
 						
 				ItemList.quinoa_seeds = new SeedQuinoa("quinoa_seeds", BlockList.plant_quinoa, (new Item.Properties().group(VeggieWay.veggie_way))),
 				ItemList.quinoa = new CropQuinoa(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("quinoa")),
@@ -72,8 +73,6 @@ public class ItemInit
 				ItemList.superfood_bar = new Item(new Item.Properties().food(FoodList.superfoodBar).group(VeggieWay.veggie_way)).setRegistryName(location("superfood_bar")),
 
 				ItemList.bamboo_sheet = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("bamboo_sheet"))
-				
-				
 			);		
 			VeggieWay.logger.info("Items registered.");
 		}

@@ -37,8 +37,7 @@ public class HandTiller extends ShovelItem
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
 		         });
-		         
-		        //20% chance to spawn Drying Agent when breaking
+
 		        double r = random.nextDouble();
 		        if (r <= 0.2)
 		        {
@@ -55,8 +54,7 @@ public class HandTiller extends ShovelItem
 				stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
 		         });
-		         
-		        //10% chance to spawn Quinoa Seeds when breaking
+
 		        double r = random.nextDouble();
 		        if (r <= 0.1)
 		        {
@@ -73,8 +71,7 @@ public class HandTiller extends ShovelItem
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
 		         });
-		         
-		        //20% chance to spawn bone fragment when breaking
+
 		        double r = random.nextDouble();
 		        if (r <= 0.2)
 		        {
@@ -89,13 +86,5 @@ public class HandTiller extends ShovelItem
 
 		return true;
 	}
-	
-	 public ActionResultType onItemUse(ItemUseContext context)
-	 {
-	      World world = context.getWorld();
-	      BlockPos blockpos = context.getPos();
-
-	      return ActionResultType.PASS;
-	   }
 }
 

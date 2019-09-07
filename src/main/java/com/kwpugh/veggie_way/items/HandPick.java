@@ -12,6 +12,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUseContext;
+import net.minecraft.item.Items;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.math.BlockPos;
@@ -36,8 +37,7 @@ public class HandPick extends PickaxeItem
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
 		         });
-		         
-		        //20% chance to spawn Drying Agent when breaking
+		         	        
 		        double r = random.nextDouble();
 		        if (r <= 0.2)
 		        {
@@ -45,7 +45,7 @@ public class HandPick extends PickaxeItem
 		        }
 		        else if (r > 0.2)
 		        {
-		        	 //just drop the normal block, no drying agent
+		        	 //just drop the normal block, no drops
 		        }		
 			}
 			
@@ -54,8 +54,7 @@ public class HandPick extends PickaxeItem
 		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
 		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
 		         });
-		         
-		        //30% chance to spawn sulfur when breaking
+		         		        
 		        double r = random.nextDouble();
 		        if (r <= 0.1)
 		        {
@@ -63,20 +62,29 @@ public class HandPick extends PickaxeItem
 		        }
 		        else if (r > 0.1)
 		        {
-		        	 //just drop the normal block, no sulfur
+		        	 //just drop the normal block, no drops
+		        }		
+			}
+			
+			if(block == Blocks.MAGMA_BLOCK)
+			{
+		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
+		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
+		         });
+		         
+		        double r = random.nextDouble();
+		        if (r <= 0.1)
+		        {
+		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.BLAZE_POWDER, 1)));
+		        }
+		        else if (r > 0.1)
+		        {
+		        	 //just drop the normal block, no drops
 		        }		
 			}
 	    }
 
 		return true;
 	}
-	
-	 public ActionResultType onItemUse(ItemUseContext context)
-	 {
-	      World world = context.getWorld();
-	      BlockPos blockpos = context.getPos();
-
-	      return ActionResultType.PASS;
-	   }
 }
 
