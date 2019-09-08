@@ -41,7 +41,7 @@ public class ItemInit
 			(				
 				ItemList.hand_tiller = new HandTiller(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("hand_tiller")),	
 				ItemList.hand_pick = new HandPick(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("hand_pick")),
-				ItemList.hand_scraper = new HandScraper(Fluids.EMPTY, (new Item.Properties()).maxStackSize(1).group(VeggieWay.veggie_way)).setRegistryName(location("hand_scraper")),
+				ItemList.hand_scraper = new HandScraper(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("hand_scraper")),
 				ItemList.tree_trimmer = new TreeTrimmer(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("tree_trimmer")),
 						
 				ItemList.powder_sulfur = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("powder_sulfur")),
@@ -49,6 +49,7 @@ public class ItemInit
 				
 				ItemList.bone_fragment = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("bone_fragment")),
 				ItemList.pearl_fragment = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("pearl_fragment")),
+				ItemList.small_blaze_powder = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("small_blaze_powder")),
 						
 				ItemList.quinoa_seeds = new SeedQuinoa("quinoa_seeds", BlockList.plant_quinoa, (new Item.Properties().group(VeggieWay.veggie_way))),
 				ItemList.quinoa = new CropQuinoa(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("quinoa")),

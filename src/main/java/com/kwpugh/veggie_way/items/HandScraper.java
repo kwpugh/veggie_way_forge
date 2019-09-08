@@ -1,16 +1,23 @@
 package com.kwpugh.veggie_way.items;
 
-import net.minecraft.fluid.Fluid;
-import net.minecraft.item.BucketItem;
-import net.minecraft.item.ItemStack;
+import java.util.List;
 
-public class HandScraper extends BucketItem
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.World;
+
+public class HandScraper extends Item
 {
-	public HandScraper(Fluid containedFluidIn, Properties builder)
+
+	public HandScraper(Properties properties)
 	{
-		super(containedFluidIn, builder);
+		super(properties);
 	}
-	
+
     @Override
     public boolean hasContainerItem(ItemStack stack)
     {
@@ -22,4 +29,13 @@ public class HandScraper extends BucketItem
     {
         return stack.copy();
     }
+    
+	@Override
+	public void addInformation(ItemStack stack, World world, List<ITextComponent> list, ITooltipFlag flag)
+	{
+		super.addInformation(stack, world, list, flag);				
+		list.add(new StringTextComponent(TextFormatting.GREEN + "Used on Bamboo to make sheets"));
+		list.add(new StringTextComponent(TextFormatting.BLUE + "Use in a crafting table"));
+
+	} 
 }
