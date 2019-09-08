@@ -18,8 +18,6 @@ public class CropQuinoa extends Item
 		super(properties);
 	}
 
-	
-	
     @Override
 	public void addInformation(ItemStack stack, World world, List<ITextComponent> list, ITooltipFlag flag)
 	{
