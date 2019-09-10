@@ -73,11 +73,11 @@ public class HandPick extends PickaxeItem
 		         });
 		         
 		        double r = random.nextDouble();
-		        if (r <= 0.2)
+		        if (r <= 0.1)
 		        {
 		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.small_blaze_powder, 1)));
 		        }
-		        else if (r > 0.2)
+		        else if (r > 0.1)
 		        {
 		        	 //just drop the normal block, no drops
 		        }		
@@ -90,11 +90,11 @@ public class HandPick extends PickaxeItem
 		         });
 		         
 		        double r = random.nextDouble();
-		        if (r <= 0.05)
+		        if (r <= 0.15)
 		        {
 		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemList.nether_star_fragment, 1)));
 		        }
-		        else if (r > 0.05)
+		        else if (r > 0.15)
 		        {
 		        	 //just drop the normal block, no drops
 		        }		
