@@ -16,6 +16,7 @@ public class ItemList
 	public static Item bone_fragment;
 	public static Item pearl_fragment;
 	public static Item small_blaze_powder;
+	public static Item nether_star_fragment;
 	
 	public static Item quinoa_seeds;
 	public static Item quinoa;

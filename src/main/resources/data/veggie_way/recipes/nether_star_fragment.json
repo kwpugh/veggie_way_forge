@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    
+    "key":
+    {
+        "A":
+        {
+            "item": "veggie_way:nether_star_fragment"
+        }
+    },
+    
+    "result":
+    {
+        "item": "minecraft:nether_star",
+        "count": 1
+    }
+}
