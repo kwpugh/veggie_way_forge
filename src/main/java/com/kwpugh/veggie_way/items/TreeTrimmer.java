@@ -1,10 +1,13 @@
 package com.kwpugh.veggie_way.items;
 
+import java.util.List;
+
 import com.kwpugh.veggie_way.lists.ItemList;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,6 +17,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
 public class TreeTrimmer extends ShovelItem
@@ -191,4 +197,11 @@ public class TreeTrimmer extends ShovelItem
 		
 		return true;
 	} 
+	
+	@Override
+	public void addInformation(ItemStack stack, World world, List<ITextComponent> list, ITooltipFlag flag)
+	{
+		super.addInformation(stack, world, list, flag);				
+		list.add(new StringTextComponent(TextFormatting.GREEN + "Used to obtain resources from leaves"));
+	}
 }

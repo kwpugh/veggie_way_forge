@@ -1,6 +1,8 @@
 package com.kwpugh.veggie_way.init;
 
 import com.kwpugh.veggie_way.VeggieWay;
+import com.kwpugh.veggie_way.items.BambooSheet;
+import com.kwpugh.veggie_way.items.BoneFragment;
 import com.kwpugh.veggie_way.items.CropQuinoa;
 import com.kwpugh.veggie_way.items.DrinkBase;
 import com.kwpugh.veggie_way.items.HandPick;
@@ -12,10 +14,15 @@ import com.kwpugh.veggie_way.items.ItemDryingAgent;
 import com.kwpugh.veggie_way.items.ItemEnergyPowder;
 import com.kwpugh.veggie_way.items.ItemFructose;
 import com.kwpugh.veggie_way.items.ItemProteins;
+import com.kwpugh.veggie_way.items.ItemSaltpeter;
+import com.kwpugh.veggie_way.items.ItemSulfur;
 import com.kwpugh.veggie_way.items.ItemSuperfoodPowder;
 import com.kwpugh.veggie_way.items.ItemVitamins;
 import com.kwpugh.veggie_way.items.ItemWheatgerm;
+import com.kwpugh.veggie_way.items.NetherStarFragment;
+import com.kwpugh.veggie_way.items.PearlFragment;
 import com.kwpugh.veggie_way.items.SeedQuinoa;
+import com.kwpugh.veggie_way.items.SmallBlazePowder;
 import com.kwpugh.veggie_way.items.TreeTrimmer;
 import com.kwpugh.veggie_way.lists.BlockList;
 import com.kwpugh.veggie_way.lists.FoodList;
@@ -43,13 +50,13 @@ public class ItemInit
 				ItemList.hand_scraper = new HandScraper(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("hand_scraper")),
 				ItemList.tree_trimmer = new TreeTrimmer(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("tree_trimmer")),
 						
-				ItemList.powder_sulfur = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("powder_sulfur")),
-				ItemList.powder_saltpeter = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("powder_saltpeter")),
-				
-				ItemList.bone_fragment = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("bone_fragment")),
-				ItemList.pearl_fragment = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("pearl_fragment")),
-				ItemList.small_blaze_powder = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("small_blaze_powder")),
-				ItemList.nether_star_fragment = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("nether_star_fragment")),
+				ItemList.powder_sulfur = new ItemSulfur(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("powder_sulfur")),
+				ItemList.powder_saltpeter = new ItemSaltpeter(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("powder_saltpeter")),				
+				ItemList.bone_fragment = new BoneFragment(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("bone_fragment")),
+				ItemList.pearl_fragment = new PearlFragment(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("pearl_fragment")),
+				ItemList.small_blaze_powder = new SmallBlazePowder(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("small_blaze_powder")),
+				ItemList.nether_star_fragment = new NetherStarFragment(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("nether_star_fragment")),
+				ItemList.bamboo_sheet = new BambooSheet(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("bamboo_sheet")),
 						
 				ItemList.quinoa_seeds = new SeedQuinoa("quinoa_seeds", BlockList.plant_quinoa, (new Item.Properties().group(VeggieWay.veggie_way))),
 				ItemList.quinoa = new CropQuinoa(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("quinoa")),
@@ -71,9 +78,7 @@ public class ItemInit
 				ItemList.superfood_smoothie = new DrinkBase(new Item.Properties().food(FoodList.superfoodSmoothie).group(VeggieWay.veggie_way)).setRegistryName(location("superfood_smoothie")),
 				
 				ItemList.energy_bar = new Item(new Item.Properties().food(FoodList.energyBar).group(VeggieWay.veggie_way)).setRegistryName(location("energy_bar")),
-				ItemList.superfood_bar = new Item(new Item.Properties().food(FoodList.superfoodBar).group(VeggieWay.veggie_way)).setRegistryName(location("superfood_bar")),
-
-				ItemList.bamboo_sheet = new Item(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("bamboo_sheet"))
+				ItemList.superfood_bar = new Item(new Item.Properties().food(FoodList.superfoodBar).group(VeggieWay.veggie_way)).setRegistryName(location("superfood_bar"))
 			);		
 			VeggieWay.logger.info("Items registered.");
 		}
