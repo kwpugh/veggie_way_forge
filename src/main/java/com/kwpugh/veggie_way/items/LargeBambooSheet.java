@@ -10,10 +10,10 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 
-public class BambooSheet extends Item
+public class LargeBambooSheet extends Item
 {
 
-	public BambooSheet(Properties properties)
+	public LargeBambooSheet(Properties properties)
 	{
 		super(properties);
 	}
@@ -22,7 +22,6 @@ public class BambooSheet extends Item
 	public void addInformation(ItemStack stack, World world, List<ITextComponent> list, ITooltipFlag flag)
 	{
 		super.addInformation(stack, world, list, flag);				
-		list.add(new StringTextComponent(TextFormatting.GREEN + "Crafted and smeleted into vanilla leather"));
-		list.add(new StringTextComponent(TextFormatting.BLUE + "Made from Bamboo and a hand scraper"));
+		list.add(new StringTextComponent(TextFormatting.GREEN + "Dry into leather on a campfire"));
 	}
 }

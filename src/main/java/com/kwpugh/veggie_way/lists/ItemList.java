@@ -13,6 +13,8 @@ public class ItemList
 	public static Item powder_sulfur;
 	public static Item powder_saltpeter;
 	public static Item bamboo_sheet;
+	public static Item large_bamboo_sheet;
+	
 	public static Item bone_fragment;
 	public static Item pearl_fragment;
 	public static Item small_blaze_powder;

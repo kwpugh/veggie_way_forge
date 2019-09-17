@@ -19,6 +19,7 @@ import com.kwpugh.veggie_way.items.ItemSulfur;
 import com.kwpugh.veggie_way.items.ItemSuperfoodPowder;
 import com.kwpugh.veggie_way.items.ItemVitamins;
 import com.kwpugh.veggie_way.items.ItemWheatgerm;
+import com.kwpugh.veggie_way.items.LargeBambooSheet;
 import com.kwpugh.veggie_way.items.NetherStarFragment;
 import com.kwpugh.veggie_way.items.PearlFragment;
 import com.kwpugh.veggie_way.items.SeedQuinoa;
@@ -57,6 +58,7 @@ public class ItemInit
 				ItemList.small_blaze_powder = new SmallBlazePowder(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("small_blaze_powder")),
 				ItemList.nether_star_fragment = new NetherStarFragment(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("nether_star_fragment")),
 				ItemList.bamboo_sheet = new BambooSheet(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("bamboo_sheet")),
+				ItemList.large_bamboo_sheet = new LargeBambooSheet(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("large_bamboo_sheet")),
 						
 				ItemList.quinoa_seeds = new SeedQuinoa("quinoa_seeds", BlockList.plant_quinoa, (new Item.Properties().group(VeggieWay.veggie_way))),
 				ItemList.quinoa = new CropQuinoa(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("quinoa")),
