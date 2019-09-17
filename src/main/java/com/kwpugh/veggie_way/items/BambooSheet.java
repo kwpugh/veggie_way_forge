@@ -22,7 +22,7 @@ public class BambooSheet extends Item
 	public void addInformation(ItemStack stack, World world, List<ITextComponent> list, ITooltipFlag flag)
 	{
 		super.addInformation(stack, world, list, flag);				
-		list.add(new StringTextComponent(TextFormatting.GREEN + "Crafted and smeleted into vanilla leather"));
+		list.add(new StringTextComponent(TextFormatting.GREEN + "Crafted and smelted into vanilla leather"));
 		list.add(new StringTextComponent(TextFormatting.BLUE + "Made from Bamboo and a hand scraper"));
 	}
 }
