@@ -8,10 +8,10 @@ authors="kwpugh" #optional
 
 [[mods]] #mandatory
 modId="veggie_way" #mandatory
-version="2.0.24" #mandatory
+version="2.0.25" #mandatory
 displayName="The Veggie Way" #mandatory
 description='''
-A the veggie way to nutritious food
+The veggie way to nutritious food without killing
 '''
 
 
