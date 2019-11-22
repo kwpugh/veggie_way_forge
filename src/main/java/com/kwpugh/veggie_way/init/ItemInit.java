@@ -3,7 +3,7 @@ package com.kwpugh.veggie_way.init;
 import com.kwpugh.veggie_way.VeggieWay;
 import com.kwpugh.veggie_way.items.CropQuinoa;
 import com.kwpugh.veggie_way.items.DrinkBase;
-import com.kwpugh.veggie_way.items.HandTiller;
+import com.kwpugh.veggie_way.items.HandRake;
 import com.kwpugh.veggie_way.items.ItemCaffeine;
 import com.kwpugh.veggie_way.items.ItemCarbs;
 import com.kwpugh.veggie_way.items.ItemDryingAgent;
@@ -35,7 +35,7 @@ public class ItemInit
 		{
 			event.getRegistry().registerAll
 			(				
-				ItemList.hand_tiller = new HandTiller(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("hand_tiller")),	
+				ItemList.hand_rake = new HandRake(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("hand_rake")),	
 						
 				ItemList.quinoa_seeds = new SeedQuinoa("quinoa_seeds", BlockList.plant_quinoa, (new Item.Properties().group(VeggieWay.veggie_way))),
 				ItemList.quinoa = new CropQuinoa(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("quinoa")),

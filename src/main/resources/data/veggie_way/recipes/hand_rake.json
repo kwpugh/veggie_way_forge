@@ -3,8 +3,8 @@
     
     "pattern":
     [
-        " CC",
-        " BC",
+        " BB",
+        " BB",
         "A  "
     ],
     
@@ -16,17 +16,13 @@
         },
         "B":
         {
-            "item": "minecraft:iron_ingot"
-        },
-        "C":
-        {
             "item": "minecraft:iron_nugget"
         }
     },
     
     "result":
     {
-        "item": "veggie_way:hand_tiller",
+        "item": "veggie_way:hand_rake",
         "count": 1
     }
 }

@@ -4,7 +4,7 @@ import net.minecraft.item.Item;
 
 public class ItemList 
 {
-	public static Item hand_tiller;
+	public static Item hand_rake;
 	
 	public static Item drying_agent;
 	

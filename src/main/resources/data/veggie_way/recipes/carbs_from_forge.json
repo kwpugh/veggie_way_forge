@@ -12,7 +12,7 @@
     {
         "A":
         {
-            "tag": "veggie_way:vegetables"
+            "tag": "forge:carbs"
         },
         "B":
         {
@@ -22,7 +22,7 @@
     
     "result":
     {
-        "item": "veggie_way:vitamins",
+        "item": "veggie_way:carbs",
         "count": 4
     }
 }

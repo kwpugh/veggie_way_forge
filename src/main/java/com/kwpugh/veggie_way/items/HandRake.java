@@ -17,9 +17,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 
-public class HandTiller extends ShovelItem
+public class HandRake extends ShovelItem
 {
-	public HandTiller(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder)
+	public HandRake(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder)
 	{
 		super(tier, attackDamageIn, attackSpeedIn, builder);
 	}
