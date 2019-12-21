@@ -41,6 +41,5 @@ public class ItemSuperfoodBar extends Item
 	{
 		super.addInformation(stack, world, list, flag);				
 		list.add(new StringTextComponent(TextFormatting.BLUE + "A very hearty meal"));
-		list.add(new StringTextComponent(TextFormatting.GREEN + "Gives you a boost to yuor health"));
 	} 
 }

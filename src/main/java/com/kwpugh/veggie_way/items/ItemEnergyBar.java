@@ -41,6 +41,5 @@ public class ItemEnergyBar extends Item
 	{
 		super.addInformation(stack, world, list, flag);				
 		list.add(new StringTextComponent(TextFormatting.BLUE + "A nice little meal"));
-		list.add(new StringTextComponent(TextFormatting.GREEN + "Gives you a boost of damage resistance"));
 	} 
 }

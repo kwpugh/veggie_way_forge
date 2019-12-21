@@ -41,6 +41,5 @@ public class ItemEnergyDrink extends Item
 	{
 		super.addInformation(stack, world, list, flag);				
 		list.add(new StringTextComponent(TextFormatting.BLUE + "A sweet drink that peps you up!"));
-		list.add(new StringTextComponent(TextFormatting.GREEN + "Gives you a Speed effect"));
 	} 
 }

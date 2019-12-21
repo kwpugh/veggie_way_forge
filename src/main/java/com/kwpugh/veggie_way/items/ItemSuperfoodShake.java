@@ -41,6 +41,5 @@ public class ItemSuperfoodShake extends Item
 	{
 		super.addInformation(stack, world, list, flag);				
 		list.add(new StringTextComponent(TextFormatting.BLUE + "A most statisfying meal!"));
-		list.add(new StringTextComponent(TextFormatting.GREEN + "Gives you a boost of Strength"));
 	} 
 }
