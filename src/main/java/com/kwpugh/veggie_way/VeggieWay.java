@@ -6,7 +6,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.kwpugh.veggie_way.group.GroupVeggieWay;
+import com.kwpugh.veggie_way.lists.BlockList;
 
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -43,6 +46,10 @@ public class VeggieWay
 
     private void doClientStuff(final FMLClientSetupEvent event)
     {
+		RenderType cutoutMipped = RenderType.func_228641_d_();
+		
+		RenderTypeLookup.setRenderLayer(BlockList.plant_quinoa, cutoutMipped);
+		
     	logger.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
 
