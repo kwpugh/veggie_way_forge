@@ -11,6 +11,10 @@ public class ItemList
 	public static Item quinoa_seeds;
 	public static Item quinoa;
 	
+	public static Item melon_pie;
+	public static Item sweet_berry_pie;
+	public static Item apple_pie;
+	
 	public static Item carbs;
 	public static Item fructose;
 	public static Item proteins;
