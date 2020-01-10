@@ -15,6 +15,8 @@ public class ItemList
 	public static Item sweet_berry_pie;
 	public static Item apple_pie;
 	
+	public static Item pumpkin_soup;
+	
 	public static Item carbs;
 	public static Item fructose;
 	public static Item proteins;

@@ -13,7 +13,6 @@ import com.kwpugh.veggie_way.items.ItemProteins;
 import com.kwpugh.veggie_way.items.ItemSuperfoodPowder;
 import com.kwpugh.veggie_way.items.ItemVitamins;
 import com.kwpugh.veggie_way.items.ItemWheatgerm;
-import com.kwpugh.veggie_way.items.PieBase;
 import com.kwpugh.veggie_way.items.SeedQuinoa;
 import com.kwpugh.veggie_way.lists.BlockList;
 import com.kwpugh.veggie_way.lists.FoodList;
@@ -44,7 +43,9 @@ public class ItemInit
 				ItemList.apple_pie = new Item(new Item.Properties().food(FoodList.apple_pie).group(VeggieWay.veggie_way)).setRegistryName(location("apple_pie")),
 				ItemList.melon_pie = new Item(new Item.Properties().food(FoodList.melon_pie).group(VeggieWay.veggie_way)).setRegistryName(location("melon_pie")),
 				ItemList.sweet_berry_pie = new Item(new Item.Properties().food(FoodList.sweet_berry_pie).group(VeggieWay.veggie_way)).setRegistryName(location("sweet_berry_pie")),
-		
+
+				ItemList.pumpkin_soup = new Item(new Item.Properties().food(FoodList.pumpkin_soup).group(VeggieWay.veggie_way)).setRegistryName(location("pumpkin_soup")),
+
 				ItemList.drying_agent = new ItemDryingAgent(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("drying_agent")),
 						
 				ItemList.carbs = new ItemCarbs(new Item.Properties().group(VeggieWay.veggie_way)).setRegistryName(location("carbs")),
