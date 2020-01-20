@@ -2,6 +2,8 @@ package com.kwpugh.veggie_way.items;
 
 import java.util.List;
 
+import com.kwpugh.veggie_way.util.VeggieWayConfig;
+
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -9,6 +11,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.UseAction;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
@@ -21,10 +25,19 @@ public class ItemEnergyDrink extends Item
 		super(properties);
 	}
 
+	@Override
 	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving)
-	{
+	{	
+		
 	    if (entityLiving instanceof PlayerEntity && !((PlayerEntity)entityLiving).abilities.isCreativeMode)
 	    {
+	    	System.out.println(VeggieWayConfig.enableFoodEffects.get());
+	    	
+	    	if(VeggieWayConfig.enableFoodEffects.get())
+	    	{
+	    		entityLiving.addPotionEffect(new EffectInstance(Effects.SPEED, 1200, 1, false, false));
+	    	}
+	    	
 	    	stack.shrink(1);
 	    }
 
