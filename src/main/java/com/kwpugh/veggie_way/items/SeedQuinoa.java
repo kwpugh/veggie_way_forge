@@ -33,6 +33,5 @@ public class SeedQuinoa extends BlockNamedItem
 	{
 		super.addInformation(stack, world, list, flag);				
 		list.add(new StringTextComponent(TextFormatting.BLUE + "Plant on Farmland to grow Quinoa Plant"));
-		list.add(new StringTextComponent(TextFormatting.GREEN + "Right-click to harvest when plant is mature"));
 	} 
 }
