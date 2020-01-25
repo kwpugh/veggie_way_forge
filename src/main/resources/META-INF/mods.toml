@@ -2,13 +2,13 @@ modLoader="javafml" #mandatory
 
 loaderVersion="[30,)" #mandatory (24 is current forge version)
 
-credits="Thanks to Harry Talks for his amazing tutorials and Udemy for great Java courses." #optional
+credits="Thanks to Udemy for great Java courses." #optional
 
 authors="kwpugh" #optional
 
 [[mods]] #mandatory
 modId="veggie_way" #mandatory
-version="2.1.10" #mandatory
+version="2.1.11" #mandatory
 displayName="The Veggie Way" #mandatory
 description='''
 The veggie way to nutritious food without killing
