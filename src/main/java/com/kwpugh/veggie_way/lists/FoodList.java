@@ -1,19 +1,48 @@
 package com.kwpugh.veggie_way.lists;
 
+import com.kwpugh.veggie_way.util.VeggieWayConfig;
+
 import net.minecraft.item.Food;
 
 public class FoodList 
-{	
-	public static Food apple_pie = (new Food.Builder()).hunger(7).saturation(.5F).setAlwaysEdible().fastToEat().build();
-	public static Food melon_pie = (new Food.Builder()).hunger(7).saturation(.5F).setAlwaysEdible().fastToEat().build();
-	public static Food sweet_berry_pie = (new Food.Builder()).hunger(7).saturation(.5F).setAlwaysEdible().fastToEat().build();
+{
+	static int applePieHunger = VeggieWayConfig.apple_pie_hunger.get();
+	static int applePieSaturation = VeggieWayConfig.apple_pie_saturation.get();
 	
-	public static Food pumpkin_soup = (new Food.Builder()).hunger(7).saturation(.5F).setAlwaysEdible().fastToEat().build();
+	static int melonPieHunger = VeggieWayConfig.melon_pie_hunger.get();
+	static int melonPieSaturation = VeggieWayConfig.melon_pie_saturation.get();
 	
-	public static Food energyDrink = (new Food.Builder()).hunger(9).saturation(0.5F).setAlwaysEdible().fastToEat().build();
-	public static Food superfoodShake = (new Food.Builder()).hunger(10).saturation(0.9F).setAlwaysEdible().fastToEat().build();
-	public static Food superfoodSmoothie = (new Food.Builder()).hunger(10).saturation(0.9F).setAlwaysEdible().fastToEat().build();
+	static int berryPieHunger = VeggieWayConfig.berry_pie_hunger.get();
+	static int berryPieSaturation = VeggieWayConfig.berry_pie_saturation.get();
 	
-	public static Food energyBar = (new Food.Builder()).hunger(12).saturation(1.0F).setAlwaysEdible().fastToEat().build();
-	public static Food superfoodBar = (new Food.Builder()).hunger(14).saturation(1.5F).setAlwaysEdible().fastToEat().build();	
+	static int pumpkinSoupHunger = VeggieWayConfig.pumpkin_soup_hunger.get();
+	static int pumpkinSoupSaturation = VeggieWayConfig.pumpkin_soup_saturation.get();
+	
+	static int energyDrinkHunger = VeggieWayConfig.energy_drink_hunger.get();
+	static int energyDrinkSaturation = VeggieWayConfig.energy_drink_saturation.get();
+	
+	static int shakeHunger = VeggieWayConfig.shake_hunger.get();
+	static int shakeSaturation = VeggieWayConfig.shake_saturation.get();
+	
+	static int smoothieHunger = VeggieWayConfig.smoothie_hunger.get();
+	static int smoothieSaturation = VeggieWayConfig.smoothie_saturation.get();
+	
+	static int energyBarHunger = VeggieWayConfig.energyBar_hunger.get();
+	static int energyBarSaturation = VeggieWayConfig.energyBar_saturation.get();
+	
+	static int superFoodHunger = VeggieWayConfig.superFoodBar_hunger.get();
+	static int superFoodSaturation = VeggieWayConfig.superFoodBar_saturation.get();
+	
+	public static Food apple_pie = (new Food.Builder()).hunger(applePieHunger).saturation(applePieSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food melon_pie = (new Food.Builder()).hunger(melonPieHunger).saturation(melonPieSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food sweet_berry_pie = (new Food.Builder()).hunger(berryPieHunger).saturation(berryPieSaturation).setAlwaysEdible().fastToEat().build();
+	
+	public static Food pumpkin_soup = (new Food.Builder()).hunger(pumpkinSoupHunger).saturation(pumpkinSoupSaturation).setAlwaysEdible().fastToEat().build();
+	
+	public static Food energyDrink = (new Food.Builder()).hunger(energyDrinkHunger).saturation(energyDrinkSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food superfoodShake = (new Food.Builder()).hunger(shakeHunger).saturation(shakeSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food superfoodSmoothie = (new Food.Builder()).hunger(smoothieHunger).saturation(smoothieSaturation).setAlwaysEdible().fastToEat().build();
+	
+	public static Food energyBar = (new Food.Builder()).hunger(energyBarHunger).saturation(energyBarSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food superfoodBar = (new Food.Builder()).hunger(superFoodHunger).saturation(superFoodSaturation).setAlwaysEdible().fastToEat().build();	
 }
