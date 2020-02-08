@@ -15,9 +15,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
@@ -35,15 +33,14 @@ public class VeggieWay
 
     public VeggieWay()
     {
-    	ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, Config.config);
+    	//ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.config);
+    	Config.loadConfig(Config.config, FMLPaths.CONFIGDIR.get().resolve("veggie_way.toml").toString());
     	
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
         
-        Config.loadConfig(Config.config, FMLPaths.CONFIGDIR.get().resolve("veggie_way.toml").toString());
-
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -67,7 +64,7 @@ public class VeggieWay
 
     private void processIMC(final InterModProcessEvent event)
     {
-    	logger.info("Got IMC {}", event.getIMCStream().
+    	logger.info("VeggieWay got IMC {}", event.getIMCStream().
                 map(m->m.getMessageSupplier().get()).
                 collect(Collectors.toList()));
     }
