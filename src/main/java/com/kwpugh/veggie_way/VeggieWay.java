@@ -33,7 +33,6 @@ public class VeggieWay
 
     public VeggieWay()
     {
-    	//ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.config);
     	Config.loadConfig(Config.config, FMLPaths.CONFIGDIR.get().resolve("veggie_way.toml").toString());
     	
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
