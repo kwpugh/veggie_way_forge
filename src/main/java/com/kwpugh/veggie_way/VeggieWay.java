@@ -6,7 +6,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.kwpugh.veggie_way.group.GroupVeggieWay;
-import com.kwpugh.veggie_way.lists.BlockList;
+import com.kwpugh.veggie_way.init.BlockInit;
+import com.kwpugh.veggie_way.init.ItemInit;
 import com.kwpugh.veggie_way.util.Config;
 
 import net.minecraft.client.renderer.RenderType;
@@ -35,6 +36,9 @@ public class VeggieWay
     {
     	Config.loadConfig(Config.config, FMLPaths.CONFIGDIR.get().resolve("veggie_way.toml").toString());
     	
+    	BlockInit.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+    	ItemInit.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+   
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
@@ -51,7 +55,7 @@ public class VeggieWay
     private void clientSetup(final FMLClientSetupEvent event)
     {
 		RenderType cutoutMipped = RenderType.cutoutMipped();	
-		RenderTypeLookup.setRenderLayer(BlockList.plant_quinoa, cutoutMipped);
+		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_QUINOA.get(), cutoutMipped);
 		
     	logger.info("VeggieWay got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }

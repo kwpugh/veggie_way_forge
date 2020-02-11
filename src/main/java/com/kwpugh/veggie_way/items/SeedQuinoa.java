@@ -20,16 +20,23 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class SeedQuinoa extends BlockNamedItem
 {
-	public SeedQuinoa(String name, Block crop, Properties builder)
+	public SeedQuinoa(Block crop, Properties builder)
 	{
-        super(crop, builder);
+		super(crop, builder);      
+	}
 
-        this.setRegistryName("veggie_way:quinoa_seeds");       
-    }
-	
-    public List<ModelResourceLocation> getVariants() {
-        return Lists.newArrayList(new ModelResourceLocation("veggie_way:quinoa_seeds", "inventory"));
-    }
+
+
+//	public SeedQuinoa(String name, Block crop, Properties builder)
+//	{
+//        super(crop, builder);
+//
+//        this.setRegistryName("veggie_way:quinoa_seeds");       
+//    }
+//	
+//    public List<ModelResourceLocation> getVariants() {
+//        return Lists.newArrayList(new ModelResourceLocation("veggie_way:quinoa_seeds", "inventory"));
+//    }
  
 	@OnlyIn(Dist.CLIENT)
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
