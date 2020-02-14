@@ -1,4 +1,7 @@
-{	
+{
+	"item.veggie_way.quinoa_plant": "Quinoa Plant",
+	"block.veggie_way.quinoa_plant": "Quinoa Plant",
+		
 	"item.veggie_way.hand_rake": "Ancinho",
 	"item.veggie_way.hand_rake.line1": "Usado na Areia para obter o Agente de Secagem",
 	"item.veggie_way.hand_rake.line2": "e em Blocos de Grama para obter Sementes de Quinoa",
