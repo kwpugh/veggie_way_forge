@@ -54,7 +54,7 @@ public class VeggieWay
 
     private void clientSetup(final FMLClientSetupEvent event)
     {
-		RenderType cutoutMipped = RenderType.cutoutMipped();	
+		RenderType cutoutMipped = RenderType.getCutoutMipped();	
 		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_QUINOA.get(), cutoutMipped);
 		
     	logger.info("VeggieWay got game settings {}", event.getMinecraftSupplier().get().gameSettings);

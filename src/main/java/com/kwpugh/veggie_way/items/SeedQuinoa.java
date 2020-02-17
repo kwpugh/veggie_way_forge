@@ -4,10 +4,7 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
-import com.google.common.collect.Lists;
-
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.model.ModelResourceLocation;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.BlockNamedItem;
 import net.minecraft.item.ItemStack;
@@ -24,19 +21,6 @@ public class SeedQuinoa extends BlockNamedItem
 	{
 		super(crop, builder);      
 	}
-
-
-
-//	public SeedQuinoa(String name, Block crop, Properties builder)
-//	{
-//        super(crop, builder);
-//
-//        this.setRegistryName("veggie_way:quinoa_seeds");       
-//    }
-//	
-//    public List<ModelResourceLocation> getVariants() {
-//        return Lists.newArrayList(new ModelResourceLocation("veggie_way:quinoa_seeds", "inventory"));
-//    }
  
 	@OnlyIn(Dist.CLIENT)
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
