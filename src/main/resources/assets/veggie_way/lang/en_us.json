@@ -6,6 +6,13 @@
 	"item.veggie_way.hand_rake.line1": "Used on sand to get drying agent",
 	"item.veggie_way.hand_rake.line2": "and on grass blocks to get quinoa seeds",
 	
+	"item.veggie_way.knife": "Knife",
+	"item.veggie_way.knife.line1": "Used on a crafting table to cut things",
+	
+	"item.veggie_way.cactus_chunk": "Cactus Chunk",
+	"item.veggie_way.pumpkin_chunk": "Pumpkin Chunk",
+	"item.veggie_way.chunk.line1": "An edible food",
+	
 	"item.veggie_way.drying_agent": "Drying Agent",
 	"item.veggie_way.drying_agent.line1": "Used to dry materials for further processing",
 	
@@ -23,6 +30,7 @@
 	"item.veggie_way.sweet_berry_pie": "Sweet Berry Pie",
 	
 	"item.veggie_way.pumpkin_soup": "Pumpkin Soup",
+	"item.veggie_way.cactus_soup": "Cactus Soup",
 	
 	"item.veggie_way.carbs": "Carb Powder",
 	"item.veggie_way.carbs.line1": "A concentrated form of carbohydrate",

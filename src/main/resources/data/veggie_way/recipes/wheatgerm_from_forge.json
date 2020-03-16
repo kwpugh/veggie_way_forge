@@ -4,25 +4,25 @@
     "pattern":
     [
         "AAA",
-        "AAA",
-        " B "
+        "ABA",
+        "AAA"
     ],
     
     "key":
     {
         "A":
         {
-            "item": "veggie_way:pumpkin_chunk"
+            "tag": "forge:grain"
         },
         "B":
         {
-            "item": "minecraft:bowl"
+            "item": "veggie_way:drying_agent"
         }
     },
     
     "result":
     {
-        "item": "veggie_way:pumpkin_soup",
-        "count": 1
+        "item": "veggie_way:wheatgerm",
+        "count": 4
     }
 }

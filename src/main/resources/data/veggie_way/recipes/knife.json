@@ -3,26 +3,26 @@
     
     "pattern":
     [
-        "AAA",
-        "AAA",
-        " B "
+        "   ",
+        "  B",
+        " A "
     ],
     
     "key":
     {
         "A":
         {
-            "item": "veggie_way:pumpkin_chunk"
+            "item": "minecraft:stick"
         },
         "B":
         {
-            "item": "minecraft:bowl"
+            "item": "minecraft:iron_ingot"
         }
     },
     
     "result":
     {
-        "item": "veggie_way:pumpkin_soup",
+        "item": "veggie_way:knife",
         "count": 1
     }
 }

@@ -6,6 +6,14 @@
 	"item.veggie_way.hand_rake.line1": "Usado na Areia para obter o Agente de Secagem",
 	"item.veggie_way.hand_rake.line2": "e em Blocos de Grama para obter Sementes de Quinoa",
 	
+	"item.veggie_way.knife": "Knife",
+	"item.veggie_way.knife.line1": "Used on a crafting table to cut things",
+	
+	"item.veggie_way.cactus_chunk": "Cactus Chunk",
+	"item.veggie_way.pumpkin_chunk": "Pumpkin Chunk",
+	"item.veggie_way.chunk.line1": "An edible food",
+	
+	
 	"item.veggie_way.drying_agent": "Agente de Secagem",
 	"item.veggie_way.drying_agent.line1": "Usado para secar materiais usados ​​em outros processos",
 	
@@ -23,6 +31,7 @@
 	"item.veggie_way.sweet_berry_pie": "Torta de Baga Doce",
 	
 	"item.veggie_way.pumpkin_soup": "Sopa de Abóbora",
+	"item.veggie_way.cactus_soup": "Cactus Soup",
 	
 	"item.veggie_way.carbs": "Carboidrato em Pó",
 	"item.veggie_way.carbs.line1": "Uma forma concentrada de carboidrato",

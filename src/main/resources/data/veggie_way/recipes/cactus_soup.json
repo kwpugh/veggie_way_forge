@@ -12,7 +12,7 @@
     {
         "A":
         {
-            "item": "veggie_way:pumpkin_chunk"
+            "item": "veggie_way:cactus_chunk"
         },
         "B":
         {
@@ -22,7 +22,7 @@
     
     "result":
     {
-        "item": "veggie_way:pumpkin_soup",
+        "item": "veggie_way:cactus_soup",
         "count": 1
     }
 }

@@ -6,6 +6,12 @@ import net.minecraftforge.common.ForgeConfigSpec;
 
 public class VeggieWayConfig 
 {
+	public static ForgeConfigSpec.IntValue cactus_chunk_hunger;
+	public static ForgeConfigSpec.IntValue cactus_chunk_saturation;
+
+	public static ForgeConfigSpec.IntValue pumpkin_chunk_hunger;
+	public static ForgeConfigSpec.IntValue pumpkin_chunk_saturation;
+	
 	public static ForgeConfigSpec.IntValue apple_pie_hunger;
 	public static ForgeConfigSpec.IntValue apple_pie_saturation;
 	
@@ -17,6 +23,9 @@ public class VeggieWayConfig
 	
 	public static ForgeConfigSpec.IntValue pumpkin_soup_hunger;
 	public static ForgeConfigSpec.IntValue pumpkin_soup_saturation;
+	
+	public static ForgeConfigSpec.IntValue cactus_soup_hunger;
+	public static ForgeConfigSpec.IntValue cactus_soup_saturation;
 	
 	public static ForgeConfigSpec.IntValue energy_drink_hunger;
 	public static ForgeConfigSpec.IntValue energy_drink_saturation;
@@ -39,8 +48,26 @@ public class VeggieWayConfig
 	public static void init(ForgeConfigSpec.Builder server)
 	{	
 		server_output = server.comment("Normal Food Hunger and Saturation Values").push("Normal Foods");
+
+			server_output = server.comment("Normal Foods").push("Cactus Chunk");
+			cactus_chunk_hunger = server
+					.comment("Hunger value:")
+					.defineInRange("cactus_chunk_hunger", 2, 0, 30);
+			cactus_chunk_saturation = server
+					.comment("Saturation value:")
+					.defineInRange("cactus_chunk_saturation", 1, 0, 10);
+			server_output.pop();
 		
-			server_output = server.comment("Normal Foods").push("Apple");
+			server_output = server.comment("Normal Foods").push("Pumpkin Chunk");
+			pumpkin_chunk_hunger = server
+					.comment("Hunger value:")
+					.defineInRange("pumpkin_chunk_hunger", 2, 0, 30);
+			pumpkin_chunk_saturation = server
+					.comment("Saturation value:")
+					.defineInRange("pumpkin_chunk_saturation", 1, 0, 10);
+			server_output.pop();
+
+			server_output = server.comment("Normal Foods").push("Apple Pie");
 			apple_pie_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("apple_pie_hunger", 7, 0, 30);
@@ -50,7 +77,7 @@ public class VeggieWayConfig
 			server_output.pop();
 		
 		
-			server_output = server.comment("Normal Foods").push("Melon");
+			server_output = server.comment("Normal Foods").push("Melon Pie");
 			melon_pie_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("melon_pie_hunger", 7, 0, 30);
@@ -60,7 +87,7 @@ public class VeggieWayConfig
 			server_output.pop();
 			
 		
-			server_output = server.comment("Normal Foods").push("Berry");
+			server_output = server.comment("Normal Foods").push("Berry Pie");
 			berry_pie_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("berry_pie_hunger", 7, 0, 30);
@@ -70,13 +97,22 @@ public class VeggieWayConfig
 			server_output.pop();
 		
 		
-			server_output = server.comment("Normal Foods").push("Pumpkin");
+			server_output = server.comment("Normal Foods").push("Pumpkin Soup");
 			pumpkin_soup_hunger = server
 					.comment("Hunger value:")
-					.defineInRange("pumpkin_soup_hunger", 7, 0, 30);
+					.defineInRange("pumpkin_soup_hunger", 6, 0, 30);
 			pumpkin_soup_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("pumpkin_soup_saturation", 2, 0, 10);
+					.defineInRange("pumpkin_soup_saturation", 1, 0, 10);
+			server_output.pop();
+			
+			server_output = server.comment("Normal Foods").push("Cactus Soup");
+			cactus_soup_hunger = server
+					.comment("Hunger value:")
+					.defineInRange("cactus_soup_hunger", 6, 0, 30);
+			cactus_soup_saturation = server
+					.comment("Saturation value:")
+					.defineInRange("cactus_soup_saturation", 1, 0, 10);
 			server_output.pop();
 			
 		server_output.pop();
@@ -85,7 +121,7 @@ public class VeggieWayConfig
 
 		server_output = server.comment("Super Food Hunger and Saturation Values").push("Super Foods");
 		
-			server_output = server.comment("Super Foods").push("Energy");
+			server_output = server.comment("Super Foods").push("Energy Drink");
 			energy_drink_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("energy_drink_hunger", 9, 0, 30);
