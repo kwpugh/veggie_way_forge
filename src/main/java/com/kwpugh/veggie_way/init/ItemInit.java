@@ -13,6 +13,7 @@ import com.kwpugh.veggie_way.items.ItemFructose;
 import com.kwpugh.veggie_way.items.ItemKnife;
 import com.kwpugh.veggie_way.items.ItemProteins;
 import com.kwpugh.veggie_way.items.ItemPumpkinChunk;
+import com.kwpugh.veggie_way.items.ItemSuperPetals;
 import com.kwpugh.veggie_way.items.ItemSuperfoodPowder;
 import com.kwpugh.veggie_way.items.ItemVitamins;
 import com.kwpugh.veggie_way.items.ItemWheatgerm;
@@ -55,13 +56,15 @@ public class ItemInit
 	public static final RegistryObject<Item> CAFFEINE = ITEMS.register("caffeine", () -> new ItemCaffeine(new Item.Properties().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> WHEATGERM = ITEMS.register("wheatgerm", () -> new ItemWheatgerm(new Item.Properties().group(VeggieWay.veggie_way)));
 	
+	public static final RegistryObject<Item> SUPER_PETALS = ITEMS.register("super_petals", () -> new ItemSuperPetals(new Item.Properties().food(FoodList.super_petals).group(VeggieWay.veggie_way)));
+	
 	public static final RegistryObject<Item> ENERGY_POWDER = ITEMS.register("energy_powder", () -> new ItemEnergyPowder(new Item.Properties().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> SUPERFOOD_POWDER = ITEMS.register("superfood_powder", () -> new ItemSuperfoodPowder(new Item.Properties().group(VeggieWay.veggie_way)));
 	
-	public static final RegistryObject<Item> ENERGY_DRINK = ITEMS.register("energy_drink", () -> new DrinkBase(new Item.Properties().food(FoodList.energyDrink).group(VeggieWay.veggie_way)));
-	public static final RegistryObject<Item> SUPERFOOD_SHAKE = ITEMS.register("superfood_shake", () -> new DrinkBase(new Item.Properties().food(FoodList.superfoodShake).group(VeggieWay.veggie_way)));
-	public static final RegistryObject<Item> SUPERFOOD_SMOOTHIE = ITEMS.register("superfood_smoothie", () -> new DrinkBase(new Item.Properties().food(FoodList.superfoodSmoothie).group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> ENERGY_DRINK = ITEMS.register("energy_drink", () -> new DrinkBase(new Item.Properties().food(FoodList.energy_drink).group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> SUPERFOOD_SHAKE = ITEMS.register("superfood_shake", () -> new DrinkBase(new Item.Properties().food(FoodList.superfood_shake).group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> SUPERFOOD_SMOOTHIE = ITEMS.register("superfood_smoothie", () -> new DrinkBase(new Item.Properties().food(FoodList.superfood_smoothie).group(VeggieWay.veggie_way)));
 	
-	public static final RegistryObject<Item> ENERGY_BAR = ITEMS.register("energy_bar", () -> new Item(new Item.Properties().food(FoodList.energyBar).group(VeggieWay.veggie_way)));
-	public static final RegistryObject<Item> SUPERFOOD_BAR = ITEMS.register("superfood_bar", () -> new Item(new Item.Properties().food(FoodList.superfoodBar).group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> ENERGY_BAR = ITEMS.register("energy_bar", () -> new Item(new Item.Properties().food(FoodList.energy_bar).group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> SUPERFOOD_BAR = ITEMS.register("superfood_bar", () -> new Item(new Item.Properties().food(FoodList.superfood_bar).group(VeggieWay.veggie_way)));
 }

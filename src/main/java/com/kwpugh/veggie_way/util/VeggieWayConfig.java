@@ -26,6 +26,9 @@ public class VeggieWayConfig
 	
 	public static ForgeConfigSpec.IntValue cactus_soup_hunger;
 	public static ForgeConfigSpec.IntValue cactus_soup_saturation;
+
+	public static ForgeConfigSpec.IntValue super_petals_hunger;
+	public static ForgeConfigSpec.IntValue super_petals_saturation;
 	
 	public static ForgeConfigSpec.IntValue energy_drink_hunger;
 	public static ForgeConfigSpec.IntValue energy_drink_saturation;
@@ -120,7 +123,17 @@ public class VeggieWayConfig
 		
 
 		server_output = server.comment("Super Food Hunger and Saturation Values").push("Super Foods");
+
+			server_output = server.comment("Super Foods").push("Super Petals");
+			super_petals_hunger = server
+					.comment("Hunger value:")
+					.defineInRange("super_petals_hunger", 6, 0, 30);
+			super_petals_saturation = server
+					.comment("Saturation value:")
+					.defineInRange("super_petals_saturation", 9, 0, 10);
+			server_output.pop();
 		
+			
 			server_output = server.comment("Super Foods").push("Energy Drink");
 			energy_drink_hunger = server
 					.comment("Hunger value:")

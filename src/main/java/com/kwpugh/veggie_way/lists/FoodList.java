@@ -26,6 +26,9 @@ public class FoodList
 
 	static int cactusSoupHunger = VeggieWayConfig.cactus_soup_hunger.get();
 	static int cactusSoupSaturation = VeggieWayConfig.cactus_soup_saturation.get();
+
+	static int superPetalsHunger = VeggieWayConfig.super_petals_hunger.get();
+	static int superPetalsSaturation = VeggieWayConfig.super_petals_saturation.get();
 	
 	static int energyDrinkHunger = VeggieWayConfig.energy_drink_hunger.get();
 	static int energyDrinkSaturation = VeggieWayConfig.energy_drink_saturation.get();
@@ -52,10 +55,12 @@ public class FoodList
 	public static Food pumpkin_soup = (new Food.Builder()).hunger(pumpkinSoupHunger).saturation(pumpkinSoupSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food cactus_soup = (new Food.Builder()).hunger(cactusSoupHunger).saturation(cactusSoupSaturation).setAlwaysEdible().fastToEat().build();
 	
-	public static Food energyDrink = (new Food.Builder()).hunger(energyDrinkHunger).saturation(energyDrinkSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food superfoodShake = (new Food.Builder()).hunger(shakeHunger).saturation(shakeSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food superfoodSmoothie = (new Food.Builder()).hunger(smoothieHunger).saturation(smoothieSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food super_petals = (new Food.Builder()).hunger(superPetalsHunger).saturation(superPetalsSaturation).setAlwaysEdible().fastToEat().build();
 	
-	public static Food energyBar = (new Food.Builder()).hunger(energyBarHunger).saturation(energyBarSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food superfoodBar = (new Food.Builder()).hunger(superFoodHunger).saturation(superFoodSaturation).setAlwaysEdible().fastToEat().build();	
+	public static Food energy_drink = (new Food.Builder()).hunger(energyDrinkHunger).saturation(energyDrinkSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food superfood_shake = (new Food.Builder()).hunger(shakeHunger).saturation(shakeSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food superfood_smoothie = (new Food.Builder()).hunger(smoothieHunger).saturation(smoothieSaturation).setAlwaysEdible().fastToEat().build();
+	
+	public static Food energy_bar = (new Food.Builder()).hunger(energyBarHunger).saturation(energyBarSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food superfood_bar = (new Food.Builder()).hunger(superFoodHunger).saturation(superFoodSaturation).setAlwaysEdible().fastToEat().build();	
 }
