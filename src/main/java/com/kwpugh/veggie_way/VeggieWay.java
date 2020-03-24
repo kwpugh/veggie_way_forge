@@ -57,7 +57,7 @@ public class VeggieWay
 		RenderType cutoutMipped = RenderType.getCutoutMipped();	
 		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_QUINOA.get(), cutoutMipped);
 		
-    	logger.info("VeggieWay got game settings {}", event.getMinecraftSupplier().get().gameSettings);
+    	logger.info("VeggieWay client setup", event.getMinecraftSupplier().get().gameSettings);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
@@ -67,7 +67,7 @@ public class VeggieWay
 
     private void processIMC(final InterModProcessEvent event)
     {
-    	logger.info("VeggieWay got IMC {}", event.getIMCStream().
+    	logger.info("VeggieWay IMC", event.getIMCStream().
                 map(m->m.getMessageSupplier().get()).
                 collect(Collectors.toList()));
     }
@@ -75,6 +75,6 @@ public class VeggieWay
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event)
     {
-    	logger.info("VeggieWay Server starting");
+    	logger.info("VeggieWay server starting");
     }
 }
