@@ -11,6 +11,7 @@
 	
 	"item.veggie_way.cactus_chunk": "Cactus Chunk",
 	"item.veggie_way.pumpkin_chunk": "Pumpkin Chunk",
+	"item.veggie_way.melon_chunk": "Melon Chunk",
 	"item.veggie_way.chunk.line1": "An edible food",
 	
 	
@@ -32,6 +33,7 @@
 	
 	"item.veggie_way.pumpkin_soup": "Sopa de Abóbora",
 	"item.veggie_way.cactus_soup": "Cactus Soup",
+	"item.veggie_way.melon_soup": "Melon Soup",
 	
 	"item.veggie_way.carbs": "Carboidrato em Pó",
 	"item.veggie_way.carbs.line1": "Uma forma concentrada de carboidrato",

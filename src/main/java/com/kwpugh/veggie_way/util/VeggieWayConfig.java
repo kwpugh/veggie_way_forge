@@ -6,6 +6,9 @@ import net.minecraftforge.common.ForgeConfigSpec;
 
 public class VeggieWayConfig 
 {
+	public static ForgeConfigSpec.IntValue melon_chunk_hunger;
+	public static ForgeConfigSpec.IntValue melon_chunk_saturation;
+	
 	public static ForgeConfigSpec.IntValue cactus_chunk_hunger;
 	public static ForgeConfigSpec.IntValue cactus_chunk_saturation;
 
@@ -26,6 +29,9 @@ public class VeggieWayConfig
 	
 	public static ForgeConfigSpec.IntValue cactus_soup_hunger;
 	public static ForgeConfigSpec.IntValue cactus_soup_saturation;
+	
+	public static ForgeConfigSpec.IntValue melon_soup_hunger;
+	public static ForgeConfigSpec.IntValue melon_soup_saturation;
 
 	public static ForgeConfigSpec.IntValue super_petals_hunger;
 	public static ForgeConfigSpec.IntValue super_petals_saturation;
@@ -52,6 +58,15 @@ public class VeggieWayConfig
 	{	
 		server_output = server.comment("Normal Food Hunger and Saturation Values").push("Normal Foods");
 
+			server_output = server.comment("Normal Foods").push("Melon Chunk");
+			melon_chunk_hunger = server
+					.comment("Hunger value:")
+					.defineInRange("melon_chunk_hunger", 2, 0, 30);
+			melon_chunk_saturation = server
+					.comment("Saturation value:")
+					.defineInRange("melon_chunk_saturation", 1, 0, 10);
+			server_output.pop();
+		
 			server_output = server.comment("Normal Foods").push("Cactus Chunk");
 			cactus_chunk_hunger = server
 					.comment("Hunger value:")
@@ -108,6 +123,17 @@ public class VeggieWayConfig
 					.comment("Saturation value:")
 					.defineInRange("pumpkin_soup_saturation", 1, 0, 10);
 			server_output.pop();
+	
+			
+			server_output = server.comment("Normal Foods").push("Melon Soup");
+			melon_soup_hunger = server
+					.comment("Hunger value:")
+					.defineInRange("melon_soup_hunger", 6, 0, 30);
+			melon_soup_saturation = server
+					.comment("Saturation value:")
+					.defineInRange("melon_soup_saturation", 1, 0, 10);
+			server_output.pop();
+			
 			
 			server_output = server.comment("Normal Foods").push("Cactus Soup");
 			cactus_soup_hunger = server

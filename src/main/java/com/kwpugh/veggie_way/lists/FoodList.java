@@ -8,6 +8,9 @@ public class FoodList
 {
 	static int cactusChunkHunger = VeggieWayConfig.cactus_chunk_hunger.get();
 	static int cactusChunkSaturation = VeggieWayConfig.cactus_chunk_saturation.get();
+
+	static int melonChunkHunger = VeggieWayConfig.melon_chunk_hunger.get();
+	static int melonChunkSaturation = VeggieWayConfig.melon_chunk_saturation.get();
 	
 	static int pumpkinChunkHunger = VeggieWayConfig.pumpkin_chunk_hunger.get();
 	static int pumpkinChunkSaturation = VeggieWayConfig.pumpkin_chunk_saturation.get();
@@ -24,6 +27,9 @@ public class FoodList
 	static int pumpkinSoupHunger = VeggieWayConfig.pumpkin_soup_hunger.get();
 	static int pumpkinSoupSaturation = VeggieWayConfig.pumpkin_soup_saturation.get();
 
+	static int melonSoupHunger = VeggieWayConfig.melon_soup_hunger.get();
+	static int melonSoupSaturation = VeggieWayConfig.cactus_soup_saturation.get();
+	
 	static int cactusSoupHunger = VeggieWayConfig.cactus_soup_hunger.get();
 	static int cactusSoupSaturation = VeggieWayConfig.cactus_soup_saturation.get();
 
@@ -47,6 +53,7 @@ public class FoodList
 	
 	public static Food cactus_chunk = (new Food.Builder()).hunger(cactusChunkHunger).saturation(cactusChunkSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food pumpkin_chunk = (new Food.Builder()).hunger(pumpkinChunkHunger).saturation(pumpkinChunkSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food melon_chunk = (new Food.Builder()).hunger(melonChunkHunger).saturation(melonChunkSaturation).setAlwaysEdible().fastToEat().build();
 	
 	public static Food apple_pie = (new Food.Builder()).hunger(applePieHunger).saturation(applePieSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food melon_pie = (new Food.Builder()).hunger(melonPieHunger).saturation(melonPieSaturation).setAlwaysEdible().fastToEat().build();
@@ -54,6 +61,7 @@ public class FoodList
 	
 	public static Food pumpkin_soup = (new Food.Builder()).hunger(pumpkinSoupHunger).saturation(pumpkinSoupSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food cactus_soup = (new Food.Builder()).hunger(cactusSoupHunger).saturation(cactusSoupSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food melon_soup = (new Food.Builder()).hunger(melonSoupHunger).saturation(melonSoupSaturation).setAlwaysEdible().fastToEat().build();
 	
 	public static Food super_petals = (new Food.Builder()).hunger(superPetalsHunger).saturation(superPetalsSaturation).setAlwaysEdible().fastToEat().build();
 	
