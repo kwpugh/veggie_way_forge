@@ -9,9 +9,11 @@ import com.kwpugh.veggie_way.items.ItemCaffeine;
 import com.kwpugh.veggie_way.items.ItemCarbs;
 import com.kwpugh.veggie_way.items.ItemDryingAgent;
 import com.kwpugh.veggie_way.items.ItemEnergyPowder;
+import com.kwpugh.veggie_way.items.ItemFlour;
 import com.kwpugh.veggie_way.items.ItemFructose;
 import com.kwpugh.veggie_way.items.ItemKnife;
 import com.kwpugh.veggie_way.items.ItemMelonChunk;
+import com.kwpugh.veggie_way.items.ItemMill;
 import com.kwpugh.veggie_way.items.ItemProteins;
 import com.kwpugh.veggie_way.items.ItemPumpkinChunk;
 import com.kwpugh.veggie_way.items.ItemSuperPetals;
@@ -35,6 +37,9 @@ public class ItemInit
 	public static final RegistryObject<Item> HAND_RAKE = ITEMS.register("hand_rake", () -> new HandRake(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> KNIFE = ITEMS.register("knife", () -> new ItemKnife(new Item.Properties().maxDamage(128).group(VeggieWay.veggie_way)));
 	
+	public static final RegistryObject<Item> MILL = ITEMS.register("mill", () -> new ItemMill(new Item.Properties().maxDamage(512).group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new ItemFlour(new Item.Properties().group(VeggieWay.veggie_way)));
+
 	public static final RegistryObject<Item> PUMPKIN_CHUNK = ITEMS.register("pumpkin_chunk", () -> new ItemPumpkinChunk(new Item.Properties().food(FoodList.pumpkin_chunk).group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> CACTUS_CHUNK = ITEMS.register("cactus_chunk", () -> new ItemCactusChunk(new Item.Properties().food(FoodList.cactus_chunk).group(VeggieWay.veggie_way)));	
 	public static final RegistryObject<Item> MELON_CHUNK = ITEMS.register("melon_chunk", () -> new ItemMelonChunk(new Item.Properties().food(FoodList.melon_chunk).group(VeggieWay.veggie_way)));

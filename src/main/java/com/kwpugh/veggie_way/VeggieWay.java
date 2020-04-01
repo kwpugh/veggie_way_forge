@@ -75,6 +75,6 @@ public class VeggieWay
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event)
     {
-    	logger.info("VeggieWay server starting");
+    	logger.info("VeggieWay server setup");
     }
 }

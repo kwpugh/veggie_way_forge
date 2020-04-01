@@ -8,7 +8,9 @@
 
 	"item.veggie_way.knife": "Knife",
 	"item.veggie_way.knife.line1": "Used on a crafting table to cut things",
-	
+
+	"item.veggie_way.mill": "Mill",		
+	"item.veggie_way.flour": "Flour",
 	"item.veggie_way.cactus_chunk": "Cactus Chunk",
 	"item.veggie_way.pumpkin_chunk": "Pumpkin Chunk",
 	"item.veggie_way.melon_chunk": "Melon Chunk",

@@ -5,7 +5,7 @@
             "item": "minecraft:sugar"
         },
         {
-            "item": "minecraft:wheat"
+            "tag": "forge:flour"
         },
         {
             "item": "minecraft:apple"
