@@ -1,10 +1,13 @@
 {
 	"item.veggie_way.quinoa_plant": "藜麦植株",
    "block.veggie_way.quinoa_plant": "藜麦植株",
+   
+   	"item.veggie_way.soybean_plant": "Soybean Plant",
+	"block.veggie_way.soybean_plant": "Soybean Plant",
 
    "item.veggie_way.hand_rake": "手耙",
    "item.veggie_way.hand_rake.line1": "挖掘沙子来获得干燥剂",
-   "item.veggie_way.hand_rake.line2": "挖掘草方块来获得红藜麦种子",
+   "item.veggie_way.hand_rake.line2": "and on grass/dirt blocks to get quinoa and soybean seeds",
 
    "item.veggie_way.knife": "厨刀",
    "item.veggie_way.knife.line1": "在工作台中用来切食材",
@@ -29,9 +32,15 @@
 
    "item.veggie_way.quinoa_seeds": "红藜麦种子",
    "item.veggie_way.quinoa_seeds.line1": "可以直接在耕地上种植红藜麦作物",
+   
+   	"item.veggie_way.soybean_seeds": "Soybean Seeds",	
+	"item.veggie_way.soybean_seeds.line1": "Plant on Farmland to grow Soybean Plant",
 
    "item.veggie_way.quinoa": "红藜麦",
    "item.veggie_way.quinoa.line1": "蛋白质的绝佳来源",
+   
+   	"item.veggie_way.soybean": "Soybean",
+	"item.veggie_way.soybean.line1": "A wonderful source of protein",
 
    "item.veggie_way.apple_pie": "苹果派",
    "item.veggie_way.melon_pie": "西瓜派",
@@ -40,6 +49,7 @@
    "item.veggie_way.pumpkin_soup": "南瓜汤",
    "item.veggie_way.cactus_soup": "仙人掌汤",
    "item.veggie_way.melon_soup": "西瓜汁",
+   "item.veggie_way.carrot_soup": "Carrot Soup",
 
    "item.veggie_way.carbs": "碳水粉",
    "item.veggie_way.carbs.line1": "浓缩的碳水化合物粉末",

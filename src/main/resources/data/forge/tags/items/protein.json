@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "veggie_way:quinoa"
+    "veggie_way:quinoa",
+    "veggie_way:soybean"
   ]
 }

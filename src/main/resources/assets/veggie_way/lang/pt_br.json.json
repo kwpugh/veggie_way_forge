@@ -1,10 +1,13 @@
 {
 	"item.veggie_way.quinoa_plant": "Quinoa Plant",
 	"block.veggie_way.quinoa_plant": "Quinoa Plant",
+	
+	"item.veggie_way.soybean_plant": "Soybean Plant",
+	"block.veggie_way.soybean_plant": "Soybean Plant",
 		
 	"item.veggie_way.hand_rake": "Ancinho",
 	"item.veggie_way.hand_rake.line1": "Usado na Areia para obter o Agente de Secagem",
-	"item.veggie_way.hand_rake.line2": "e em Blocos de Grama para obter Sementes de Quinoa",
+	"item.veggie_way.hand_rake.line2": "and on grass/dirt blocks to get quinoa and soybean seeds",
 	
 	"item.veggie_way.knife": "Knife",
 	"item.veggie_way.knife.line1": "Used on a crafting table to cut things",
@@ -30,8 +33,14 @@
 	"item.veggie_way.quinoa_seeds": "Sementes de Quinoa Vermelha",	
 	"item.veggie_way.quinoa_seeds.line1": "Plantar em Terra Arada para cultivar Planta de Quinoa",
 	
+	"item.veggie_way.soybean_seeds": "Soybean Seeds",	
+	"item.veggie_way.soybean_seeds.line1": "Plant on Farmland to grow Soybean Plant",
+	
 	"item.veggie_way.quinoa": "Quinoa Vermelha",
 	"item.veggie_way.quinoa.line1": "Uma maravilhosa fonte de proteína",
+	
+	"item.veggie_way.soybean": "Soybean",
+	"item.veggie_way.soybean.line1": "A wonderful source of protein",
 	
 	"item.veggie_way.apple_pie": "Torta de Maçã",
 	"item.veggie_way.melon_pie": "Torta de Melancia",
@@ -40,6 +49,7 @@
 	"item.veggie_way.pumpkin_soup": "Sopa de Abóbora",
 	"item.veggie_way.cactus_soup": "Cactus Soup",
 	"item.veggie_way.melon_soup": "Melon Soup",
+	"item.veggie_way.carrot_soup": "Carrot Soup",
 	
 	"item.veggie_way.carbs": "Carboidrato em Pó",
 	"item.veggie_way.carbs.line1": "Uma forma concentrada de carboidrato",

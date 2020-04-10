@@ -65,10 +65,14 @@ public class HandRake extends ShovelItem
 		        {
 		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.QUINOA_SEEDS.get(), 1)));
 		        }
-		        else if (r > 0.1)
+		        else if (r > 0.1 && r <= 0.2)
 		        {
-		        	 //just drop the normal block, no quinoa
-		        }			
+		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.SOYBEAN_SEEDS.get(), 1)));
+		        }
+		        else if (r > 0.2)
+		        {
+		        	 //Nothing right now
+		        }
 			} 
 	    }
 

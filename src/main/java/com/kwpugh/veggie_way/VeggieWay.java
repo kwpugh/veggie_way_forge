@@ -56,6 +56,7 @@ public class VeggieWay
     {
 		RenderType cutoutMipped = RenderType.getCutoutMipped();	
 		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_QUINOA.get(), cutoutMipped);
+		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_SOYBEAN.get(), cutoutMipped);
 		
     	logger.info("VeggieWay client setup", event.getMinecraftSupplier().get().gameSettings);
     }

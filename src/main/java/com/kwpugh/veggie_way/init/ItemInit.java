@@ -2,6 +2,7 @@ package com.kwpugh.veggie_way.init;
 
 import com.kwpugh.veggie_way.VeggieWay;
 import com.kwpugh.veggie_way.items.CropQuinoa;
+import com.kwpugh.veggie_way.items.CropSoybean;
 import com.kwpugh.veggie_way.items.DrinkBase;
 import com.kwpugh.veggie_way.items.HandRake;
 import com.kwpugh.veggie_way.items.ItemCactusChunk;
@@ -22,6 +23,7 @@ import com.kwpugh.veggie_way.items.ItemSuperfoodPowder;
 import com.kwpugh.veggie_way.items.ItemVitamins;
 import com.kwpugh.veggie_way.items.ItemWheatgerm;
 import com.kwpugh.veggie_way.items.SeedQuinoa;
+import com.kwpugh.veggie_way.items.SeedSoybean;
 import com.kwpugh.veggie_way.lists.FoodList;
 
 import net.minecraft.item.Item;
@@ -59,6 +61,9 @@ public class ItemInit
 	public static final RegistryObject<Item> QUINOA_SEEDS = ITEMS.register("quinoa_seeds", () -> new SeedQuinoa(BlockInit.PLANT_QUINOA.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
 	public static final RegistryObject<Item> QUINOA = ITEMS.register("quinoa", () -> new CropQuinoa(new Item.Properties().group(VeggieWay.veggie_way)));
 
+	public static final RegistryObject<Item> SOYBEAN_SEEDS = ITEMS.register("soybean_seeds", () -> new SeedSoybean(BlockInit.PLANT_SOYBEAN.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
+	public static final RegistryObject<Item> SOYBEAN = ITEMS.register("soybean", () -> new CropSoybean(new Item.Properties().group(VeggieWay.veggie_way)));
+	
 	public static final RegistryObject<Item> SUPER_PETALS = ITEMS.register("super_petals", () -> new ItemSuperPetals(new Item.Properties().food(FoodList.super_petals).group(VeggieWay.veggie_way)));
 	
 	public static final RegistryObject<Item> DRYING_AGENT = ITEMS.register("drying_agent", () -> new ItemDryingAgent(new Item.Properties().group(VeggieWay.veggie_way)));
