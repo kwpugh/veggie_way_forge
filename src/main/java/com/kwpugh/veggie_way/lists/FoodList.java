@@ -6,6 +6,9 @@ import net.minecraft.item.Food;
 
 public class FoodList 
 {
+	static int chocolateBarHunger = VeggieWayConfig.chocolate_bar_hunger.get();
+	static int chocolateBarSaturation = VeggieWayConfig.chocolate_bar_saturation.get();
+	
 	static int cactusChunkHunger = VeggieWayConfig.cactus_chunk_hunger.get();
 	static int cactusChunkSaturation = VeggieWayConfig.cactus_chunk_saturation.get();
 
@@ -54,6 +57,7 @@ public class FoodList
 	static int superFoodHunger = VeggieWayConfig.superFoodBar_hunger.get();
 	static int superFoodSaturation = VeggieWayConfig.superFoodBar_saturation.get();
 	
+	public static Food chocolate_bar = (new Food.Builder()).hunger(chocolateBarHunger).saturation(chocolateBarSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food cactus_chunk = (new Food.Builder()).hunger(cactusChunkHunger).saturation(cactusChunkSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food pumpkin_chunk = (new Food.Builder()).hunger(pumpkinChunkHunger).saturation(pumpkinChunkSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food melon_chunk = (new Food.Builder()).hunger(melonChunkHunger).saturation(melonChunkSaturation).setAlwaysEdible().fastToEat().build();

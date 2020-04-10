@@ -43,7 +43,7 @@ public class ItemInit
 	public static final RegistryObject<Item> MILL = ITEMS.register("mill", () -> new ItemMill(new Item.Properties().maxDamage(512).group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new ItemFlour(new Item.Properties().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> DOUGH = ITEMS.register("dough", () -> new ItemDough(new Item.Properties().group(VeggieWay.veggie_way)));
-	
+	public static final RegistryObject<Item> CHOCOLATE_BAR = ITEMS.register("chocolate_bar", () -> new Item(new Item.Properties().food(FoodList.superfood_bar).group(VeggieWay.veggie_way)));
 
 	public static final RegistryObject<Item> PUMPKIN_CHUNK = ITEMS.register("pumpkin_chunk", () -> new ItemPumpkinChunk(new Item.Properties().food(FoodList.pumpkin_chunk).group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> CACTUS_CHUNK = ITEMS.register("cactus_chunk", () -> new ItemCactusChunk(new Item.Properties().food(FoodList.cactus_chunk).group(VeggieWay.veggie_way)));	

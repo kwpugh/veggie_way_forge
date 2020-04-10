@@ -6,6 +6,9 @@ import net.minecraftforge.common.ForgeConfigSpec;
 
 public class VeggieWayConfig 
 {
+	public static ForgeConfigSpec.IntValue chocolate_bar_hunger;
+	public static ForgeConfigSpec.IntValue chocolate_bar_saturation;
+	
 	public static ForgeConfigSpec.IntValue melon_chunk_hunger;
 	public static ForgeConfigSpec.IntValue melon_chunk_saturation;
 	
@@ -229,6 +232,20 @@ public class VeggieWayConfig
 		
 		
 		server_output.pop();
+		
+		
+	server_output = server.comment("Misc Hunger and Saturation Values").push("Misc");
+		
+		server_output = server.comment("Misc").push("Apple Pie");
+		chocolate_bar_hunger = server
+				.comment("Hunger value:")
+				.defineInRange("chocolate_bar_hunger", 7, 0, 30);
+		chocolate_bar_saturation = server
+				.comment("Saturation value:")
+				.defineInRange("chocolate_bar_saturation", 2, 0, 10);
+		server_output.pop();
+	
+	server_output.pop();
 		
 	}
 }
