@@ -33,6 +33,9 @@ public class FoodList
 	static int cactusSoupHunger = VeggieWayConfig.cactus_soup_hunger.get();
 	static int cactusSoupSaturation = VeggieWayConfig.cactus_soup_saturation.get();
 
+	static int carrotSoupHunger = VeggieWayConfig.carrot_soup_hunger.get();
+	static int carrotSoupSaturation = VeggieWayConfig.carrot_soup_saturation.get();
+	
 	static int superPetalsHunger = VeggieWayConfig.super_petals_hunger.get();
 	static int superPetalsSaturation = VeggieWayConfig.super_petals_saturation.get();
 	
@@ -62,6 +65,7 @@ public class FoodList
 	public static Food pumpkin_soup = (new Food.Builder()).hunger(pumpkinSoupHunger).saturation(pumpkinSoupSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food cactus_soup = (new Food.Builder()).hunger(cactusSoupHunger).saturation(cactusSoupSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food melon_soup = (new Food.Builder()).hunger(melonSoupHunger).saturation(melonSoupSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food carrot_soup = (new Food.Builder()).hunger(carrotSoupHunger).saturation(carrotSoupSaturation).setAlwaysEdible().fastToEat().build();
 	
 	public static Food super_petals = (new Food.Builder()).hunger(superPetalsHunger).saturation(superPetalsSaturation).setAlwaysEdible().fastToEat().build();
 	

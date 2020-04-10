@@ -12,6 +12,10 @@
    "item.veggie_way.mill": "磨石",
    "item.veggie_way.mill.line1": "用于将小麦磨成面粉",
    "item.veggie_way.flour": "面粉",
+   
+   	"item.veggie_way.dough": "Dough",
+	"item.veggie_way.dough.line1": "Bake in a furnace to get bread",
+	
    "item.veggie_way.cactus_chunk": "小块仙人掌",
    "item.veggie_way.pumpkin_chunk": "小块南瓜",
    "item.veggie_way.melon_chunk": "小块西瓜",

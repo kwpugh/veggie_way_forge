@@ -33,6 +33,9 @@ public class VeggieWayConfig
 	public static ForgeConfigSpec.IntValue melon_soup_hunger;
 	public static ForgeConfigSpec.IntValue melon_soup_saturation;
 
+	public static ForgeConfigSpec.IntValue carrot_soup_hunger;
+	public static ForgeConfigSpec.IntValue carrot_soup_saturation;
+	
 	public static ForgeConfigSpec.IntValue super_petals_hunger;
 	public static ForgeConfigSpec.IntValue super_petals_saturation;
 	
@@ -55,10 +58,10 @@ public class VeggieWayConfig
 	
 	
 	public static void init(ForgeConfigSpec.Builder server)
-	{	
-		server_output = server.comment("Normal Food Hunger and Saturation Values").push("Normal Foods");
-
-			server_output = server.comment("Normal Foods").push("Melon Chunk");
+	{
+		server_output = server.comment("Chunk Hunger and Saturation Values").push("Chunks");
+		
+			server_output = server.comment("Chunks").push("Melon Chunk");
 			melon_chunk_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("melon_chunk_hunger", 2, 0, 30);
@@ -67,7 +70,7 @@ public class VeggieWayConfig
 					.defineInRange("melon_chunk_saturation", 1, 0, 10);
 			server_output.pop();
 		
-			server_output = server.comment("Normal Foods").push("Cactus Chunk");
+			server_output = server.comment("Chunks").push("Cactus Chunk");
 			cactus_chunk_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("cactus_chunk_hunger", 2, 0, 30);
@@ -76,7 +79,7 @@ public class VeggieWayConfig
 					.defineInRange("cactus_chunk_saturation", 1, 0, 10);
 			server_output.pop();
 		
-			server_output = server.comment("Normal Foods").push("Pumpkin Chunk");
+			server_output = server.comment("Chunks").push("Pumpkin Chunk");
 			pumpkin_chunk_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("pumpkin_chunk_hunger", 2, 0, 30);
@@ -84,8 +87,13 @@ public class VeggieWayConfig
 					.comment("Saturation value:")
 					.defineInRange("pumpkin_chunk_saturation", 1, 0, 10);
 			server_output.pop();
+		
+		server_output.pop();		
 
-			server_output = server.comment("Normal Foods").push("Apple Pie");
+		
+		server_output = server.comment("Pie Hunger and Saturation Values").push("Pie");
+		
+			server_output = server.comment("Pie").push("Apple Pie");
 			apple_pie_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("apple_pie_hunger", 7, 0, 30);
@@ -95,7 +103,7 @@ public class VeggieWayConfig
 			server_output.pop();
 		
 		
-			server_output = server.comment("Normal Foods").push("Melon Pie");
+			server_output = server.comment("Pie").push("Melon Pie");
 			melon_pie_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("melon_pie_hunger", 7, 0, 30);
@@ -105,7 +113,7 @@ public class VeggieWayConfig
 			server_output.pop();
 			
 		
-			server_output = server.comment("Normal Foods").push("Berry Pie");
+			server_output = server.comment("Pie").push("Berry Pie");
 			berry_pie_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("berry_pie_hunger", 7, 0, 30);
@@ -114,8 +122,12 @@ public class VeggieWayConfig
 					.defineInRange("berry_pie_saturation", 2, 0, 10);		
 			server_output.pop();
 		
+		server_output.pop();
 		
-			server_output = server.comment("Normal Foods").push("Pumpkin Soup");
+	
+		server_output = server.comment("Soup Hunger and Saturation Values").push("Soup");
+		
+			server_output = server.comment("Soup").push("Pumpkin Soup");
 			pumpkin_soup_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("pumpkin_soup_hunger", 6, 0, 30);
@@ -125,7 +137,7 @@ public class VeggieWayConfig
 			server_output.pop();
 	
 			
-			server_output = server.comment("Normal Foods").push("Melon Soup");
+			server_output = server.comment("Soup").push("Melon Soup");
 			melon_soup_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("melon_soup_hunger", 6, 0, 30);
@@ -135,7 +147,7 @@ public class VeggieWayConfig
 			server_output.pop();
 			
 			
-			server_output = server.comment("Normal Foods").push("Cactus Soup");
+			server_output = server.comment("Soup").push("Cactus Soup");
 			cactus_soup_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("cactus_soup_hunger", 6, 0, 30);
@@ -143,11 +155,20 @@ public class VeggieWayConfig
 					.comment("Saturation value:")
 					.defineInRange("cactus_soup_saturation", 1, 0, 10);
 			server_output.pop();
+	
 			
+			server_output = server.comment("Soup").push("Carrot Soup");
+			carrot_soup_hunger = server
+					.comment("Hunger value:")
+					.defineInRange("carrot_soup_hunger", 6, 0, 30);
+			carrot_soup_saturation = server
+					.comment("Saturation value:")
+					.defineInRange("carrot_soup_saturation", 1, 0, 10);
+			server_output.pop();
+		
 		server_output.pop();
-		
-		
 
+		
 		server_output = server.comment("Super Food Hunger and Saturation Values").push("Super Foods");
 
 			server_output = server.comment("Super Foods").push("Super Petals");

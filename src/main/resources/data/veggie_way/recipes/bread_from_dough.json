@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "veggie_way:flour"
+    "item": "veggie_way:dough"
   },
   "result": "minecraft:bread",
   "experience": 1.0,

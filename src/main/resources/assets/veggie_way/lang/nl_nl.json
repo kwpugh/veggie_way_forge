@@ -11,6 +11,9 @@
 
 	"item.veggie_way.mill": "Mill",		
 	"item.veggie_way.flour": "Flour",
+	"item.veggie_way.dough": "Dough",
+	"item.veggie_way.dough.line1": "Bake in a furnace to get bread",
+	
 	"item.veggie_way.cactus_chunk": "Cactus Chunk",
 	"item.veggie_way.pumpkin_chunk": "Pumpkin Chunk",
 	"item.veggie_way.melon_chunk": "Melon Chunk",
