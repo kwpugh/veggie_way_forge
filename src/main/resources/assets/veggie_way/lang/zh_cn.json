@@ -5,6 +5,9 @@
    	"item.veggie_way.soybean_plant": "Soybean Plant",
 	"block.veggie_way.soybean_plant": "Soybean Plant",
 
+	"item.veggie_way.lentil_plant": "Lentil Plant",
+	"block.veggie_way.lentil_plant": "Lentil Plant",
+	
    "item.veggie_way.hand_rake": "手耙",
    "item.veggie_way.hand_rake.line1": "挖掘沙子来获得干燥剂",
    "item.veggie_way.hand_rake.line2": "and on grass/dirt blocks to get quinoa and soybean seeds",
@@ -36,12 +39,18 @@
    	"item.veggie_way.soybean_seeds": "Soybean Seeds",	
 	"item.veggie_way.soybean_seeds.line1": "Plant on Farmland to grow Soybean Plant",
 
+	"item.veggie_way.lentil_seeds": "Lentil Seeds",	
+	"item.veggie_way.lentil_seeds.line1": "Plant on Farmland to grow Lentil Plant",
+	
    "item.veggie_way.quinoa": "红藜麦",
    "item.veggie_way.quinoa.line1": "蛋白质的绝佳来源",
    
    	"item.veggie_way.soybean": "Soybean",
 	"item.veggie_way.soybean.line1": "A wonderful source of protein",
 
+	"item.veggie_way.lentil": "Lentil",
+	"item.veggie_way.lentil.line1": "A wonderful source of protein",
+	
    "item.veggie_way.apple_pie": "苹果派",
    "item.veggie_way.melon_pie": "西瓜派",
    "item.veggie_way.sweet_berry_pie": "甜浆果派",

@@ -5,6 +5,9 @@
 	"item.veggie_way.soybean_plant": "Soybean Plant",
 	"block.veggie_way.soybean_plant": "Soybean Plant",
 	
+	"item.veggie_way.lentil_plant": "Lentil Plant",
+	"block.veggie_way.lentil_plant": "Lentil Plant",
+	
  	"item.veggie_way.hand_rake": "Handhark",
  	"item.veggie_way.hand_rake.line1": "Used on sand to get drying agent",
 	"item.veggie_way.hand_rake.line2": "and on grass/dirt blocks to get quinoa and soybean seeds",
@@ -33,11 +36,17 @@
  	"item.veggie_way.soybean_seeds": "Soybean Seeds",	
 	"item.veggie_way.soybean_seeds.line1": "Plant on Farmland to grow Soybean Plant",
 
+	"item.veggie_way.lentil_seeds": "Lentil Seeds",	
+	"item.veggie_way.lentil_seeds.line1": "Plant on Farmland to grow Lentil Plant",
+	
 	"item.veggie_way.quinoa": "Red Quinoa",
 	"item.veggie_way.quinoa.line1": "A wonderful source of protein",
 
 	"item.veggie_way.soybean": "Soybean",
 	"item.veggie_way.soybean.line1": "A wonderful source of protein",
+	
+	"item.veggie_way.lentil": "Lentil",
+	"item.veggie_way.lentil.line1": "A wonderful source of protein",
 	
  	"item.veggie_way.apple_pie": "Appeltaart",
  	"item.veggie_way.melon_pie": "Watermeloentaart",

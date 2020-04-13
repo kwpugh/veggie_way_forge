@@ -24,9 +24,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class HandRake extends ShovelItem
+public class ItemHandRake extends ShovelItem
 {
-	public HandRake(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder)
+	public ItemHandRake(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder)
 	{
 		super(tier, attackDamageIn, attackSpeedIn, builder);
 	}
@@ -69,7 +69,11 @@ public class HandRake extends ShovelItem
 		        {
 		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.SOYBEAN_SEEDS.get(), 1)));
 		        }
-		        else if (r > 0.2)
+		        else if (r > 0.2 && r <= 0.3)
+		        {
+		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.LENTIL_SEEDS.get(), 1)));
+		        }
+		        else if (r > 0.3)
 		        {
 		        	 //Nothing right now
 		        }

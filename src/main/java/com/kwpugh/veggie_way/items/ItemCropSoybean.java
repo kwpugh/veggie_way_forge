@@ -14,10 +14,10 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class CropSoybean extends Item
+public class ItemCropSoybean extends Item
 {
 
-	public CropSoybean(Properties properties)
+	public ItemCropSoybean(Properties properties)
 	{
 		super(properties);
 	}

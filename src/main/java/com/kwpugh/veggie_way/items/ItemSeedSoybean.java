@@ -15,9 +15,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class SeedSoybean extends BlockNamedItem
+public class ItemSeedSoybean extends BlockNamedItem
 {
-	public SeedSoybean(Block crop, Properties builder)
+	public ItemSeedSoybean(Block crop, Properties builder)
 	{
 		super(crop, builder);      
 	}

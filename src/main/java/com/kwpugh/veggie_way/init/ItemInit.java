@@ -1,29 +1,31 @@
 package com.kwpugh.veggie_way.init;
 
 import com.kwpugh.veggie_way.VeggieWay;
-import com.kwpugh.veggie_way.items.CropQuinoa;
-import com.kwpugh.veggie_way.items.CropSoybean;
 import com.kwpugh.veggie_way.items.DrinkBase;
-import com.kwpugh.veggie_way.items.HandRake;
 import com.kwpugh.veggie_way.items.ItemCactusChunk;
 import com.kwpugh.veggie_way.items.ItemCaffeine;
 import com.kwpugh.veggie_way.items.ItemCarbs;
+import com.kwpugh.veggie_way.items.ItemCropLentil;
+import com.kwpugh.veggie_way.items.ItemCropQuinoa;
+import com.kwpugh.veggie_way.items.ItemCropSoybean;
 import com.kwpugh.veggie_way.items.ItemDough;
 import com.kwpugh.veggie_way.items.ItemDryingAgent;
 import com.kwpugh.veggie_way.items.ItemEnergyPowder;
 import com.kwpugh.veggie_way.items.ItemFlour;
 import com.kwpugh.veggie_way.items.ItemFructose;
+import com.kwpugh.veggie_way.items.ItemHandRake;
 import com.kwpugh.veggie_way.items.ItemKnife;
 import com.kwpugh.veggie_way.items.ItemMelonChunk;
 import com.kwpugh.veggie_way.items.ItemMill;
 import com.kwpugh.veggie_way.items.ItemProteins;
 import com.kwpugh.veggie_way.items.ItemPumpkinChunk;
+import com.kwpugh.veggie_way.items.ItemSeedLentil;
+import com.kwpugh.veggie_way.items.ItemSeedQuinoa;
+import com.kwpugh.veggie_way.items.ItemSeedSoybean;
 import com.kwpugh.veggie_way.items.ItemSuperPetals;
 import com.kwpugh.veggie_way.items.ItemSuperfoodPowder;
 import com.kwpugh.veggie_way.items.ItemVitamins;
 import com.kwpugh.veggie_way.items.ItemWheatgerm;
-import com.kwpugh.veggie_way.items.SeedQuinoa;
-import com.kwpugh.veggie_way.items.SeedSoybean;
 import com.kwpugh.veggie_way.lists.FoodList;
 
 import net.minecraft.item.Item;
@@ -37,7 +39,7 @@ public class ItemInit
 {
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, VeggieWay.modid);
 	
-	public static final RegistryObject<Item> HAND_RAKE = ITEMS.register("hand_rake", () -> new HandRake(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> HAND_RAKE = ITEMS.register("hand_rake", () -> new ItemHandRake(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> KNIFE = ITEMS.register("knife", () -> new ItemKnife(new Item.Properties().maxDamage(128).group(VeggieWay.veggie_way)));
 	
 	public static final RegistryObject<Item> MILL = ITEMS.register("mill", () -> new ItemMill(new Item.Properties().maxDamage(512).group(VeggieWay.veggie_way)));
@@ -58,13 +60,16 @@ public class ItemInit
 	public static final RegistryObject<Item> SWEET_BERRY_PIE = ITEMS.register("sweet_berry_pie", () -> new Item(new Item.Properties().food(FoodList.sweet_berry_pie).group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> MELON_PIE = ITEMS.register("melon_pie", () -> new Item(new Item.Properties().food(FoodList.melon_pie).group(VeggieWay.veggie_way)));
 	
-	public static final RegistryObject<Item> QUINOA_SEEDS = ITEMS.register("quinoa_seeds", () -> new SeedQuinoa(BlockInit.PLANT_QUINOA.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
-	public static final RegistryObject<Item> QUINOA = ITEMS.register("quinoa", () -> new CropQuinoa(new Item.Properties().group(VeggieWay.veggie_way)));
-
-	public static final RegistryObject<Item> SOYBEAN_SEEDS = ITEMS.register("soybean_seeds", () -> new SeedSoybean(BlockInit.PLANT_SOYBEAN.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
-	public static final RegistryObject<Item> SOYBEAN = ITEMS.register("soybean", () -> new CropSoybean(new Item.Properties().group(VeggieWay.veggie_way)));
-	
 	public static final RegistryObject<Item> SUPER_PETALS = ITEMS.register("super_petals", () -> new ItemSuperPetals(new Item.Properties().food(FoodList.super_petals).group(VeggieWay.veggie_way)));
+	
+	public static final RegistryObject<Item> QUINOA_SEEDS = ITEMS.register("quinoa_seeds", () -> new ItemSeedQuinoa(BlockInit.PLANT_QUINOA.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
+	public static final RegistryObject<Item> QUINOA = ITEMS.register("quinoa", () -> new ItemCropQuinoa(new Item.Properties().group(VeggieWay.veggie_way)));
+
+	public static final RegistryObject<Item> SOYBEAN_SEEDS = ITEMS.register("soybean_seeds", () -> new ItemSeedSoybean(BlockInit.PLANT_SOYBEAN.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
+	public static final RegistryObject<Item> SOYBEAN = ITEMS.register("soybean", () -> new ItemCropSoybean(new Item.Properties().group(VeggieWay.veggie_way)));
+	
+	public static final RegistryObject<Item> LENTIL_SEEDS = ITEMS.register("lentil_seeds", () -> new ItemSeedLentil(BlockInit.PLANT_LENTIL.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
+	public static final RegistryObject<Item> LENTIL = ITEMS.register("lentil", () -> new ItemCropLentil(new Item.Properties().group(VeggieWay.veggie_way)));
 	
 	public static final RegistryObject<Item> DRYING_AGENT = ITEMS.register("drying_agent", () -> new ItemDryingAgent(new Item.Properties().group(VeggieWay.veggie_way)));
 	
