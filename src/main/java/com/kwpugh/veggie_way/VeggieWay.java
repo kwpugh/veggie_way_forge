@@ -8,10 +8,9 @@ import org.apache.logging.log4j.Logger;
 import com.kwpugh.veggie_way.group.GroupVeggieWay;
 import com.kwpugh.veggie_way.init.BlockInit;
 import com.kwpugh.veggie_way.init.ItemInit;
+import com.kwpugh.veggie_way.util.BlockRenders;
 import com.kwpugh.veggie_way.util.Config;
 
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -54,10 +53,7 @@ public class VeggieWay
 
     private void clientSetup(final FMLClientSetupEvent event)
     {
-		RenderType cutoutMipped = RenderType.getCutoutMipped();	
-		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_QUINOA.get(), cutoutMipped);
-		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_SOYBEAN.get(), cutoutMipped);
-		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_LENTIL.get(), cutoutMipped);
+    	BlockRenders.defineRenders();
 		
     	logger.info("VeggieWay client setup", event.getMinecraftSupplier().get().gameSettings);
     }
