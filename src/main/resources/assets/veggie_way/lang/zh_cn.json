@@ -1,31 +1,47 @@
 {
 	"item.veggie_way.quinoa_plant": "藜麦植株",
-   "block.veggie_way.quinoa_plant": "藜麦植株",
+   	"block.veggie_way.quinoa_plant": "藜麦植株",
    
-   	"item.veggie_way.soybean_plant": "Soybean Plant",
-	"block.veggie_way.soybean_plant": "Soybean Plant",
+	"item.veggie_way.soybean_plant": "大豆作物",
+   	"block.veggie_way.soybean_plant": "大豆作物",
 
-	"item.veggie_way.lentil_plant": "Lentil Plant",
-	"block.veggie_way.lentil_plant": "Lentil Plant",
+ 	 "item.veggie_way.lentil_plant": "扁豆作物",
+	 "block.veggie_way.lentil_plant": "扁豆作物",
 	
-   "item.veggie_way.hand_rake": "手耙",
+	"item.veggie_way.hand_rake": "手耙",
    "item.veggie_way.hand_rake.line1": "挖掘沙子来获得干燥剂",
-   "item.veggie_way.hand_rake.line2": "and on grass/dirt blocks to get quinoa and soybean seeds",
+   "item.veggie_way.hand_rake.line2": "挖掘草方块和泥土来获得藜麦、大豆和扁豆种子",
 
-   "item.veggie_way.knife": "厨刀",
+	"item.veggie_way.hand_scraper": "Hand Scraper",
+	"item.veggie_way.hand_scraper.line1": "Used in a crafting table to scrape bamboo into sheets for leather",
+	
+	"item.veggie_way.hand_bamboo_sheet": "Bamboo Sheet",
+	"item.veggie_way.hand_bamboo_sheet.line1": "Used to craft Large Bamboo Sheets",
+	
+	"item.veggie_way.hand_large_bamboo_sheet": "Large Bamboo Sheet",
+	"item.veggie_way.hand_large_bamboo_sheet.line1": "Can be smelted and used as leather",
+	
+	"item.veggie_way.large_pot": "Large Pot",
+	"item.veggie_way.large_pot.line1": "Used to cook food",
+	
+	"item.veggie_way.fresh_tofu": "Fresh Tofu",
+	"item.veggie_way.cooked_tofu": "Cooked Tofu",
+	
+  "item.veggie_way.knife": "厨刀",
    "item.veggie_way.knife.line1": "在工作台中用来切食材",
 
    "item.veggie_way.mill": "磨石",
    "item.veggie_way.mill.line1": "用于将小麦磨成面粉",
    "item.veggie_way.flour": "面粉",
-   
-   	"item.veggie_way.dough": "Dough",
-	"item.veggie_way.dough.line1": "Bake in a furnace to get bread",
-	
+   "item.veggie_way.dough": "面团",
+   "item.veggie_way.dough.line1": "在烤箱里烤面包",
+
+   "item.veggie_way.chocolate_bar": "巧克力棒",
+
    "item.veggie_way.cactus_chunk": "小块仙人掌",
    "item.veggie_way.pumpkin_chunk": "小块南瓜",
    "item.veggie_way.melon_chunk": "小块西瓜",
-   "item.veggie_way.chunk.line1": "可食用的食物",
+   "item.veggie_way.chunk.line1": "可以直接吃",
 
    "item.veggie_way.drying_agent": "干燥剂",
    "item.veggie_way.drying_agent.line1": "可以将食材干燥，以便后面进一步处理",
@@ -35,22 +51,22 @@
 
    "item.veggie_way.quinoa_seeds": "红藜麦种子",
    "item.veggie_way.quinoa_seeds.line1": "可以直接在耕地上种植红藜麦作物",
-   
-   	"item.veggie_way.soybean_seeds": "Soybean Seeds",	
-	"item.veggie_way.soybean_seeds.line1": "Plant on Farmland to grow Soybean Plant",
 
-	"item.veggie_way.lentil_seeds": "Lentil Seeds",	
-	"item.veggie_way.lentil_seeds.line1": "Plant on Farmland to grow Lentil Plant",
-	
    "item.veggie_way.quinoa": "红藜麦",
    "item.veggie_way.quinoa.line1": "蛋白质的绝佳来源",
-   
-   	"item.veggie_way.soybean": "Soybean",
-	"item.veggie_way.soybean.line1": "A wonderful source of protein",
 
-	"item.veggie_way.lentil": "Lentil",
-	"item.veggie_way.lentil.line1": "A wonderful source of protein",
-	
+   "item.veggie_way.soybean_seeds": "大豆种子",
+   "item.veggie_way.soybean_seeds.line1": "可以直接在耕地上种植大豆作物",
+
+   "item.veggie_way.lentil_seeds": "扁豆种子",
+   "item.veggie_way.lentil_seeds.line1": "可以直接在耕地上种植扁豆作物",
+   
+     "item.veggie_way.soybean": "大豆",
+   "item.veggie_way.soybean.line1": "蛋白质的绝佳来源",
+
+   "item.veggie_way.lentil": "扁豆",
+   "item.veggie_way.lentil.line1": "蛋白质的绝佳来源",
+
    "item.veggie_way.apple_pie": "苹果派",
    "item.veggie_way.melon_pie": "西瓜派",
    "item.veggie_way.sweet_berry_pie": "甜浆果派",
@@ -58,7 +74,7 @@
    "item.veggie_way.pumpkin_soup": "南瓜汤",
    "item.veggie_way.cactus_soup": "仙人掌汤",
    "item.veggie_way.melon_soup": "西瓜汁",
-   "item.veggie_way.carrot_soup": "Carrot Soup",
+   "item.veggie_way.carrot_soup": "胡萝卜汤",
 
    "item.veggie_way.carbs": "碳水粉",
    "item.veggie_way.carbs.line1": "浓缩的碳水化合物粉末",

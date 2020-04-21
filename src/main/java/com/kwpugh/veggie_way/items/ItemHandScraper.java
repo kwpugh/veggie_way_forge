@@ -14,9 +14,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class ItemKnife extends Item
+public class ItemHandScraper extends Item
 {
-	public ItemKnife(Properties properties)
+	public ItemHandScraper(Properties properties)
 	{
 		super(properties);
 	}
@@ -45,6 +45,6 @@ public class ItemKnife extends Item
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 		super.addInformation(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslationTextComponent("item.veggie_way.knife.line1").applyTextStyle(TextFormatting.GREEN)));
+		tooltip.add((new TranslationTextComponent("item.veggie_way.hand_scraper.line1").applyTextStyle(TextFormatting.GREEN)));
 	}
 }

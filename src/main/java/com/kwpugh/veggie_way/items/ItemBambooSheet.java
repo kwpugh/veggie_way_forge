@@ -14,37 +14,18 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class ItemKnife extends Item
+public class ItemBambooSheet extends Item
 {
-	public ItemKnife(Properties properties)
+
+	public ItemBambooSheet(Properties properties)
 	{
 		super(properties);
 	}
 
-    @Override
-    public boolean hasContainerItem(ItemStack stack)
-    {
-        return true;
-    }
-
-    @Override
-    public ItemStack getContainerItem(ItemStack stackIn)
-    {	
-    	ItemStack stack = stackIn.copy();
-    	stack.setDamage(getDamage(stack) + 1);
-
-    	if(stack.getDamage() >= stack.getMaxDamage())
-    	{
-    		stack.shrink(1);
-    	}
-    	
-        return stack;    
-    }
-    
 	@OnlyIn(Dist.CLIENT)
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 		super.addInformation(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslationTextComponent("item.veggie_way.knife.line1").applyTextStyle(TextFormatting.GREEN)));
+		tooltip.add((new TranslationTextComponent("item.veggie_way.hand_bamboo_sheet.line1").applyTextStyle(TextFormatting.GREEN)));
 	}
 }

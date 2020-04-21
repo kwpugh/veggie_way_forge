@@ -14,7 +14,9 @@ import com.kwpugh.veggie_way.items.ItemEnergyPowder;
 import com.kwpugh.veggie_way.items.ItemFlour;
 import com.kwpugh.veggie_way.items.ItemFructose;
 import com.kwpugh.veggie_way.items.ItemHandRake;
+import com.kwpugh.veggie_way.items.ItemHandScraper;
 import com.kwpugh.veggie_way.items.ItemKnife;
+import com.kwpugh.veggie_way.items.ItemLargePot;
 import com.kwpugh.veggie_way.items.ItemMelonChunk;
 import com.kwpugh.veggie_way.items.ItemMill;
 import com.kwpugh.veggie_way.items.ItemProteins;
@@ -39,8 +41,15 @@ public class ItemInit
 {
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, VeggieWay.modid);
 	
-	public static final RegistryObject<Item> HAND_RAKE = ITEMS.register("hand_rake", () -> new ItemHandRake(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> KNIFE = ITEMS.register("knife", () -> new ItemKnife(new Item.Properties().maxDamage(128).group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> HAND_RAKE = ITEMS.register("hand_rake", () -> new ItemHandRake(ItemTier.IRON, -2, -3, new Item.Properties().group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> HAND_SCRAPER = ITEMS.register("hand_scraper", () -> new ItemHandScraper(new Item.Properties().maxStackSize(1).group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> BAMBOO_SHEET = ITEMS.register("bamboo_sheet", () -> new Item(new Item.Properties().group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> LARGE_BAMBOO_SHEET = ITEMS.register("large_bamboo_sheet", () -> new Item(new Item.Properties().group(VeggieWay.veggie_way)));	
+	
+	public static final RegistryObject<Item> LARGE_POT = ITEMS.register("large_pot", () -> new ItemLargePot(new Item.Properties().maxStackSize(1).group(VeggieWay.veggie_way)));	
+	public static final RegistryObject<Item> FRESH_TOFU = ITEMS.register("fresh_tofu", () -> new Item(new Item.Properties().group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> COOKED_TOFU = ITEMS.register("cooked_tofu", () -> new Item(new Item.Properties().group(VeggieWay.veggie_way)));
 	
 	public static final RegistryObject<Item> MILL = ITEMS.register("mill", () -> new ItemMill(new Item.Properties().maxDamage(512).group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new ItemFlour(new Item.Properties().group(VeggieWay.veggie_way)));

@@ -12,6 +12,21 @@
 	"item.veggie_way.hand_rake.line1": "Usado na Areia para obter o Agente de Secagem",
 	"item.veggie_way.hand_rake.line2": "and on grass/dirt blocks to get quinoa and soybean seeds",
 	
+	"item.veggie_way.hand_scraper": "Hand Scraper",
+	"item.veggie_way.hand_scraper.line1": "Used in a crafting table to scrape bamboo into sheets for leather",
+	
+	"item.veggie_way.hand_bamboo_sheet": "Bamboo Sheet",
+	"item.veggie_way.hand_bamboo_sheet.line1": "Used to craft Large Bamboo Sheets",
+	
+	"item.veggie_way.hand_large_bamboo_sheet": "Large Bamboo Sheet",
+	"item.veggie_way.hand_large_bamboo_sheet.line1": "Can be smelted and used as leather",
+	
+	"item.veggie_way.large_pot": "Large Pot",
+	"item.veggie_way.large_pot.line1": "Used to cook food",
+	
+	"item.veggie_way.fresh_tofu": "Fresh Tofu",
+	"item.veggie_way.cooked_tofu": "Cooked Tofu",
+	
 	"item.veggie_way.knife": "Knife",
 	"item.veggie_way.knife.line1": "Used on a crafting table to cut things",
 
