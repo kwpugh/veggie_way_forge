@@ -3,6 +3,12 @@
     "ingredients": [
         {
             "item": "veggie_way:cooked_tofu"
+        },
+        {
+            "item": "veggie_way:cooked_tofu"
+        },
+        {
+            "item": "veggie_way:cooked_tofu"
         }
     ],
     "result": {
