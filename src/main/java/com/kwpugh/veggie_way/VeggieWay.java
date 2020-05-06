@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.kwpugh.veggie_way.group.GroupVeggieWay;
 import com.kwpugh.veggie_way.init.BlockInit;
+import com.kwpugh.veggie_way.init.Compostables;
 import com.kwpugh.veggie_way.init.ItemInit;
 import com.kwpugh.veggie_way.util.BlockRenders;
 import com.kwpugh.veggie_way.util.Config;
@@ -48,6 +49,8 @@ public class VeggieWay
 
     private void setup(final FMLCommonSetupEvent event)
     {
+    	Compostables.setup();
+    	
         logger.info("VeggieWay common setup");
     }
 

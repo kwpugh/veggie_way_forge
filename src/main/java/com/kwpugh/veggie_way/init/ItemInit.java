@@ -5,6 +5,7 @@ import com.kwpugh.veggie_way.items.DrinkBase;
 import com.kwpugh.veggie_way.items.ItemCactusChunk;
 import com.kwpugh.veggie_way.items.ItemCaffeine;
 import com.kwpugh.veggie_way.items.ItemCarbs;
+import com.kwpugh.veggie_way.items.ItemCropCorn;
 import com.kwpugh.veggie_way.items.ItemCropLentil;
 import com.kwpugh.veggie_way.items.ItemCropQuinoa;
 import com.kwpugh.veggie_way.items.ItemCropSoybean;
@@ -16,11 +17,11 @@ import com.kwpugh.veggie_way.items.ItemFructose;
 import com.kwpugh.veggie_way.items.ItemHandRake;
 import com.kwpugh.veggie_way.items.ItemHandScraper;
 import com.kwpugh.veggie_way.items.ItemKnife;
-import com.kwpugh.veggie_way.items.ItemLargePot;
 import com.kwpugh.veggie_way.items.ItemMelonChunk;
 import com.kwpugh.veggie_way.items.ItemMill;
 import com.kwpugh.veggie_way.items.ItemProteins;
 import com.kwpugh.veggie_way.items.ItemPumpkinChunk;
+import com.kwpugh.veggie_way.items.ItemSeedCorn;
 import com.kwpugh.veggie_way.items.ItemSeedLentil;
 import com.kwpugh.veggie_way.items.ItemSeedQuinoa;
 import com.kwpugh.veggie_way.items.ItemSeedSoybean;
@@ -46,10 +47,10 @@ public class ItemInit
 	public static final RegistryObject<Item> HAND_SCRAPER = ITEMS.register("hand_scraper", () -> new ItemHandScraper(new Item.Properties().maxStackSize(1).maxDamage(192).group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> BAMBOO_SHEET = ITEMS.register("bamboo_sheet", () -> new Item(new Item.Properties().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> LARGE_BAMBOO_SHEET = ITEMS.register("large_bamboo_sheet", () -> new Item(new Item.Properties().group(VeggieWay.veggie_way)));	
-	
-	public static final RegistryObject<Item> LARGE_POT = ITEMS.register("large_pot", () -> new ItemLargePot(new Item.Properties().maxStackSize(1).group(VeggieWay.veggie_way)));	
+		
 	public static final RegistryObject<Item> FRESH_TOFU = ITEMS.register("fresh_tofu", () -> new Item(new Item.Properties().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> COOKED_TOFU = ITEMS.register("cooked_tofu", () -> new Item(new Item.Properties().group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> FRIED_EGG = ITEMS.register("fried_egg", () -> new Item(new Item.Properties().group(VeggieWay.veggie_way)));
 	
 	public static final RegistryObject<Item> MILL = ITEMS.register("mill", () -> new ItemMill(new Item.Properties().maxStackSize(1).maxDamage(512).group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new ItemFlour(new Item.Properties().group(VeggieWay.veggie_way)));
@@ -79,6 +80,9 @@ public class ItemInit
 	
 	public static final RegistryObject<Item> LENTIL_SEEDS = ITEMS.register("lentil_seeds", () -> new ItemSeedLentil(BlockInit.PLANT_LENTIL.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
 	public static final RegistryObject<Item> LENTIL = ITEMS.register("lentil", () -> new ItemCropLentil(new Item.Properties().group(VeggieWay.veggie_way)));
+	
+	public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds", () -> new ItemSeedCorn(BlockInit.PLANT_CORN.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
+	public static final RegistryObject<Item> CORN = ITEMS.register("corn", () -> new ItemCropCorn(new Item.Properties().group(VeggieWay.veggie_way)));
 	
 	public static final RegistryObject<Item> DRYING_AGENT = ITEMS.register("drying_agent", () -> new ItemDryingAgent(new Item.Properties().group(VeggieWay.veggie_way)));
 	

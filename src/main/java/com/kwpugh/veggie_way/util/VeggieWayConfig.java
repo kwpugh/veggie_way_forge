@@ -6,56 +6,59 @@ import net.minecraftforge.common.ForgeConfigSpec;
 
 public class VeggieWayConfig 
 {
+	public static ForgeConfigSpec.IntValue fried_egg_hunger;
+	public static ForgeConfigSpec.DoubleValue fried_egg_saturation;
+	
 	public static ForgeConfigSpec.IntValue chocolate_bar_hunger;
-	public static ForgeConfigSpec.IntValue chocolate_bar_saturation;
+	public static ForgeConfigSpec.DoubleValue chocolate_bar_saturation;
 	
 	public static ForgeConfigSpec.IntValue melon_chunk_hunger;
-	public static ForgeConfigSpec.IntValue melon_chunk_saturation;
+	public static ForgeConfigSpec.DoubleValue melon_chunk_saturation;
 	
 	public static ForgeConfigSpec.IntValue cactus_chunk_hunger;
-	public static ForgeConfigSpec.IntValue cactus_chunk_saturation;
+	public static ForgeConfigSpec.DoubleValue cactus_chunk_saturation;
 
 	public static ForgeConfigSpec.IntValue pumpkin_chunk_hunger;
-	public static ForgeConfigSpec.IntValue pumpkin_chunk_saturation;
+	public static ForgeConfigSpec.DoubleValue pumpkin_chunk_saturation;
 	
 	public static ForgeConfigSpec.IntValue apple_pie_hunger;
-	public static ForgeConfigSpec.IntValue apple_pie_saturation;
+	public static ForgeConfigSpec.DoubleValue apple_pie_saturation;
 	
 	public static ForgeConfigSpec.IntValue melon_pie_hunger;
-	public static ForgeConfigSpec.IntValue melon_pie_saturation;
+	public static ForgeConfigSpec.DoubleValue melon_pie_saturation;
 	
 	public static ForgeConfigSpec.IntValue berry_pie_hunger;
-	public static ForgeConfigSpec.IntValue berry_pie_saturation;
+	public static ForgeConfigSpec.DoubleValue berry_pie_saturation;
 	
 	public static ForgeConfigSpec.IntValue pumpkin_soup_hunger;
-	public static ForgeConfigSpec.IntValue pumpkin_soup_saturation;
+	public static ForgeConfigSpec.DoubleValue pumpkin_soup_saturation;
 	
 	public static ForgeConfigSpec.IntValue cactus_soup_hunger;
-	public static ForgeConfigSpec.IntValue cactus_soup_saturation;
+	public static ForgeConfigSpec.DoubleValue cactus_soup_saturation;
 	
 	public static ForgeConfigSpec.IntValue melon_soup_hunger;
-	public static ForgeConfigSpec.IntValue melon_soup_saturation;
+	public static ForgeConfigSpec.DoubleValue melon_soup_saturation;
 
 	public static ForgeConfigSpec.IntValue carrot_soup_hunger;
-	public static ForgeConfigSpec.IntValue carrot_soup_saturation;
+	public static ForgeConfigSpec.DoubleValue carrot_soup_saturation;
 	
 	public static ForgeConfigSpec.IntValue super_petals_hunger;
-	public static ForgeConfigSpec.IntValue super_petals_saturation;
+	public static ForgeConfigSpec.DoubleValue super_petals_saturation;
 	
 	public static ForgeConfigSpec.IntValue energy_drink_hunger;
-	public static ForgeConfigSpec.IntValue energy_drink_saturation;
+	public static ForgeConfigSpec.DoubleValue energy_drink_saturation;
 	
 	public static ForgeConfigSpec.IntValue shake_hunger;
-	public static ForgeConfigSpec.IntValue shake_saturation;
+	public static ForgeConfigSpec.DoubleValue shake_saturation;
 	
 	public static ForgeConfigSpec.IntValue smoothie_hunger;
-	public static ForgeConfigSpec.IntValue smoothie_saturation;
+	public static ForgeConfigSpec.DoubleValue smoothie_saturation;
 	
 	public static ForgeConfigSpec.IntValue energyBar_hunger;
-	public static ForgeConfigSpec.IntValue energyBar_saturation;
+	public static ForgeConfigSpec.DoubleValue energyBar_saturation;
 	
 	public static ForgeConfigSpec.IntValue superFoodBar_hunger;
-	public static ForgeConfigSpec.IntValue superFoodBar_saturation;
+	public static ForgeConfigSpec.DoubleValue superFoodBar_saturation;
 	
 	public static ForgeConfigSpec.Builder server_output;
 	
@@ -70,7 +73,7 @@ public class VeggieWayConfig
 					.defineInRange("melon_chunk_hunger", 2, 0, 30);
 			melon_chunk_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("melon_chunk_saturation", 1, 0, 10);
+					.defineInRange("melon_chunk_saturation", 0.2, 0.0, 10.0);
 			server_output.pop();
 		
 			server_output = server.comment("Chunks").push("Cactus Chunk");
@@ -79,7 +82,7 @@ public class VeggieWayConfig
 					.defineInRange("cactus_chunk_hunger", 2, 0, 30);
 			cactus_chunk_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("cactus_chunk_saturation", 1, 0, 10);
+					.defineInRange("cactus_chunk_saturation", 0.2, 0, 10);
 			server_output.pop();
 		
 			server_output = server.comment("Chunks").push("Pumpkin Chunk");
@@ -88,7 +91,7 @@ public class VeggieWayConfig
 					.defineInRange("pumpkin_chunk_hunger", 2, 0, 30);
 			pumpkin_chunk_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("pumpkin_chunk_saturation", 1, 0, 10);
+					.defineInRange("pumpkin_chunk_saturation", 0.2, 0, 10);
 			server_output.pop();
 		
 		server_output.pop();		
@@ -102,7 +105,7 @@ public class VeggieWayConfig
 					.defineInRange("apple_pie_hunger", 7, 0, 30);
 			apple_pie_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("apple_pie_saturation", 2, 0, 10);
+					.defineInRange("apple_pie_saturation", 0.2, 0, 10);
 			server_output.pop();
 		
 		
@@ -112,7 +115,7 @@ public class VeggieWayConfig
 					.defineInRange("melon_pie_hunger", 7, 0, 30);
 			melon_pie_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("melon_pie_saturation", 2, 0, 10);
+					.defineInRange("melon_pie_saturation", 0.2, 0, 10);
 			server_output.pop();
 			
 		
@@ -122,7 +125,7 @@ public class VeggieWayConfig
 					.defineInRange("berry_pie_hunger", 7, 0, 30);
 			berry_pie_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("berry_pie_saturation", 2, 0, 10);		
+					.defineInRange("berry_pie_saturation", 0.2, 0, 10);		
 			server_output.pop();
 		
 		server_output.pop();
@@ -136,7 +139,7 @@ public class VeggieWayConfig
 					.defineInRange("pumpkin_soup_hunger", 6, 0, 30);
 			pumpkin_soup_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("pumpkin_soup_saturation", 1, 0, 10);
+					.defineInRange("pumpkin_soup_saturation", 0.2, 0, 10);
 			server_output.pop();
 	
 			
@@ -146,7 +149,7 @@ public class VeggieWayConfig
 					.defineInRange("melon_soup_hunger", 6, 0, 30);
 			melon_soup_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("melon_soup_saturation", 1, 0, 10);
+					.defineInRange("melon_soup_saturation", 0.2, 0, 10);
 			server_output.pop();
 			
 			
@@ -156,7 +159,7 @@ public class VeggieWayConfig
 					.defineInRange("cactus_soup_hunger", 6, 0, 30);
 			cactus_soup_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("cactus_soup_saturation", 1, 0, 10);
+					.defineInRange("cactus_soup_saturation", 0.2, 0, 10);
 			server_output.pop();
 	
 			
@@ -166,7 +169,7 @@ public class VeggieWayConfig
 					.defineInRange("carrot_soup_hunger", 6, 0, 30);
 			carrot_soup_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("carrot_soup_saturation", 1, 0, 10);
+					.defineInRange("carrot_soup_saturation", 0.2, 0, 10);
 			server_output.pop();
 		
 		server_output.pop();
@@ -180,7 +183,7 @@ public class VeggieWayConfig
 					.defineInRange("super_petals_hunger", 6, 0, 30);
 			super_petals_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("super_petals_saturation", 9, 0, 10);
+					.defineInRange("super_petals_saturation", 0.8, 0, 10);
 			server_output.pop();
 		
 			
@@ -190,7 +193,7 @@ public class VeggieWayConfig
 					.defineInRange("energy_drink_hunger", 9, 0, 30);
 			energy_drink_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("energy_drink_saturation", 2, 0, 10);
+					.defineInRange("energy_drink_saturation", 0.2, 0, 10);
 			server_output.pop();
 		
 		
@@ -200,7 +203,7 @@ public class VeggieWayConfig
 					.defineInRange("shake_hunger", 10, 0, 30);
 			shake_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("shake_saturation", 3, 0, 10);
+					.defineInRange("shake_saturation", 0.3, 0, 10);
 			server_output.pop();
 		
 		
@@ -210,7 +213,7 @@ public class VeggieWayConfig
 					.defineInRange("smoothie_hunger", 10, 0, 30);
 			smoothie_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("smoothie_saturation", 3, 0, 10);
+					.defineInRange("smoothie_saturation", 0.3, 0, 10);
 			server_output.pop();
 		
 		
@@ -220,14 +223,14 @@ public class VeggieWayConfig
 					.defineInRange("energyBar_hunger", 13, 0, 30);
 			energyBar_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("energyBar_saturation", 4, 0, 10);	
+					.defineInRange("energyBar_saturation", 0.4, 0, 10);	
 			
 			superFoodBar_hunger = server
 					.comment("Hunger value:")
 					.defineInRange("superFoodBar_hunger", 13, 0, 30);
 			superFoodBar_saturation = server
 					.comment("Saturation value:")
-					.defineInRange("superFoodBar_saturation", 4, 0, 10);
+					.defineInRange("superFoodBar_saturation", 0.4, 0, 10);
 			server_output.pop();
 		
 		
@@ -236,15 +239,24 @@ public class VeggieWayConfig
 		
 	server_output = server.comment("Misc Hunger and Saturation Values").push("Misc");
 		
-		server_output = server.comment("Misc").push("Apple Pie");
+		server_output = server.comment("Misc").push("Chocolate Bar");
 		chocolate_bar_hunger = server
 				.comment("Hunger value:")
 				.defineInRange("chocolate_bar_hunger", 7, 0, 30);
 		chocolate_bar_saturation = server
 				.comment("Saturation value:")
-				.defineInRange("chocolate_bar_saturation", 2, 0, 10);
+				.defineInRange("chocolate_bar_saturation", 0.2, 0, 10);
 		server_output.pop();
-	
+
+		server_output = server.comment("Misc").push("Fried Egg");
+		fried_egg_hunger = server
+				.comment("Hunger value:")
+				.defineInRange("fried_egg_hunger", 7, 0, 30);
+		fried_egg_saturation = server
+				.comment("Saturation value:")
+				.defineInRange("fried_egg_saturation", 0.2, 0, 10);
+		server_output.pop();
+		
 	server_output.pop();
 		
 	}

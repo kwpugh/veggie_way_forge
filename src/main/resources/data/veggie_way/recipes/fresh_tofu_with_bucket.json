@@ -2,7 +2,7 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "veggie_way:large_pot"
+            "item": "minecraft:water_bucket"
         },
         {
             "item": "veggie_way:soybean"

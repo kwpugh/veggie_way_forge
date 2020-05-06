@@ -8,6 +8,9 @@
 	"item.veggie_way.lentil_plant": "Lentil Plant",
 	"block.veggie_way.lentil_plant": "Lentil Plant",
 	
+	"item.veggie_way.corn_plant": "Corn Plant",
+	"block.veggie_way.corn_plant": "Corn Plant",
+	
  	"item.veggie_way.hand_rake": "Handhark",
 	"item.veggie_way.hand_rake.line1": "Gebruikt op zand om droogmiddel te krijgen",
  	"item.veggie_way.hand_rake.line2": "en op gras / vuilblokken om quinoa en sojabonen te krijgen",
@@ -20,9 +23,6 @@
 	
 	"item.veggie_way.hand_large_bamboo_sheet": "Large Bamboo Sheet",
 	"item.veggie_way.hand_large_bamboo_sheet.line1": "Can be smelted and used as leather",
-	
-	"item.veggie_way.large_pot": "Large Pot",
-	"item.veggie_way.large_pot.line1": "Used to cook food",
 	
 	"item.veggie_way.fresh_tofu": "Fresh Tofu",
 	"item.veggie_way.cooked_tofu": "Cooked Tofu",
@@ -58,6 +58,9 @@
 	"item.veggie_way.lentil_seeds": "Linze zaden",	
  	"item.veggie_way.lentil_seeds.line1": "Plant op landbouwgrond om linzenplanten te laten groeien",
 
+	"item.veggie_way.corn_seeds": "Corn Seeds",	
+	"item.veggie_way.corn_seeds.line1": "Plant on Farmland to grow Corn Plant",
+	
  	"item.veggie_way.quinoa": "Rode Quinoa",
  	"item.veggie_way.quinoa.line1": "Een geweldige bron van eiwitten",
 
@@ -66,6 +69,9 @@
 
  	"item.veggie_way.lentil": "Linze",
  	"item.veggie_way.lentil.line1": "Een geweldige bron van eiwitten",
+	
+	"item.veggie_way.corn": "Corn",
+	"item.veggie_way.corn.line1": "A wonderful source of carbs",
 	
  	"item.veggie_way.apple_pie": "Appeltaart",
  	"item.veggie_way.melon_pie": "Watermeloentaart",

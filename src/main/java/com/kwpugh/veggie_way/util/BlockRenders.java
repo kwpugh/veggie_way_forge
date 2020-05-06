@@ -13,5 +13,6 @@ public class BlockRenders
 		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_QUINOA.get(), cutoutMipped);
 		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_SOYBEAN.get(), cutoutMipped);
 		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_LENTIL.get(), cutoutMipped);
+		RenderTypeLookup.setRenderLayer(BlockInit.PLANT_CORN.get(), cutoutMipped);
 	}	
 }
