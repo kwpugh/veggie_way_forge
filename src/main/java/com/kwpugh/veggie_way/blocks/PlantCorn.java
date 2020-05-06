@@ -45,6 +45,6 @@ public class PlantCorn extends CropsBlock
 	public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 		super.addInformation(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslationTextComponent("block.veggie_way.lentil_plant").applyTextStyle(TextFormatting.GREEN)));
+		tooltip.add((new TranslationTextComponent("block.veggie_way.corn_plant").applyTextStyle(TextFormatting.GREEN)));
 	}
 }
