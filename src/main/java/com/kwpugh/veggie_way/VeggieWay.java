@@ -29,36 +29,36 @@ import net.minecraftforge.fml.loading.FMLPaths;
 public class VeggieWay
 {
 	public static final String modid = "veggie_way";
-	public static final Logger logger = LogManager.getLogger(modid);	
+	public static final Logger logger = LogManager.getLogger(modid);
 	public static final ItemGroup veggie_way = new GroupVeggieWay();
 
     public VeggieWay()
     {
     	Config.loadConfig(Config.config, FMLPaths.CONFIGDIR.get().resolve("veggie_way.toml").toString());
-    	
+
     	BlockInit.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     	ItemInit.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-   
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event)
     {
     	Compostables.setup();
-    	
+
         logger.info("VeggieWay common setup");
     }
 
     private void clientSetup(final FMLClientSetupEvent event)
     {
     	BlockRenders.defineRenders();
-		
-    	logger.info("VeggieWay client setup", event.getMinecraftSupplier().get().gameSettings);
+
+    	logger.info("VeggieWay client setup");
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
