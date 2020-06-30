@@ -26,7 +26,7 @@ public class ItemEnergyPowder extends Item
 	public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 		super.addInformation(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslationTextComponent("item.veggie_way.energy_powder.line1").applyTextStyle(TextFormatting.GREEN)));
-		tooltip.add((new TranslationTextComponent("item.veggie_way.energy_powder.line2").applyTextStyle(TextFormatting.GREEN)));
+		tooltip.add((new TranslationTextComponent("item.veggie_way.energy_powder.line1").func_240699_a_(TextFormatting.GREEN)));
+		tooltip.add((new TranslationTextComponent("item.veggie_way.energy_powder.line2").func_240699_a_(TextFormatting.GREEN)));
 	}
 }

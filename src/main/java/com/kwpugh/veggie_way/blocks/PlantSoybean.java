@@ -45,6 +45,6 @@ public class PlantSoybean extends CropsBlock
 	public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
 	{
 		super.addInformation(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslationTextComponent("block.veggie_way.soybean_plant").applyTextStyle(TextFormatting.GREEN)));
+		tooltip.add((new TranslationTextComponent("block.veggie_way.soybean_plant").func_240699_a_(TextFormatting.GREEN)));
 	}
 }
