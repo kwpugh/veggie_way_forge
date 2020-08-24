@@ -1,14 +1,15 @@
 modLoader="javafml" #mandatory
 
-loaderVersion="[32,)" #mandatory (24 is current forge version)
+loaderVersion="[33,)" #mandatory (24 is current forge version)
 
 credits="Thanks to Udemy for great Java courses." #optional
 
 authors="kwpugh" #optional
+license="MIT"
 
 [[mods]] #mandatory
 modId="veggie_way" #mandatory
-version="2.2.0" #mandatory
+version="2.2.1" #mandatory
 displayName="The Veggie Way" #mandatory
 description='''
 The veggie way to nutritious food without killing
@@ -18,7 +19,7 @@ The veggie way to nutritious food without killing
 [[dependencies.veggie_way]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[32,)" #mandatory
+    versionRange="[33,)" #mandatory
     ordering="NONE"
     side="BOTH"
 
@@ -27,6 +28,6 @@ The veggie way to nutritious food without killing
 [[dependencies.veggie_way]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16, 1.16.1]"
+    versionRange="[1.16.2]"
     ordering="NONE"
     side="BOTH"
