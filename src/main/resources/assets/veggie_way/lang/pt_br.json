@@ -1,79 +1,79 @@
 {
-	"item.veggie_way.quinoa_plant": "Quinoa Plant",
-	"block.veggie_way.quinoa_plant": "Quinoa Plant",
+	"item.veggie_way.quinoa_plant": "Pé de Quinoa",
+	"block.veggie_way.quinoa_plant": "Pé de Quinoa",
 	
-	"item.veggie_way.soybean_plant": "Soybean Plant",
-	"block.veggie_way.soybean_plant": "Soybean Plant",
+	"item.veggie_way.soybean_plant": "Pé de Soja",
+	"block.veggie_way.soybean_plant": "Pé de Soja",
 	
-	"item.veggie_way.lentil_plant": "Lentil Plant",
-	"block.veggie_way.lentil_plant": "Lentil Plant",
+	"item.veggie_way.lentil_plant": "Pé de Lentilha",
+	"block.veggie_way.lentil_plant": "Pé de Lentilha",
 	
-	"item.veggie_way.corn_plant": "Corn Plant",
-	"block.veggie_way.corn_plant": "Corn Plant",
+	"item.veggie_way.corn_plant": "Pé de Milho",
+	"block.veggie_way.corn_plant": "Pé de Milho",
 		
 	"item.veggie_way.hand_rake": "Ancinho",
 	"item.veggie_way.hand_rake.line1": "Usado na Areia para obter o Agente de Secagem",
-	"item.veggie_way.hand_rake.line2": "and on grass/dirt blocks to get quinoa and soybean seeds",
+	"item.veggie_way.hand_rake.line2": "e em Blocos de Grama/Terra para obter sementes de Quinoa e Soja",
 	
-	"item.veggie_way.hand_scraper": "Hand Scraper",
-	"item.veggie_way.hand_scraper.line1": "Used in a crafting table to scrape bamboo into sheets for leather",
+	"item.veggie_way.hand_scraper": "Espatula de Raspagem",
+	"item.veggie_way.hand_scraper.line1": "Usado em uma Bancada de Trabalho para raspar bambu em folhas de couro",
 	
-	"item.veggie_way.hand_bamboo_sheet": "Bamboo Sheet",
-	"item.veggie_way.hand_bamboo_sheet.line1": "Used to craft Large Bamboo Sheets",
+	"item.veggie_way.hand_bamboo_sheet": "Folha de Bambu",
+	"item.veggie_way.hand_bamboo_sheet.line1": "Usado para criar Folha de Bambu Grande",
 	
-	"item.veggie_way.hand_large_bamboo_sheet": "Large Bamboo Sheet",
-	"item.veggie_way.hand_large_bamboo_sheet.line1": "Can be smelted and used as leather",
+	"item.veggie_way.hand_large_bamboo_sheet": "Folha de Bambu Grande",
+	"item.veggie_way.hand_large_bamboo_sheet.line1": "Pode ser assado e usado como couro",
 	
-	"item.veggie_way.fresh_tofu": "Fresh Tofu",
-	"item.veggie_way.cooked_tofu": "Cooked Tofu",
+	"item.veggie_way.fresh_tofu": "Tofu Fresco",
+	"item.veggie_way.cooked_tofu": "Tofu Cozido",
 	
-	"item.veggie_way.knife": "Knife",
-	"item.veggie_way.knife.line1": "Used on a crafting table to cut things",
+	"item.veggie_way.knife": "Faca",
+	"item.veggie_way.knife.line1": "Usado em uma Bancada de Trabalho para cortar coisas",
 
-	"item.veggie_way.mill": "Mill",		
-	"item.veggie_way.flour": "Flour",
+	"item.veggie_way.mill": "Moinho",		
+	"item.veggie_way.flour": "Farinha",
 	
-	"item.veggie_way.dough": "Dough",
-	"item.veggie_way.dough.line1": "Bake in a furnace to get bread",
+	"item.veggie_way.dough": "Massa",
+	"item.veggie_way.dough.line1": "Asse em uma Fornalha para obter pão",
 	
-	"item.veggie_way.chocolate_bar": "Chocolate Bar",
+	"item.veggie_way.chocolate_bar": "Barra de Chocolate",
 	
-	"item.veggie_way.fried_egg": "Fried Egg",
+	"item.veggie_way.fried_egg": "Ovo Frito",
 	
-	"item.veggie_way.cactus_chunk": "Cactus Chunk",
-	"item.veggie_way.pumpkin_chunk": "Pumpkin Chunk",
-	"item.veggie_way.melon_chunk": "Melon Chunk",
-	"item.veggie_way.chunk.line1": "An edible food",	
+	"item.veggie_way.cactus_chunk": "Pedaço de Cacto",
+	"item.veggie_way.pumpkin_chunk": "Pedaço de Abóbora",
+	"item.veggie_way.melon_chunk": "Pedaço de Melancia",
+	"item.veggie_way.chunk.line1": "Um alimento comestível",	
 	
 	"item.veggie_way.drying_agent": "Agente de Secagem",
-	"item.veggie_way.drying_agent.line1": "Usado para secar materiais usados ​​em outros processos",
+	"item.veggie_way.drying_agent.line1": "Usado para secar materiais usados em outros processos",
 	
 	"item.veggie_way.bamboo_sheet": "Folha de Bambu",
 	"item.veggie_way.large_bamboo_sheet": "Folha Grande de Bambu",
 	
 	"item.veggie_way.quinoa_seeds": "Sementes de Quinoa Vermelha",	
-	"item.veggie_way.quinoa_seeds.line1": "Plantar em Terra Arada para cultivar Planta de Quinoa",
+	"item.veggie_way.quinoa_seeds.line1": "Plantar em Terra Arada para cultivar Pé de Quinoa",
 	
-	"item.veggie_way.soybean_seeds": "Soybean Seeds",	
-	"item.veggie_way.soybean_seeds.line1": "Plant on Farmland to grow Soybean Plant",
+	"item.veggie_way.soybean_seeds": "Sementes de Soja",	
+	"item.veggie_way.soybean_seeds.line1": "Plantar em Terra Arrada para cultivar Pé de Soja",
 	
-	"item.veggie_way.lentil_seeds": "Lentil Seeds",	
-	"item.veggie_way.lentil_seeds.line1": "Plant on Farmland to grow Lentil Plant",
+	"item.veggie_way.lentil_seeds": "Sementes de Lentilha",	
+	"item.veggie_way.lentil_seeds.line1": "Plantar em Terra Arrada para cultivar Pé de Lentilha",
 	
-	"item.veggie_way.corn_seeds": "Corn Seeds",	
-	"item.veggie_way.corn_seeds.line1": "Plant on Farmland to grow Corn Plant",
+	"item.veggie_way.corn_seeds": "Sementes de Milho",	
+	"item.veggie_way.corn_seeds.line1": "Plantar em Terra Arrada para crescer Pé de Milho",
 	
 	"item.veggie_way.quinoa": "Quinoa Vermelha",
 	"item.veggie_way.quinoa.line1": "Uma maravilhosa fonte de proteína",
 	
-	"item.veggie_way.soybean": "Soybean",
-	"item.veggie_way.soybean.line1": "A wonderful source of protein",
+	"item.veggie_way.soybean": "Soja",
+	"item.veggie_way.soybean.line1": "Uma maravilhosa fonte de proteína",
 	
-	"item.veggie_way.lentil": "Lentil",
-	"item.veggie_way.lentil.line1": "A wonderful source of protein",
+	"item.veggie_way.lentil": "Lentilha",
+	"item.veggie_way.lentil.line1": "Uma maravilhosa fonte de proteína",
 	
-	"item.veggie_way.corn": "Corn",
-	"item.veggie_way.corn.line1": "A wonderful source of carbs",
+	"item.veggie_way.corn": "Milho",
+	"item.veggie_way.corn.line1": "Uma maravilhosa fonte de carboidratos",
 	
 	"item.veggie_way.apple_pie": "Torta de Maçã",
 	"item.veggie_way.melon_pie": "Torta de Melancia",
@@ -133,5 +133,5 @@
 	"item.veggie_way.superfood_bar": "Barra de Superalimento",
 	"item.veggie_way.superfood_bar.line1": "Uma refeição muito saudável",
 		
-	"itemGroup.veggie_way": "The Veggie Way (O Caminho Vegetariano)"
+	"itemGroup.veggie_way": "The Veggie Way"
 }
