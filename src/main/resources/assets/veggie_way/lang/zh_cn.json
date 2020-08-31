@@ -8,27 +8,27 @@
  	 "item.veggie_way.lentil_plant": "扁豆作物",
 	 "block.veggie_way.lentil_plant": "扁豆作物",
 	
-	"item.veggie_way.corn_plant": "Corn Plant",
-	"block.veggie_way.corn_plant": "Corn Plant",
-	
+    "item.veggie_way.corn_plant": "玉米作物",
+    "block.veggie_way.corn_plant": "玉米作物",
+   
 	"item.veggie_way.hand_rake": "手耙",
-   "item.veggie_way.hand_rake.line1": "挖掘沙子来获得干燥剂",
-   "item.veggie_way.hand_rake.line2": "挖掘草方块和泥土来获得藜麦、大豆和扁豆种子",
+    "item.veggie_way.hand_rake.line1": "挖掘沙子来获得干燥剂",
+    "item.veggie_way.hand_rake.line2": "挖掘草方块和泥土来获得藜麦、大豆和扁豆种子",
 
-	"item.veggie_way.hand_scraper": "Hand Scraper",
-	"item.veggie_way.hand_scraper.line1": "Used in a crafting table to scrape bamboo into sheets for leather",
+    "item.veggie_way.hand_scraper": "手持刮刀",
+    "item.veggie_way.hand_scraper.line1": "在工作台使用，用来将竹子刮成革",
+   
+    "item.veggie_way.hand_bamboo_sheet": "竹纸",
+    "item.veggie_way.hand_bamboo_sheet.line1": "在工作台合成厚竹纸",
+    
+    "item.veggie_way.hand_large_bamboo_sheet": "厚竹纸",
+    "item.veggie_way.hand_large_bamboo_sheet.line1": "可以烧炼后制成皮革",
+   
+    "item.veggie_way.fresh_tofu": "新鲜豆腐",
+    "item.veggie_way.cooked_tofu": "煮豆腐",
 	
-	"item.veggie_way.hand_bamboo_sheet": "Bamboo Sheet",
-	"item.veggie_way.hand_bamboo_sheet.line1": "Used to craft Large Bamboo Sheets",
-	
-	"item.veggie_way.hand_large_bamboo_sheet": "Large Bamboo Sheet",
-	"item.veggie_way.hand_large_bamboo_sheet.line1": "Can be smelted and used as leather",
-
-	"item.veggie_way.fresh_tofu": "Fresh Tofu",
-	"item.veggie_way.cooked_tofu": "Cooked Tofu",
-	
-  "item.veggie_way.knife": "厨刀",
-   "item.veggie_way.knife.line1": "在工作台中用来切食材",
+    "item.veggie_way.knife": "厨刀",
+    "item.veggie_way.knife.line1": "在工作台中用来切食材",
 
    "item.veggie_way.mill": "磨石",
    "item.veggie_way.mill.line1": "用于将小麦磨成面粉",
@@ -38,7 +38,7 @@
 
    "item.veggie_way.chocolate_bar": "巧克力棒",
 
-	"item.veggie_way.fried_egg": "Fried Egg",
+   "item.veggie_way.fried_egg": "煎蛋",
 
    "item.veggie_way.cactus_chunk": "小块仙人掌",
    "item.veggie_way.pumpkin_chunk": "小块南瓜",
