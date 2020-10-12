@@ -73,16 +73,16 @@ public class ItemInit
 	public static final RegistryObject<Item> SUPER_PETALS = ITEMS.register("super_petals", () -> new ItemSuperPetals(new Item.Properties().food(FoodList.super_petals).group(VeggieWay.veggie_way)));
 
 	public static final RegistryObject<Item> QUINOA_SEEDS = ITEMS.register("quinoa_seeds", () -> new ItemSeedQuinoa(BlockInit.PLANT_QUINOA.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
-	public static final RegistryObject<Item> QUINOA = ITEMS.register("quinoa", () -> new ItemCropQuinoa(new Item.Properties().group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> QUINOA = ITEMS.register("quinoa", () -> new ItemCropQuinoa(new Item.Properties().food(FoodList.quinoa).group(VeggieWay.veggie_way)));
 
 	public static final RegistryObject<Item> SOYBEAN_SEEDS = ITEMS.register("soybean_seeds", () -> new ItemSeedSoybean(BlockInit.PLANT_SOYBEAN.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
-	public static final RegistryObject<Item> SOYBEAN = ITEMS.register("soybean", () -> new ItemCropSoybean(new Item.Properties().group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> SOYBEAN = ITEMS.register("soybean", () -> new ItemCropSoybean(new Item.Properties().food(FoodList.soybean).group(VeggieWay.veggie_way)));
 
 	public static final RegistryObject<Item> LENTIL_SEEDS = ITEMS.register("lentil_seeds", () -> new ItemSeedLentil(BlockInit.PLANT_LENTIL.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
-	public static final RegistryObject<Item> LENTIL = ITEMS.register("lentil", () -> new ItemCropLentil(new Item.Properties().group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> LENTIL = ITEMS.register("lentil", () -> new ItemCropLentil(new Item.Properties().food(FoodList.lentil).group(VeggieWay.veggie_way)));
 
 	public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds", () -> new ItemSeedCorn(BlockInit.PLANT_CORN.get(), (new Item.Properties().group(VeggieWay.veggie_way))));
-	public static final RegistryObject<Item> CORN = ITEMS.register("corn", () -> new ItemCropCorn(new Item.Properties().group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> CORN = ITEMS.register("corn", () -> new ItemCropCorn(new Item.Properties().food(FoodList.corn).group(VeggieWay.veggie_way)));
 
 	public static final RegistryObject<Item> DRYING_AGENT = ITEMS.register("drying_agent", () -> new ItemDryingAgent(new Item.Properties().group(VeggieWay.veggie_way)));
 

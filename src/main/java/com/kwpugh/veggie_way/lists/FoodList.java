@@ -6,6 +6,9 @@ import net.minecraft.item.Food;
 
 public class FoodList 
 {
+	static int cornHunger = VeggieWayConfig.crop_hunger.get();
+	static double cornSaturation = VeggieWayConfig.crop_saturation.get();
+	
 	static int friedEggHunger = VeggieWayConfig.fried_egg_hunger.get();
 	static double friedEggSaturation = VeggieWayConfig.fried_egg_saturation.get();
 	
@@ -65,6 +68,11 @@ public class FoodList
 	public static Food cactus_chunk = (new Food.Builder()).hunger(cactusChunkHunger).saturation((float)cactusChunkSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food pumpkin_chunk = (new Food.Builder()).hunger(pumpkinChunkHunger).saturation((float)pumpkinChunkSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food melon_chunk = (new Food.Builder()).hunger(melonChunkHunger).saturation((float) melonChunkSaturation).setAlwaysEdible().fastToEat().build();
+	
+	public static Food soybean = (new Food.Builder()).hunger(cornHunger).saturation((float) cornSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food quinoa = (new Food.Builder()).hunger(cornHunger).saturation((float) cornSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food lentil = (new Food.Builder()).hunger(cornHunger).saturation((float) cornSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food corn = (new Food.Builder()).hunger(cornHunger).saturation((float) cornSaturation).setAlwaysEdible().fastToEat().build();
 	
 	public static Food apple_pie = (new Food.Builder()).hunger(applePieHunger).saturation((float)applePieSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food melon_pie = (new Food.Builder()).hunger(melonPieHunger).saturation((float)melonPieSaturation).setAlwaysEdible().fastToEat().build();

@@ -1,11 +1,12 @@
 package com.kwpugh.veggie_way.util;
 
-
-
 import net.minecraftforge.common.ForgeConfigSpec;
 
 public class VeggieWayConfig 
 {
+	public static ForgeConfigSpec.IntValue crop_hunger;
+	public static ForgeConfigSpec.DoubleValue crop_saturation;
+	
 	public static ForgeConfigSpec.IntValue fried_egg_hunger;
 	public static ForgeConfigSpec.DoubleValue fried_egg_saturation;
 	
@@ -65,6 +66,20 @@ public class VeggieWayConfig
 	
 	public static void init(ForgeConfigSpec.Builder server)
 	{
+		server_output = server.comment("Crop Hunger and Saturation Values").push("Crops");
+			
+			server_output = server.comment("Crops").push("CornSoybeanQuinoaLentil");
+			crop_hunger = server
+					.comment("Hunger value:")
+					.defineInRange("crop_hunger", 4, 0, 30);
+			crop_saturation = server
+					.comment("Saturation value:")
+					.defineInRange("crop_saturation", 0.2, 0.0, 10.0);
+			server_output.pop();
+		
+		server_output.pop();
+	
+	
 		server_output = server.comment("Chunk Hunger and Saturation Values").push("Chunks");
 		
 			server_output = server.comment("Chunks").push("Melon Chunk");
