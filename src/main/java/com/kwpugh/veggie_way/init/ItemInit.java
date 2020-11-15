@@ -52,6 +52,9 @@ public class ItemInit
 	public static final RegistryObject<Item> COOKED_TOFU = ITEMS.register("cooked_tofu", () -> new Item(new Item.Properties().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> FRIED_EGG = ITEMS.register("fried_egg", () -> new Item(new Item.Properties().food(FoodList.fried_egg).group(VeggieWay.veggie_way)));
 
+	public static final RegistryObject<Item> COOKED_CARROT = ITEMS.register("cooked_carrot", () -> new Item(new Item.Properties().food(FoodList.cooked_carrot).group(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> COOKED_BEETROOT = ITEMS.register("cooked_beetroot", () -> new Item(new Item.Properties().food(FoodList.cooked_beetroot).group(VeggieWay.veggie_way)));
+	
 	public static final RegistryObject<Item> MILL = ITEMS.register("mill", () -> new ItemMill(new Item.Properties().maxStackSize(1).maxDamage(512).setNoRepair().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new ItemFlour(new Item.Properties().group(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> DOUGH = ITEMS.register("dough", () -> new ItemDough(new Item.Properties().group(VeggieWay.veggie_way)));

@@ -8,6 +8,12 @@ public class FoodList
 {
 	static int cornHunger = VeggieWayConfig.crop_hunger.get();
 	static double cornSaturation = VeggieWayConfig.crop_saturation.get();
+
+	static int cookedCarrotHunger = VeggieWayConfig.cooked_carrot_hunger.get();
+	static double cookedCarrotSaturation = VeggieWayConfig.cooked_carrot_saturation.get();
+	
+	static int cookedBeetrootHunger = VeggieWayConfig.cooked_beetroot_hunger.get();
+	static double cookedBeetrootSaturation = VeggieWayConfig.cooked_beetroot_saturation.get();
 	
 	static int friedEggHunger = VeggieWayConfig.fried_egg_hunger.get();
 	static double friedEggSaturation = VeggieWayConfig.fried_egg_saturation.get();
@@ -68,6 +74,9 @@ public class FoodList
 	public static Food cactus_chunk = (new Food.Builder()).hunger(cactusChunkHunger).saturation((float)cactusChunkSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food pumpkin_chunk = (new Food.Builder()).hunger(pumpkinChunkHunger).saturation((float)pumpkinChunkSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food melon_chunk = (new Food.Builder()).hunger(melonChunkHunger).saturation((float) melonChunkSaturation).setAlwaysEdible().fastToEat().build();
+
+	public static Food cooked_carrot = (new Food.Builder()).hunger(cookedCarrotHunger).saturation((float) cookedCarrotSaturation).setAlwaysEdible().fastToEat().build();
+	public static Food cooked_beetroot= (new Food.Builder()).hunger(cookedBeetrootHunger).saturation((float) cookedBeetrootSaturation).setAlwaysEdible().fastToEat().build();
 	
 	public static Food soybean = (new Food.Builder()).hunger(cornHunger).saturation((float) cornSaturation).setAlwaysEdible().fastToEat().build();
 	public static Food quinoa = (new Food.Builder()).hunger(cornHunger).saturation((float) cornSaturation).setAlwaysEdible().fastToEat().build();

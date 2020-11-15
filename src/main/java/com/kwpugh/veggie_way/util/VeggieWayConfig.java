@@ -6,6 +6,12 @@ public class VeggieWayConfig
 {
 	public static ForgeConfigSpec.IntValue crop_hunger;
 	public static ForgeConfigSpec.DoubleValue crop_saturation;
+
+	public static ForgeConfigSpec.IntValue cooked_carrot_hunger;
+	public static ForgeConfigSpec.DoubleValue cooked_carrot_saturation;
+	
+	public static ForgeConfigSpec.IntValue cooked_beetroot_hunger;
+	public static ForgeConfigSpec.DoubleValue cooked_beetroot_saturation;
 	
 	public static ForgeConfigSpec.IntValue fried_egg_hunger;
 	public static ForgeConfigSpec.DoubleValue fried_egg_saturation;
@@ -78,6 +84,29 @@ public class VeggieWayConfig
 			server_output.pop();
 		
 		server_output.pop();
+	
+		
+		
+		server_output = server.comment("Cooked Carrot & Beetroot Hunger and Saturation Values").push("Cooked");
+		
+			server_output = server.comment("Cooked").push("Cooked Carrot & Beetroot");		
+			cooked_carrot_hunger = server
+					.comment("Hunger value:")
+					.defineInRange("cooked_carrot_hunger", 4, 0, 30);
+			cooked_carrot_saturation = server
+					.comment("Saturation value:")
+					.defineInRange("cooked_carrot_saturation", 0.8, 0.0, 10.0);
+	
+			cooked_beetroot_hunger = server
+					.comment("Hunger value:")
+					.defineInRange("cooked_beetroot_hunger", 2, 0, 30);
+			cooked_beetroot_saturation = server
+					.comment("Saturation value:")
+					.defineInRange("cooked_beetroot_saturation", 0.8, 0.0, 10.0);
+			server_output.pop();
+		
+	    server_output.pop();
+	
 	
 	
 		server_output = server.comment("Chunk Hunger and Saturation Values").push("Chunks");
