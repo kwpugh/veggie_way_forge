@@ -1,10 +1,10 @@
 package com.kwpugh.veggie_way.group;
 
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 
-public class GroupVeggieWay extends ItemGroup
+public class GroupVeggieWay extends CreativeModeTab
 {
 	public GroupVeggieWay() 
 	{
@@ -12,7 +12,7 @@ public class GroupVeggieWay extends ItemGroup
 	}
 
 	@Override
-	public ItemStack createIcon() 
+	public ItemStack makeIcon() 
 	{
 		return new ItemStack(Items.CARROT);
 	}	

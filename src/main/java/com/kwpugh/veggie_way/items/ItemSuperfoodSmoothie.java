@@ -2,11 +2,13 @@ package com.kwpugh.veggie_way.items;
 
 import java.util.List;
 
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.world.World;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.Level;
+
+import net.minecraft.world.item.Item.Properties;
 
 public class ItemSuperfoodSmoothie extends Item
 {	
@@ -16,8 +18,8 @@ public class ItemSuperfoodSmoothie extends Item
 	}
 	
     @Override
-	public void addInformation(ItemStack stack, World world, List<ITextComponent> list, ITooltipFlag flag)
+	public void appendHoverText(ItemStack stack, Level world, List<Component> list, TooltipFlag flag)
 	{
-		super.addInformation(stack, world, list, flag);				
+		super.appendHoverText(stack, world, list, flag);				
 	} 
 }

@@ -1,7 +1,7 @@
 package com.kwpugh.veggie_way.init;
 
-import net.minecraft.block.ComposterBlock;
-import net.minecraft.util.IItemProvider;
+import net.minecraft.world.level.block.ComposterBlock;
+import net.minecraft.world.level.ItemLike;
 
 public class Compostables
 {
@@ -18,8 +18,8 @@ public class Compostables
 
     }
 
-    public static void registerCompostable(float chance, IItemProvider itemIn)
+    public static void registerCompostable(float chance, ItemLike itemIn)
     {
-        ComposterBlock.CHANCES.put(itemIn.asItem(), chance);
+        ComposterBlock.COMPOSTABLES.put(itemIn.asItem(), chance);
     }
 }

@@ -6,45 +6,47 @@ import javax.annotation.Nullable;
 
 import com.kwpugh.veggie_way.init.ItemInit;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.CropsBlock;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.IItemProvider;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraft.world.IBlockReader;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class PlantCorn extends CropsBlock
+import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+
+public class PlantCorn extends CropBlock
 { 
     public PlantCorn(String name, Properties builder)
     {
         super(builder);
-        this.setDefaultState(this.stateContainer.getBaseState().with(this.getAgeProperty(), Integer.valueOf(0)));
+        this.registerDefaultState(this.stateDefinition.any().setValue(this.getAgeProperty(), Integer.valueOf(0)));
     }
     
-    protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
+    protected boolean mayPlaceOn(BlockState state, BlockGetter worldIn, BlockPos pos) {
         return state.getBlock() == Blocks.FARMLAND;
     }
     
     @OnlyIn(Dist.CLIENT)
-    protected IItemProvider getSeedsItem() {
+    protected ItemLike getBaseSeedId() {
         return ItemInit.CORN_SEEDS.get();
     }
 
-    public ItemStack getItem(IBlockReader worldIn, BlockPos pos, BlockState state) {
-        return new ItemStack(this.getSeedsItem());
+    public ItemStack getCloneItemStack(BlockGetter worldIn, BlockPos pos, BlockState state) {
+        return new ItemStack(this.getBaseSeedId());
     }
     
 	@OnlyIn(Dist.CLIENT)
-	public void addInformation(ItemStack stack, @Nullable IBlockReader worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
+	public void appendHoverText(ItemStack stack, @Nullable BlockGetter worldIn, List<Component> tooltip, TooltipFlag flagIn)
 	{
-		super.addInformation(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslationTextComponent("block.veggie_way.corn_plant").mergeStyle(TextFormatting.GREEN)));
+		super.appendHoverText(stack, worldIn, tooltip, flagIn);
+		tooltip.add((new TranslatableComponent("block.veggie_way.corn_plant").withStyle(ChatFormatting.GREEN)));
 	}
 }

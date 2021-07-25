@@ -1,52 +1,57 @@
 package com.kwpugh.veggie_way.items;
 
 import java.util.List;
+import java.util.Random;
 
 import javax.annotation.Nullable;
 
 import com.kwpugh.veggie_way.init.ItemInit;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.item.ItemEntity;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.IItemTier;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ShovelItem;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraft.world.World;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
+import net.minecraft.world.item.Item.Properties;
+
 public class ItemHandRake extends ShovelItem
 {
-	public ItemHandRake(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder)
+	Random random = new Random();
+
+	public ItemHandRake(Tier tier, int attackDamageIn, float attackSpeedIn, Properties builder)
 	{
 		super(tier, attackDamageIn, attackSpeedIn, builder);
 	}
 
-	public boolean onBlockDestroyed(ItemStack stack, World worldIn, BlockState state, BlockPos pos, LivingEntity entityLiving)
+	public boolean mineBlock(ItemStack stack, Level worldIn, BlockState state, BlockPos pos, LivingEntity entityLiving)
 	{
 		Block block = state.getBlock();
 		
-		if (!worldIn.isRemote && state.getBlockHardness(worldIn, pos) != 0.0F)
+		if (!worldIn.isClientSide && state.getDestroySpeed(worldIn, pos) != 0.0F)
 		{
 			if(block == Blocks.SAND)
 			{
-		        stack.damageItem(1, entityLiving, (p_220038_0_) -> {
-		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
+		        stack.hurtAndBreak(1, entityLiving, (p_220038_0_) -> {
+		            p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);
 		         });
 
 		        double r = random.nextDouble();
 		        if (r <= 0.3)
 		        {
-		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.DRYING_AGENT.get(), 1)));
+		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.DRYING_AGENT.get(), 1)));
 		        }
 		        else if (r > 0.3)
 		        {
@@ -56,26 +61,26 @@ public class ItemHandRake extends ShovelItem
 			
 			if(block == Blocks.DIRT || block == Blocks.GRASS_BLOCK)
 			{
-				stack.damageItem(1, entityLiving, (p_220038_0_) -> {
-		            p_220038_0_.sendBreakAnimation(EquipmentSlotType.MAINHAND);
+				stack.hurtAndBreak(1, entityLiving, (p_220038_0_) -> {
+		            p_220038_0_.broadcastBreakEvent(EquipmentSlot.MAINHAND);
 		         });
 
 		        double r = random.nextDouble();
 		        if (r <= 0.1)
 		        {
-		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.QUINOA_SEEDS.get(), 1)));
+		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.QUINOA_SEEDS.get(), 1)));
 		        }
 		        else if (r > 0.1 && r <= 0.2)
 		        {
-		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.SOYBEAN_SEEDS.get(), 1)));
+		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.SOYBEAN_SEEDS.get(), 1)));
 		        }
 		        else if (r > 0.2 && r <= 0.3)
 		        {
-		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.LENTIL_SEEDS.get(), 1)));
+		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.LENTIL_SEEDS.get(), 1)));
 		        }
 		        else if (r > 0.3 && r <= 0.4)
 		        {
-		        	worldIn.addEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.CORN_SEEDS.get(), 1)));
+		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.CORN_SEEDS.get(), 1)));
 		        }
 		        else if (r > 0.4)
 		        {
@@ -88,11 +93,11 @@ public class ItemHandRake extends ShovelItem
 	}
 	
 	@OnlyIn(Dist.CLIENT)
-	public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
+	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn)
 	{
-		super.addInformation(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslationTextComponent("item.veggie_way.hand_rake.line1").mergeStyle(TextFormatting.GREEN)));
-		tooltip.add((new TranslationTextComponent("item.veggie_way.hand_rake.line2").mergeStyle(TextFormatting.GREEN)));
+		super.appendHoverText(stack, worldIn, tooltip, flagIn);
+		tooltip.add((new TranslatableComponent("item.veggie_way.hand_rake.line1").withStyle(ChatFormatting.GREEN)));
+		tooltip.add((new TranslatableComponent("item.veggie_way.hand_rake.line2").withStyle(ChatFormatting.GREEN)));
 	}
 }
 

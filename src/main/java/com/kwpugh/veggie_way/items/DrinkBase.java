@@ -1,13 +1,15 @@
 package com.kwpugh.veggie_way.items;
 
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.item.UseAction;
-import net.minecraft.world.World;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.items.ItemHandlerHelper;
+
+import net.minecraft.world.item.Item.Properties;
 
 public class DrinkBase extends Item
 {	
@@ -16,20 +18,20 @@ public class DrinkBase extends Item
 		super(properties);
 	}
 	   
-	public UseAction getUseAction(ItemStack stack)
+	public UseAnim getUseAnimation(ItemStack stack)
 	{
-		return UseAction.DRINK;
+		return UseAnim.DRINK;
 	}
 	
 	@Override
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving)
+    public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity entityLiving)
 	{
-        if(entityLiving instanceof PlayerEntity)
+        if(entityLiving instanceof Player)
         {
-        	PlayerEntity player = (PlayerEntity) entityLiving;
+        	Player player = (Player) entityLiving;
             ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(Items.GLASS_BOTTLE));
         }
-        return super.onItemUseFinish(stack, worldIn, entityLiving);
+        return super.finishUsingItem(stack, worldIn, entityLiving);
     }
 }
 

@@ -2,7 +2,7 @@ package com.kwpugh.veggie_way.lists;
 
 import com.kwpugh.veggie_way.util.VeggieWayConfig;
 
-import net.minecraft.item.Food;
+import net.minecraft.world.food.FoodProperties;
 
 public class FoodList 
 {
@@ -69,35 +69,35 @@ public class FoodList
 	static int superFoodHunger = VeggieWayConfig.superFoodBar_hunger.get();
 	static double superFoodSaturation = VeggieWayConfig.superFoodBar_saturation.get();
 	
-	public static Food fried_egg = (new Food.Builder()).hunger(friedEggHunger).saturation((float) friedEggSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food chocolate_bar = (new Food.Builder()).hunger(chocolateBarHunger).saturation((float)chocolateBarSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food cactus_chunk = (new Food.Builder()).hunger(cactusChunkHunger).saturation((float)cactusChunkSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food pumpkin_chunk = (new Food.Builder()).hunger(pumpkinChunkHunger).saturation((float)pumpkinChunkSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food melon_chunk = (new Food.Builder()).hunger(melonChunkHunger).saturation((float) melonChunkSaturation).setAlwaysEdible().fastToEat().build();
+	public static FoodProperties fried_egg = (new FoodProperties.Builder()).nutrition(friedEggHunger).saturationMod((float) friedEggSaturation).alwaysEat().fast().build();
+	public static FoodProperties chocolate_bar = (new FoodProperties.Builder()).nutrition(chocolateBarHunger).saturationMod((float)chocolateBarSaturation).alwaysEat().fast().build();
+	public static FoodProperties cactus_chunk = (new FoodProperties.Builder()).nutrition(cactusChunkHunger).saturationMod((float)cactusChunkSaturation).alwaysEat().fast().build();
+	public static FoodProperties pumpkin_chunk = (new FoodProperties.Builder()).nutrition(pumpkinChunkHunger).saturationMod((float)pumpkinChunkSaturation).alwaysEat().fast().build();
+	public static FoodProperties melon_chunk = (new FoodProperties.Builder()).nutrition(melonChunkHunger).saturationMod((float) melonChunkSaturation).alwaysEat().fast().build();
 
-	public static Food cooked_carrot = (new Food.Builder()).hunger(cookedCarrotHunger).saturation((float) cookedCarrotSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food cooked_beetroot= (new Food.Builder()).hunger(cookedBeetrootHunger).saturation((float) cookedBeetrootSaturation).setAlwaysEdible().fastToEat().build();
+	public static FoodProperties cooked_carrot = (new FoodProperties.Builder()).nutrition(cookedCarrotHunger).saturationMod((float) cookedCarrotSaturation).alwaysEat().fast().build();
+	public static FoodProperties cooked_beetroot= (new FoodProperties.Builder()).nutrition(cookedBeetrootHunger).saturationMod((float) cookedBeetrootSaturation).alwaysEat().fast().build();
 	
-	public static Food soybean = (new Food.Builder()).hunger(cornHunger).saturation((float) cornSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food quinoa = (new Food.Builder()).hunger(cornHunger).saturation((float) cornSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food lentil = (new Food.Builder()).hunger(cornHunger).saturation((float) cornSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food corn = (new Food.Builder()).hunger(cornHunger).saturation((float) cornSaturation).setAlwaysEdible().fastToEat().build();
+	public static FoodProperties soybean = (new FoodProperties.Builder()).nutrition(cornHunger).saturationMod((float) cornSaturation).alwaysEat().fast().build();
+	public static FoodProperties quinoa = (new FoodProperties.Builder()).nutrition(cornHunger).saturationMod((float) cornSaturation).alwaysEat().fast().build();
+	public static FoodProperties lentil = (new FoodProperties.Builder()).nutrition(cornHunger).saturationMod((float) cornSaturation).alwaysEat().fast().build();
+	public static FoodProperties corn = (new FoodProperties.Builder()).nutrition(cornHunger).saturationMod((float) cornSaturation).alwaysEat().fast().build();
 	
-	public static Food apple_pie = (new Food.Builder()).hunger(applePieHunger).saturation((float)applePieSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food melon_pie = (new Food.Builder()).hunger(melonPieHunger).saturation((float)melonPieSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food sweet_berry_pie = (new Food.Builder()).hunger(berryPieHunger).saturation((float)berryPieSaturation).setAlwaysEdible().fastToEat().build();
+	public static FoodProperties apple_pie = (new FoodProperties.Builder()).nutrition(applePieHunger).saturationMod((float)applePieSaturation).alwaysEat().fast().build();
+	public static FoodProperties melon_pie = (new FoodProperties.Builder()).nutrition(melonPieHunger).saturationMod((float)melonPieSaturation).alwaysEat().fast().build();
+	public static FoodProperties sweet_berry_pie = (new FoodProperties.Builder()).nutrition(berryPieHunger).saturationMod((float)berryPieSaturation).alwaysEat().fast().build();
 	
-	public static Food pumpkin_soup = (new Food.Builder()).hunger(pumpkinSoupHunger).saturation((float)pumpkinSoupSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food cactus_soup = (new Food.Builder()).hunger(cactusSoupHunger).saturation((float)cactusSoupSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food melon_soup = (new Food.Builder()).hunger(melonSoupHunger).saturation((float)melonSoupSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food carrot_soup = (new Food.Builder()).hunger(carrotSoupHunger).saturation((float)carrotSoupSaturation).setAlwaysEdible().fastToEat().build();
+	public static FoodProperties pumpkin_soup = (new FoodProperties.Builder()).nutrition(pumpkinSoupHunger).saturationMod((float)pumpkinSoupSaturation).alwaysEat().fast().build();
+	public static FoodProperties cactus_soup = (new FoodProperties.Builder()).nutrition(cactusSoupHunger).saturationMod((float)cactusSoupSaturation).alwaysEat().fast().build();
+	public static FoodProperties melon_soup = (new FoodProperties.Builder()).nutrition(melonSoupHunger).saturationMod((float)melonSoupSaturation).alwaysEat().fast().build();
+	public static FoodProperties carrot_soup = (new FoodProperties.Builder()).nutrition(carrotSoupHunger).saturationMod((float)carrotSoupSaturation).alwaysEat().fast().build();
 	
-	public static Food super_petals = (new Food.Builder()).hunger(superPetalsHunger).saturation((float)superPetalsSaturation).setAlwaysEdible().fastToEat().build();
+	public static FoodProperties super_petals = (new FoodProperties.Builder()).nutrition(superPetalsHunger).saturationMod((float)superPetalsSaturation).alwaysEat().fast().build();
 	
-	public static Food energy_drink = (new Food.Builder()).hunger(energyDrinkHunger).saturation((float)energyDrinkSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food superfood_shake = (new Food.Builder()).hunger(shakeHunger).saturation((float)shakeSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food superfood_smoothie = (new Food.Builder()).hunger(smoothieHunger).saturation((float)smoothieSaturation).setAlwaysEdible().fastToEat().build();
+	public static FoodProperties energy_drink = (new FoodProperties.Builder()).nutrition(energyDrinkHunger).saturationMod((float)energyDrinkSaturation).alwaysEat().fast().build();
+	public static FoodProperties superfood_shake = (new FoodProperties.Builder()).nutrition(shakeHunger).saturationMod((float)shakeSaturation).alwaysEat().fast().build();
+	public static FoodProperties superfood_smoothie = (new FoodProperties.Builder()).nutrition(smoothieHunger).saturationMod((float)smoothieSaturation).alwaysEat().fast().build();
 	
-	public static Food energy_bar = (new Food.Builder()).hunger(energyBarHunger).saturation((float)energyBarSaturation).setAlwaysEdible().fastToEat().build();
-	public static Food superfood_bar = (new Food.Builder()).hunger(superFoodHunger).saturation((float)superFoodSaturation).setAlwaysEdible().fastToEat().build();	
+	public static FoodProperties energy_bar = (new FoodProperties.Builder()).nutrition(energyBarHunger).saturationMod((float)energyBarSaturation).alwaysEat().fast().build();
+	public static FoodProperties superfood_bar = (new FoodProperties.Builder()).nutrition(superFoodHunger).saturationMod((float)superFoodSaturation).alwaysEat().fast().build();	
 }
