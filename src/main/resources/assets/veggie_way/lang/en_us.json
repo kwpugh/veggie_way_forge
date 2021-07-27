@@ -26,7 +26,9 @@
 	
 	"item.veggie_way.fresh_tofu": "Fresh Tofu",
 	"item.veggie_way.cooked_tofu": "Cooked Tofu",
-	
+
+	"item.veggie_way.soy_milk_bucket": "Raw Soy Milk",
+	"item.veggie_way.soy_milk_cooked_bucket": "Cooked Soy Milk",
 	"item.veggie_way.cooked_carrot": "Cooked Carrot",
 	"item.veggie_way.cooked_beetroot": "Cooked Beetroot",
 	

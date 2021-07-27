@@ -1,34 +1,7 @@
 package com.kwpugh.veggie_way.init;
 
 import com.kwpugh.veggie_way.VeggieWay;
-import com.kwpugh.veggie_way.items.DrinkBase;
-import com.kwpugh.veggie_way.items.ItemCactusChunk;
-import com.kwpugh.veggie_way.items.ItemCaffeine;
-import com.kwpugh.veggie_way.items.ItemCarbs;
-import com.kwpugh.veggie_way.items.ItemCropCorn;
-import com.kwpugh.veggie_way.items.ItemCropLentil;
-import com.kwpugh.veggie_way.items.ItemCropQuinoa;
-import com.kwpugh.veggie_way.items.ItemCropSoybean;
-import com.kwpugh.veggie_way.items.ItemDough;
-import com.kwpugh.veggie_way.items.ItemDryingAgent;
-import com.kwpugh.veggie_way.items.ItemEnergyPowder;
-import com.kwpugh.veggie_way.items.ItemFlour;
-import com.kwpugh.veggie_way.items.ItemFructose;
-import com.kwpugh.veggie_way.items.ItemHandRake;
-import com.kwpugh.veggie_way.items.ItemHandScraper;
-import com.kwpugh.veggie_way.items.ItemKnife;
-import com.kwpugh.veggie_way.items.ItemMelonChunk;
-import com.kwpugh.veggie_way.items.ItemMill;
-import com.kwpugh.veggie_way.items.ItemProteins;
-import com.kwpugh.veggie_way.items.ItemPumpkinChunk;
-import com.kwpugh.veggie_way.items.ItemSeedCorn;
-import com.kwpugh.veggie_way.items.ItemSeedLentil;
-import com.kwpugh.veggie_way.items.ItemSeedQuinoa;
-import com.kwpugh.veggie_way.items.ItemSeedSoybean;
-import com.kwpugh.veggie_way.items.ItemSuperPetals;
-import com.kwpugh.veggie_way.items.ItemSuperfoodPowder;
-import com.kwpugh.veggie_way.items.ItemVitamins;
-import com.kwpugh.veggie_way.items.ItemWheatgerm;
+import com.kwpugh.veggie_way.items.*;
 import com.kwpugh.veggie_way.lists.FoodList;
 
 import net.minecraft.world.item.Item;
@@ -50,11 +23,14 @@ public class ItemInit
 
 	public static final RegistryObject<Item> FRESH_TOFU = ITEMS.register("fresh_tofu", () -> new Item(new Item.Properties().tab(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> COOKED_TOFU = ITEMS.register("cooked_tofu", () -> new Item(new Item.Properties().tab(VeggieWay.veggie_way)));
-	public static final RegistryObject<Item> FRIED_EGG = ITEMS.register("fried_egg", () -> new Item(new Item.Properties().food(FoodList.fried_egg).tab(VeggieWay.veggie_way)));
 
+	public static final RegistryObject<Item> SOY_MILK_BUCKET = ITEMS.register("soy_milk_bucket", () -> new Item(new Item.Properties().tab(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> SOY_MILK_COOKED_BUCKET = ITEMS.register("soy_milk_cooked_bucket", () -> new ItemSoyMilkBucket(new Item.Properties().stacksTo(1).durability(16).setNoRepair().tab(VeggieWay.veggie_way)));
+
+	public static final RegistryObject<Item> FRIED_EGG = ITEMS.register("fried_egg", () -> new Item(new Item.Properties().food(FoodList.fried_egg).tab(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> COOKED_CARROT = ITEMS.register("cooked_carrot", () -> new Item(new Item.Properties().food(FoodList.cooked_carrot).tab(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> COOKED_BEETROOT = ITEMS.register("cooked_beetroot", () -> new Item(new Item.Properties().food(FoodList.cooked_beetroot).tab(VeggieWay.veggie_way)));
-	
+
 	public static final RegistryObject<Item> MILL = ITEMS.register("mill", () -> new ItemMill(new Item.Properties().stacksTo(1).durability(512).setNoRepair().tab(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> FLOUR = ITEMS.register("flour", () -> new ItemFlour(new Item.Properties().tab(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> DOUGH = ITEMS.register("dough", () -> new ItemDough(new Item.Properties().tab(VeggieWay.veggie_way)));
