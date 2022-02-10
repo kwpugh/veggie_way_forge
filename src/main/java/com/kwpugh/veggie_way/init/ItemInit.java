@@ -1,7 +1,12 @@
 package com.kwpugh.veggie_way.init;
 
 import com.kwpugh.veggie_way.VeggieWay;
-import com.kwpugh.veggie_way.items.*;
+import com.kwpugh.veggie_way.items.crops.*;
+import com.kwpugh.veggie_way.items.food.*;
+import com.kwpugh.veggie_way.items.tools.ItemHandRake;
+import com.kwpugh.veggie_way.items.tools.ItemHandScraper;
+import com.kwpugh.veggie_way.items.tools.ItemKnife;
+import com.kwpugh.veggie_way.items.tools.ItemMill;
 import com.kwpugh.veggie_way.lists.FoodList;
 
 import net.minecraft.world.item.Item;
