@@ -14,5 +14,6 @@ public class BlockRenders
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.PLANT_SOYBEAN.get(), cutoutMipped);
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.PLANT_LENTIL.get(), cutoutMipped);
 		ItemBlockRenderTypes.setRenderLayer(BlockInit.PLANT_CORN.get(), cutoutMipped);
+		ItemBlockRenderTypes.setRenderLayer(BlockInit.PLANT_COTTON.get(), cutoutMipped);
 	}	
 }

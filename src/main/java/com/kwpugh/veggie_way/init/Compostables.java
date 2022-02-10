@@ -11,10 +11,12 @@ public class Compostables
     	registerCompostable(0.3F, ItemInit.QUINOA_SEEDS.get());
     	registerCompostable(0.3F, ItemInit.SOYBEAN_SEEDS.get());
     	registerCompostable(0.3F, ItemInit.CORN_SEEDS.get());
+        registerCompostable(0.3F, ItemInit.COTTON_SEEDS.get());
     	
     	registerCompostable(0.65F, ItemInit.LENTIL.get());
     	registerCompostable(0.65F, ItemInit.QUINOA.get());
     	registerCompostable(0.65F, ItemInit.CORN.get());
+        registerCompostable(0.65F, ItemInit.COTTON.get());
 
     }
 

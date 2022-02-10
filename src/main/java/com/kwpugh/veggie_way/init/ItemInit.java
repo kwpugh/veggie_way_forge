@@ -63,6 +63,9 @@ public class ItemInit
 	public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds", () -> new ItemSeedCorn(BlockInit.PLANT_CORN.get(), (new Item.Properties().tab(VeggieWay.veggie_way))));
 	public static final RegistryObject<Item> CORN = ITEMS.register("corn", () -> new ItemCropCorn(new Item.Properties().food(FoodList.corn).tab(VeggieWay.veggie_way)));
 
+	public static final RegistryObject<Item> COTTON_SEEDS = ITEMS.register("cotton_seeds", () -> new ItemSeedCotton(BlockInit.PLANT_COTTON.get(), (new Item.Properties().tab(VeggieWay.veggie_way))));
+	public static final RegistryObject<Item> COTTON = ITEMS.register("cotton", () -> new ItemCropCotton(new Item.Properties().tab(VeggieWay.veggie_way)));
+
 	public static final RegistryObject<Item> DRYING_AGENT = ITEMS.register("drying_agent", () -> new ItemDryingAgent(new Item.Properties().tab(VeggieWay.veggie_way)));
 
 	public static final RegistryObject<Item> CARBS = ITEMS.register("carbs", () -> new ItemCarbs(new Item.Properties().tab(VeggieWay.veggie_way)));
