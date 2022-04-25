@@ -9,7 +9,7 @@ license="MIT"
 
 [[mods]] #mandatory
 modId="veggie_way" #mandatory
-version="2.4.9" #mandatory
+version="2.4.10" #mandatory
 displayName="The Veggie Way" #mandatory
 description='''
 The veggie way to nutritious food without killing
