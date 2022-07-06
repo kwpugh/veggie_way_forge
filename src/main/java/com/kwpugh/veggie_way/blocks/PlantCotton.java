@@ -4,7 +4,6 @@ import com.kwpugh.veggie_way.init.ItemInit;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
@@ -43,6 +42,6 @@ public class PlantCotton extends CropBlock
 	public void appendHoverText(ItemStack stack, @Nullable BlockGetter worldIn, List<Component> tooltip, TooltipFlag flagIn)
 	{
 		super.appendHoverText(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslatableComponent("block.veggie_way.cotton_plant").withStyle(ChatFormatting.GREEN)));
+		tooltip.add((Component.translatable("block.veggie_way.cotton_plant").withStyle(ChatFormatting.GREEN)));
 	}
 }

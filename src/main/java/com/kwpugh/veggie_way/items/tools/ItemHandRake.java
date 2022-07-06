@@ -1,31 +1,26 @@
 package com.kwpugh.veggie_way.items.tools;
 
-import java.util.List;
-import java.util.Random;
-
-import javax.annotation.Nullable;
-
 import com.kwpugh.veggie_way.init.ItemInit;
-
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ShovelItem;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ShovelItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-import net.minecraft.world.item.Item.Properties;
+import javax.annotation.Nullable;
+import java.util.List;
+import java.util.Random;
 
 public class ItemHandRake extends ShovelItem
 {
@@ -82,7 +77,11 @@ public class ItemHandRake extends ShovelItem
 		        {
 		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.CORN_SEEDS.get(), 1)));
 		        }
-		        else if (r > 0.4)
+				else if (r > 0.4 && r <= 0.5)
+				{
+					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.COTTON_SEEDS.get(), 1)));
+				}
+		        else if (r > 0.5)
 		        {
 		        	 //Nothing right now
 		        }
@@ -96,8 +95,8 @@ public class ItemHandRake extends ShovelItem
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn)
 	{
 		super.appendHoverText(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslatableComponent("item.veggie_way.hand_rake.line1").withStyle(ChatFormatting.GREEN)));
-		tooltip.add((new TranslatableComponent("item.veggie_way.hand_rake.line2").withStyle(ChatFormatting.GREEN)));
+		tooltip.add((Component.translatable("item.veggie_way.hand_rake.line1").withStyle(ChatFormatting.GREEN)));
+		tooltip.add((Component.translatable("item.veggie_way.hand_rake.line2").withStyle(ChatFormatting.GREEN)));
 	}
 }
 

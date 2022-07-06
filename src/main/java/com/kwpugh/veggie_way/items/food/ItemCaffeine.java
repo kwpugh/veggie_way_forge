@@ -9,12 +9,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
 import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-
-import net.minecraft.world.item.Item.Properties;
 
 public class ItemCaffeine extends Item
 {
@@ -27,7 +24,7 @@ public class ItemCaffeine extends Item
 	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn)
 	{
 		super.appendHoverText(stack, worldIn, tooltip, flagIn);
-		tooltip.add((new TranslatableComponent("item.veggie_way.caffeine.line1").withStyle(ChatFormatting.GREEN)));
-		tooltip.add((new TranslatableComponent("item.veggie_way.caffeine.line2").withStyle(ChatFormatting.GREEN)));
+		tooltip.add((Component.translatable("item.veggie_way.caffeine.line1").withStyle(ChatFormatting.GREEN)));
+		tooltip.add((Component.translatable("item.veggie_way.caffeine.line2").withStyle(ChatFormatting.GREEN)));
 	}
 }
