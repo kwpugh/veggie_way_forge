@@ -1,4 +1,4 @@
-package com.kwpugh.veggie_way.util;
+package com.kwpugh.veggie_way.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 

@@ -1,6 +1,6 @@
 package com.kwpugh.veggie_way.lists;
 
-import com.kwpugh.veggie_way.util.VeggieWayConfig;
+import com.kwpugh.veggie_way.config.VeggieWayConfig;
 
 import net.minecraft.world.food.FoodProperties;
 

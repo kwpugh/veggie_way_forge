@@ -1,4 +1,4 @@
-package com.kwpugh.veggie_way.util;
+package com.kwpugh.veggie_way.config;
 
 import java.io.File;
 
@@ -16,6 +16,8 @@ public class Config {
 	
 	static
 	{
+		com.electronwill.nightconfig.core.Config.setInsertionOrderPreserved(true);
+
 		VeggieWayConfig.init(builder);
 		
 		config = builder.build();

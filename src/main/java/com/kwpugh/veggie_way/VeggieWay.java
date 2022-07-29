@@ -10,8 +10,7 @@ import com.kwpugh.veggie_way.group.GroupVeggieWay;
 import com.kwpugh.veggie_way.init.BlockInit;
 import com.kwpugh.veggie_way.init.Compostables;
 import com.kwpugh.veggie_way.init.ItemInit;
-import com.kwpugh.veggie_way.util.BlockRenders;
-import com.kwpugh.veggie_way.util.Config;
+import com.kwpugh.veggie_way.config.Config;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.common.MinecraftForge;
@@ -55,8 +54,6 @@ public class VeggieWay
 
     private void clientSetup(final FMLClientSetupEvent event)
     {
-    	BlockRenders.defineRenders();
-
     	logger.info("VeggieWay client setup");
     }
 
