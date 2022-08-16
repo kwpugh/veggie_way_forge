@@ -7,10 +7,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -81,7 +78,27 @@ public class ItemHandRake extends ShovelItem
 				{
 					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.COTTON_SEEDS.get(), 1)));
 				}
-		        else if (r > 0.5)
+				else if (r > 0.5 && r <= 0.55)
+				{
+					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.WHEAT_SEEDS, 1)));
+				}
+				else if (r > 0.55 && r <= 0.6)
+				{
+					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.BEETROOT_SEEDS, 1)));
+				}
+				else if (r > 0.6 && r <= 0.65)
+				{
+					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.CARROT, 1)));
+				}
+				else if (r > 0.65 && r <= 0.7)
+				{
+					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.MELON_SEEDS, 1)));
+				}
+				else if (r > 0.7 && r <= 0.75)
+				{
+					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.PUMPKIN_SEEDS, 1)));
+				}
+		        else if (r > 0.75)
 		        {
 		        	 //Nothing right now
 		        }
