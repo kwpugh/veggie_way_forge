@@ -98,7 +98,11 @@ public class ItemHandRake extends ShovelItem
 				{
 					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.PUMPKIN_SEEDS, 1)));
 				}
-		        else if (r > 0.75)
+				else if (r > 0.75 && r <= 0.8)
+				{
+					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.POTATO, 1)));
+				}
+		        else if (r > 0.8)
 		        {
 		        	 //Nothing right now
 		        }
