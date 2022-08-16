@@ -48,11 +48,13 @@ public class ItemInit
 	public static final RegistryObject<Item> PUMPKIN_SOUP = ITEMS.register("pumpkin_soup", () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(FoodList.pumpkin_soup).tab(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> CACTUS_SOUP = ITEMS.register("cactus_soup", () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(FoodList.cactus_soup).tab(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> MELON_SOUP = ITEMS.register("melon_soup", () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(FoodList.melon_soup).tab(VeggieWay.veggie_way)));
-	public static final RegistryObject<Item> CARROT_SOUP = ITEMS.register("carrot_soup", () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(FoodList.melon_soup).tab(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> CARROT_SOUP = ITEMS.register("carrot_soup", () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(FoodList.carrot_soup).tab(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> LENTIL_SOUP = ITEMS.register("lentil_soup", () -> new BowlFoodItem(new Item.Properties().stacksTo(1).food(FoodList.lentil_soup).tab(VeggieWay.veggie_way)));
 
 	public static final RegistryObject<Item> APPLE_PIE = ITEMS.register("apple_pie", () -> new Item(new Item.Properties().food(FoodList.apple_pie).tab(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> SWEET_BERRY_PIE = ITEMS.register("sweet_berry_pie", () -> new Item(new Item.Properties().food(FoodList.sweet_berry_pie).tab(VeggieWay.veggie_way)));
 	public static final RegistryObject<Item> MELON_PIE = ITEMS.register("melon_pie", () -> new Item(new Item.Properties().food(FoodList.melon_pie).tab(VeggieWay.veggie_way)));
+	public static final RegistryObject<Item> CACTUS_PIE = ITEMS.register("cactus_pie", () -> new Item(new Item.Properties().food(FoodList.cactus_pie).tab(VeggieWay.veggie_way)));
 
 	public static final RegistryObject<Item> SUPER_PETALS = ITEMS.register("super_petals", () -> new ItemSuperPetals(new Item.Properties().food(FoodList.super_petals).tab(VeggieWay.veggie_way)));
 

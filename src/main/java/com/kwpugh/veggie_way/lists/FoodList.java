@@ -38,6 +38,9 @@ public class FoodList
 	
 	static int berryPieHunger = VeggieWayConfig.berry_pie_hunger.get();
 	static double berryPieSaturation = VeggieWayConfig.berry_pie_saturation.get();
+
+	static int cactusPieHunger = VeggieWayConfig.cactus_pie_hunger.get();
+	static double cactusPieSaturation = VeggieWayConfig.cactus_pie_saturation.get();
 	
 	static int pumpkinSoupHunger = VeggieWayConfig.pumpkin_soup_hunger.get();
 	static double pumpkinSoupSaturation = VeggieWayConfig.pumpkin_soup_saturation.get();
@@ -50,7 +53,10 @@ public class FoodList
 
 	static int carrotSoupHunger = VeggieWayConfig.carrot_soup_hunger.get();
 	static double carrotSoupSaturation = VeggieWayConfig.carrot_soup_saturation.get();
-	
+
+	static int lentilSoupHunger = VeggieWayConfig.lentil_soup_hunger.get();
+	static double lentilSoupSaturation = VeggieWayConfig.lentil_soup_saturation.get();
+
 	static int superPetalsHunger = VeggieWayConfig.super_petals_hunger.get();
 	static double superPetalsSaturation = VeggieWayConfig.super_petals_saturation.get();
 	
@@ -86,11 +92,13 @@ public class FoodList
 	public static FoodProperties apple_pie = (new FoodProperties.Builder()).nutrition(applePieHunger).saturationMod((float)applePieSaturation).alwaysEat().fast().build();
 	public static FoodProperties melon_pie = (new FoodProperties.Builder()).nutrition(melonPieHunger).saturationMod((float)melonPieSaturation).alwaysEat().fast().build();
 	public static FoodProperties sweet_berry_pie = (new FoodProperties.Builder()).nutrition(berryPieHunger).saturationMod((float)berryPieSaturation).alwaysEat().fast().build();
+	public static FoodProperties cactus_pie = (new FoodProperties.Builder()).nutrition(cactusPieHunger).saturationMod((float)cactusChunkSaturation).alwaysEat().fast().build();
 	
 	public static FoodProperties pumpkin_soup = (new FoodProperties.Builder()).nutrition(pumpkinSoupHunger).saturationMod((float)pumpkinSoupSaturation).alwaysEat().fast().build();
 	public static FoodProperties cactus_soup = (new FoodProperties.Builder()).nutrition(cactusSoupHunger).saturationMod((float)cactusSoupSaturation).alwaysEat().fast().build();
 	public static FoodProperties melon_soup = (new FoodProperties.Builder()).nutrition(melonSoupHunger).saturationMod((float)melonSoupSaturation).alwaysEat().fast().build();
 	public static FoodProperties carrot_soup = (new FoodProperties.Builder()).nutrition(carrotSoupHunger).saturationMod((float)carrotSoupSaturation).alwaysEat().fast().build();
+	public static FoodProperties lentil_soup = (new FoodProperties.Builder()).nutrition(lentilSoupHunger).saturationMod((float)lentilSoupSaturation).alwaysEat().fast().build();
 	
 	public static FoodProperties super_petals = (new FoodProperties.Builder()).nutrition(superPetalsHunger).saturationMod((float)superPetalsSaturation).alwaysEat().fast().build();
 	
