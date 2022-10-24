@@ -28,11 +28,11 @@ public class ItemHandRake extends ShovelItem
 		super(tier, attackDamageIn, attackSpeedIn, builder);
 	}
 
-	public boolean mineBlock(ItemStack stack, Level worldIn, BlockState state, BlockPos pos, LivingEntity entityLiving)
+	public boolean mineBlock(ItemStack stack, Level level, BlockState state, BlockPos pos, LivingEntity entityLiving)
 	{
 		Block block = state.getBlock();
 		
-		if (!worldIn.isClientSide && state.getDestroySpeed(worldIn, pos) != 0.0F)
+		if (!level.isClientSide && state.getDestroySpeed(level, pos) != 0.0F)
 		{
 			if(block == Blocks.SAND)
 			{
@@ -43,7 +43,7 @@ public class ItemHandRake extends ShovelItem
 		        double r = random.nextDouble();
 		        if (r <= 0.3)
 		        {
-		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.DRYING_AGENT.get(), 1)));
+		        	level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.DRYING_AGENT.get(), 1)));
 		        }
 		        else if (r > 0.3)
 		        {
@@ -60,47 +60,47 @@ public class ItemHandRake extends ShovelItem
 		        double r = random.nextDouble();
 		        if (r <= 0.1)
 		        {
-		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.QUINOA_SEEDS.get(), 1)));
+		        	level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.QUINOA_SEEDS.get(), 1)));
 		        }
 		        else if (r > 0.1 && r <= 0.2)
 		        {
-		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.SOYBEAN_SEEDS.get(), 1)));
+		        	level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.SOYBEAN_SEEDS.get(), 1)));
 		        }
 		        else if (r > 0.2 && r <= 0.3)
 		        {
-		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.LENTIL_SEEDS.get(), 1)));
+		        	level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.LENTIL_SEEDS.get(), 1)));
 		        }
 		        else if (r > 0.3 && r <= 0.4)
 		        {
-		        	worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.CORN_SEEDS.get(), 1)));
+		        	level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.CORN_SEEDS.get(), 1)));
 		        }
 				else if (r > 0.4 && r <= 0.5)
 				{
-					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.COTTON_SEEDS.get(), 1)));
+					level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(ItemInit.COTTON_SEEDS.get(), 1)));
 				}
 				else if (r > 0.5 && r <= 0.55)
 				{
-					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.WHEAT_SEEDS, 1)));
+					level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.WHEAT_SEEDS, 1)));
 				}
 				else if (r > 0.55 && r <= 0.6)
 				{
-					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.BEETROOT_SEEDS, 1)));
+					level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.BEETROOT_SEEDS, 1)));
 				}
 				else if (r > 0.6 && r <= 0.65)
 				{
-					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.CARROT, 1)));
+					level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.CARROT, 1)));
 				}
 				else if (r > 0.65 && r <= 0.7)
 				{
-					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.MELON_SEEDS, 1)));
+					level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.MELON_SEEDS, 1)));
 				}
 				else if (r > 0.7 && r <= 0.75)
 				{
-					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.PUMPKIN_SEEDS, 1)));
+					level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.PUMPKIN_SEEDS, 1)));
 				}
 				else if (r > 0.75 && r <= 0.8)
 				{
-					worldIn.addFreshEntity(new ItemEntity(worldIn, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.POTATO, 1)));
+					level.addFreshEntity(new ItemEntity(level, pos.getX(), pos.getY(), pos.getZ(), new ItemStack(Items.POTATO, 1)));
 				}
 		        else if (r > 0.8)
 		        {
@@ -113,9 +113,9 @@ public class ItemHandRake extends ShovelItem
 	}
 	
 	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack stack, @Nullable Level worldIn, List<Component> tooltip, TooltipFlag flagIn)
+	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flagIn)
 	{
-		super.appendHoverText(stack, worldIn, tooltip, flagIn);
+		super.appendHoverText(stack, level, tooltip, flagIn);
 		tooltip.add((Component.translatable("item.veggie_way.hand_rake.line1").withStyle(ChatFormatting.GREEN)));
 		tooltip.add((Component.translatable("item.veggie_way.hand_rake.line2").withStyle(ChatFormatting.GREEN)));
 	}
