@@ -2,7 +2,7 @@
 	"item.veggie_way.quinoa_plant": "Pé de Quinoa",
  	"block.veggie_way.quinoa_plant": "Pé de Quinoa",
  
-    "item.veggie_way.soybean_plant": "Pé de Soja",
+        "item.veggie_way.soybean_plant": "Pé de Soja",
  	"block.veggie_way.soybean_plant": "Pé de Soja",
  	
  	"item.veggie_way.lentil_plant": "Pé de Lentilha",
@@ -10,6 +10,9 @@
  	
  	"item.veggie_way.corn_plant": "Pé de Milho",
  	"block.veggie_way.corn_plant": "Pé de Milho",
+
+	"item.veggie_way.cotton_plant": "Pé de Algodão",
+	"block.veggie_way.cotton_plant": "Pé de Algodão",
  		
 	"item.veggie_way.hand_rake": "Ancinho",
 	"item.veggie_way.hand_rake.line1": "Usado na Areia para obter o Agente de Secagem",
@@ -26,13 +29,18 @@
  	
  	"item.veggie_way.fresh_tofu": "Tofu Fresco",
  	"item.veggie_way.cooked_tofu": "Tofu Cozido",
- 	
+
+	"item.veggie_way.soy_milk_bucket": "Leite de Soja Cru",
+	"item.veggie_way.soy_milk_cooked_bucket": "Leite de Soja Cozido",
+	"item.veggie_way.cooked_carrot": "Cenoura Cozida",
+	"item.veggie_way.cooked_beetroot": "Beterraba Cozida",
+	
  	"item.veggie_way.knife": "Faca",
  	"item.veggie_way.knife.line1": "Usado em uma Bancada de Trabalho para cortar coisas",
  	
- 	"item.veggie_way.mill": "Moinho",		
+ 	"item.veggie_way.mill": "Moinho",
+	"item.veggie_way.mill.line1": "Usado para moer grãos em farinha",
  	"item.veggie_way.flour": "Farinha",
- 	
  	"item.veggie_way.dough": "Massa",
  	"item.veggie_way.dough.line1": "Asse em uma Fornalha para obter pão",
  	
@@ -46,7 +54,7 @@
  	"item.veggie_way.chunk.line1": "Um alimento comestível",	
  	
 	"item.veggie_way.drying_agent": "Agente de Secagem",
-	"item.veggie_way.drying_agent.line1": "Usado para secar materiais usados ​​em outros processos",
+	"item.veggie_way.drying_agent.line1": "Usado para secar materiais usados em outros processos",
 	
 	"item.veggie_way.bamboo_sheet": "Folha de Bambu",
 	"item.veggie_way.large_bamboo_sheet": "Folha Grande de Bambu",
@@ -61,7 +69,10 @@
  	"item.veggie_way.lentil_seeds.line1": "Plantar em Terra Arrada para cultivar Pé de Lentilha",
  	
  	"item.veggie_way.corn_seeds": "Sementes de Milho",	
- 	"item.veggie_way.corn_seeds.line1": "Plantar em Terra Arrada para crescer Pé de Milho",
+ 	"item.veggie_way.corn_seeds.line1": "Plantar em Terra Arrada para cultivar Pé de Milho",
+
+	"item.veggie_way.cotton_seeds": "Sementes de Algodão",
+	"item.veggie_way.cotton_seeds.line1": "Plante em terras Arrada para cultivar Pé de Algodão",
  	
 	"item.veggie_way.quinoa": "Quinoa Vermelha",
 	"item.veggie_way.quinoa.line1": "Uma maravilhosa fonte de proteína",
@@ -74,15 +85,18 @@
  	
  	"item.veggie_way.corn": "Milho",
  	"item.veggie_way.corn.line1": "Uma maravilhosa fonte de carboidratos",
- 	
+
+	"item.veggie_way.cotton": "Algodão",
+	"item.veggie_way.cotton.line1": "Usado para fazer linha",
+	
 	"item.veggie_way.apple_pie": "Torta de Maçã",
 	"item.veggie_way.melon_pie": "Torta de Melancia",
 	"item.veggie_way.sweet_berry_pie": "Torta de Baga Doce",
 	
 	"item.veggie_way.pumpkin_soup": "Sopa de Abóbora",
-	"item.veggie_way.cactus_soup": "Cactus Soup",
-	"item.veggie_way.melon_soup": "Melon Soup",
-	"item.veggie_way.carrot_soup": "Carrot Soup",
+	"item.veggie_way.cactus_soup": "Sopa de Cacto",
+	"item.veggie_way.melon_soup": "Sopa de Melancia",
+	"item.veggie_way.carrot_soup": "Sopa de Cenoura",
 	
 	"item.veggie_way.carbs": "Carboidrato em Pó",
 	"item.veggie_way.carbs.line1": "Uma forma concentrada de carboidrato",
@@ -101,6 +115,7 @@
 	"item.veggie_way.vitamins.line2": "Usado para misturar",
 	
 	"item.veggie_way.caffeine": "Cafeína em Pó",
+	
 	"item.veggie_way.caffeine.line1": "Uma forma concentrada de cafeína",
 	"item.veggie_way.caffeine.line2": "Usado para misturar",
 	
@@ -108,8 +123,8 @@
 	"item.veggie_way.wheatgerm.line1": "Uma forma concentrada de germe de trigo",
 	"item.veggie_way.wheatgerm.line2": "Usado para misturar",
 	
-	"item.veggie_way.super_petals": "Super Petals",
-	"item.veggie_way.super_petals.line1": "Not much for hunger, but awesome for saturation",
+	"item.veggie_way.super_petals": "Super Pétalas",
+	"item.veggie_way.super_petals.line1": "Não muito para fome, mas incrível para saturação",
 	
 	"item.veggie_way.energy_powder": "Energético em Pó",
 	"item.veggie_way.energy_powder.line1": "Uma forma concentrada de energético em pó",
