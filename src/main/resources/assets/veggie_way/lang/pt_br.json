@@ -91,12 +91,14 @@
 	
 	"item.veggie_way.apple_pie": "Torta de Maçã",
 	"item.veggie_way.melon_pie": "Torta de Melancia",
-	"item.veggie_way.sweet_berry_pie": "Torta de Baga Doce",
+	"item.veggie_way.sweet_berry_pie": "Torta de Baga Doce",,
+	"item.veggie_way.cactus_pie": "Torta de Cacto",
 	
 	"item.veggie_way.pumpkin_soup": "Sopa de Abóbora",
 	"item.veggie_way.cactus_soup": "Sopa de Cacto",
 	"item.veggie_way.melon_soup": "Sopa de Melancia",
 	"item.veggie_way.carrot_soup": "Sopa de Cenoura",
+	"item.veggie_way.lentil_soup": "Sopa de Lentilha",
 	
 	"item.veggie_way.carbs": "Carboidrato em Pó",
 	"item.veggie_way.carbs.line1": "Uma forma concentrada de carboidrato",
